@@ -120,7 +120,7 @@ body:has(.section-header .drawer-menu) .announcement-bar-section .page-width {
 
 @media screen and (min-width: 750px) {
   .page-width {
-    padding: 0 5rem;
+    padding: 0 2rem;
   }
 
   .header.page-width,
@@ -309,20 +309,20 @@ h1,
 .h1 {
   /* font-size: calc(var(--font-heading-scale) * 3rem); */
   font-size: 120px;
-  line-height: 130px;
+  line-height: 108%;
   letter-spacing: -2.4px;
 }
 
 @media only screen and (min-width: 750px) {
-  h1,
+  /* h1,
   .h1 {
-    font-size: calc(var(--font-heading-scale) * 4rem);
-  }
+    font-size: 120px;
+  } */
 }
 
 h2,
 .h2 {
-  font-size: 60px;
+  font-size: 35px;
   line-height: 100%;
   letter-spacing: -1.2px;
 }
@@ -330,7 +330,7 @@ h2,
 @media only screen and (min-width: 750px) {
   h2,
   .h2 {
-    font-size: calc(var(--font-heading-scale) * 2.4rem);
+    font-size: 60px;
   }
 }
 
@@ -342,10 +342,10 @@ h3,
 }
 
 @media only screen and (min-width: 750px) {
-  h3,
+  /* h3,
   .h3 {
     font-size: calc(var(--font-heading-scale) * 1.8rem);
-  }
+  } */
 }
 
 h4,
@@ -358,15 +358,15 @@ h4,
 h5,
 .h5 {
   font-size: 30px;
-  line-height: 35px;
+  line-height: 116%;
   letter-spacing: -0.6px;
 }
 
 @media only screen and (min-width: 750px) {
-  h5,
+  /* h5,
   .h5 {
     font-size: calc(var(--font-heading-scale) * 1.3rem);
-  }
+  } */
 }
 
 h6,
@@ -1228,8 +1228,21 @@ button.shopify-payment-button__button--unbranded,
 .shopify-challenge__button,
 .customer button,
 button.shopify-payment-button__button--unbranded {
-  min-width: calc(12rem + var(--buttons-border-width) * 2);
-  min-height: calc(4.5rem + var(--buttons-border-width) * 2);
+  /* min-width: calc(12rem + var(--buttons-border-width) * 2);
+  min-height: calc(4.5rem + var(--buttons-border-width) * 2); */
+  min-height: 50px;
+  /* max-width: ; */
+  width: 145px;
+}
+
+@media screen and (min-width: 750px) { 
+.button,
+  .shopify-challenge__button,
+  .customer button,
+  button.shopify-payment-button__button--unbranded {
+    min-height: 60px;
+    width: 290px;
+  }
 }
 
 .shopify-payment-button__button--branded {
@@ -1338,9 +1351,19 @@ button.shopify-payment-button__button--unbranded {
 .button-label,
 .shopify-challenge__button,
 .customer button {
-  font-size: 1.5rem;
-  letter-spacing: 0.1rem;
-  line-height: calc(1 + 0.2 / var(--font-body-scale));
+  /* font-size: 1.5rem; */
+  font-size: 14px;
+  /* letter-spacing: 0.1rem; */
+  line-height: normal;
+}
+
+@media screen and (min-width: 750px) {
+  .button,
+  .button-label,
+  .shopify-challenge__button,
+  .customer button {
+    font-size: 16px;
+  }
 }
 
 .button--tertiary {

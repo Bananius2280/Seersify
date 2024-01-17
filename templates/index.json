@@ -6,17 +6,18 @@
         "heading": {
           "type": "heading",
           "settings": {
-            "heading": "Skincare powered by nature and science",
-            "heading_size": "h0"
+            "heading": "Skincare powered",
+            "heading_second_line": "by nature and science",
+            "heading_size": "h2"
           }
         },
         "button": {
           "type": "buttons",
           "settings": {
-            "button_label_1": "Shop all",
+            "button_label_1": "SHOP ALL",
             "button_link_1": "shopify:\/\/collections\/all",
             "button_style_secondary_1": true,
-            "button_label_2": "",
+            "button_label_2": "fd",
             "button_link_2": "",
             "button_style_secondary_2": false
           }
@@ -29,7 +30,7 @@
       "settings": {
         "image": "shopify:\/\/shop_images\/FAQ_1.jpg",
         "image_2": "shopify:\/\/shop_images\/48.jpg",
-        "image_overlay_opacity": 40,
+        "image_overlay_opacity": 0,
         "image_height": "large",
         "desktop_content_position": "bottom-left",
         "show_text_box": false,

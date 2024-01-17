@@ -1248,6 +1248,9 @@
           "settings": {
             "heading": {
               "label": "Heading"
+            },
+            "heading_second_line": {
+              "label": "Heading second line"
             }
           }
         },
