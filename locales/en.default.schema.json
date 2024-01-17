@@ -1067,6 +1067,9 @@
           },
           "options__4": {
             "label": "Middle center"
+          },
+          "options__5": {
+            "label": "Middle right"
           }
         },
         "menu": {
