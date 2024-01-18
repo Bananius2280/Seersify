@@ -17,7 +17,7 @@
             "button_label_1": "SHOP ALL",
             "button_link_1": "shopify:\/\/collections\/all",
             "button_style_secondary_1": true,
-            "button_label_2": "fd",
+            "button_label_2": "",
             "button_link_2": "",
             "button_style_secondary_2": false
           }
@@ -65,10 +65,22 @@
         "enable_country_selector": false,
         "enable_language_selector": false
       }
+    },
+    "images_with_text_6pVkYK": {
+      "type": "images-with-text",
+      "settings": {
+        "section_color_scheme": "scheme-21bd5b93-d091-4cb6-a15a-e37de14aef4a",
+        "images_with_text_title": "Seersify is at the helm of leading-edge beauty science, offering customers multifunctional products that do more with your skin",
+        "image_with_text_first_image": "shopify:\/\/shop_images\/FAQ_7.jpg",
+        "image_with_text_second_image": "shopify:\/\/shop_images\/21.jpg",
+        "image_with_text_link_text": "READ MORE",
+        "image_with_text_link": ""
+      }
     }
   },
   "order": [
     "image_banner",
-    "announcement_bar_nk3VjB"
+    "announcement_bar_nk3VjB",
+    "images_with_text_6pVkYK"
   ]
 }

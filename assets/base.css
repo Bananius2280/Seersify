@@ -95,7 +95,7 @@ html.no-js .no-js-hidden {
 
 .page-width {
   /* max-width: var(--page-width); */
-  max-width: 1660px;
+  max-width: 1670px;
   margin: 0 auto;
   padding: 0 1.5rem;
 }
@@ -336,16 +336,16 @@ h2,
 
 h3,
 .h3 {
-  font-size: 50px;
+  font-size: 30px;
   line-height: 120%;
   letter-spacing: -1px;
 }
 
 @media only screen and (min-width: 750px) {
-  /* h3,
+  h3,
   .h3 {
-    font-size: calc(var(--font-heading-scale) * 1.8rem);
-  } */
+    font-size: 50px;
+  }
 }
 
 h4,
@@ -514,6 +514,30 @@ h6:empty {
   background-color: transparent;
   font-size: 1.4rem;
   font-family: inherit;
+}
+
+.link-arrow {
+  text-align: center;
+  font-size: 14px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: unset;
+  color: rgb(var(--color-foreground));
+  border-bottom: 1px solid;
+  width: max-content;
+  line-height: 16px;
+}
+
+.link-arrow svg {
+  margin-left: 5px;
+  margin-right: 1.5px;
+}
+
+@media only screen and (min-width: 750px) {
+  .link-arrow {
+    font-size: 16px;
+  }
 }
 
 .link--text {
