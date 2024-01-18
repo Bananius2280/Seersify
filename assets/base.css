@@ -1232,7 +1232,7 @@ button.shopify-payment-button__button--unbranded {
   min-height: calc(4.5rem + var(--buttons-border-width) * 2); */
   min-height: 50px;
   /* max-width: ; */
-  width: 145px;
+  width: 135px;
 }
 
 @media screen and (min-width: 750px) { 
@@ -2217,6 +2217,8 @@ product-info .loading__spinner:not(.hidden) ~ *,
   flex-wrap: wrap;
   align-content: center;
   grid-area: announcements;
+  min-height: 60px;
+  overflow: hidden;
 }
 
 .announcement-bar .slider--everywhere {
@@ -2308,10 +2310,29 @@ product-info .loading__spinner:not(.hidden) ~ *,
 
 .announcement-bar__message {
   text-align: center;
-  padding: 1rem 0;
   margin: 0;
-  letter-spacing: 0.1rem;
   min-height: 3.8rem;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  white-space: nowrap;
+  /* padding-top: 15px; */
+  letter-spacing: normal;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+@media screen and (min-width: 750px) {
+  .announcement-bar__message {
+    font-size: 19px;
+  }
+
+  .announcement-bar,
+  .announcement-bar__announcement {
+    min-height: 80px;
+  }
 }
 
 .announcement-bar-slider--fade-in-next .announcement-bar__message,
