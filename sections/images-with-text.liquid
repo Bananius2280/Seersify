@@ -2,11 +2,16 @@
 
 <div class="images-with-text color-{{ section.settings.section_color_scheme }}">
   <div class="images-with-text__box page-width">
-    {%- if section.settings.image_with_text_first_image != blank -%}
+    {%- if section.settings.images_with_text_name != blank -%}
+      <p class="images-with-text__name">
+        {{ section.settings.images_with_text_name }}
+      </p>
+    {%- endif -%}
+    {%- if section.settings.images_with_text_first_image != blank -%}
       <img
-        class="images-with-text__img images-with-text__img--first"
-        src="{{ section.settings.image_with_text_first_image | image_url: width: 426 }}"
-        alt="{{ section.settings.image_with_text_first_image.alt | escape }}"
+        class="images-with-text__img images-with-text__img--first images-with-text__img--first-{{ section.settings.images_with_text_first_image_position }} images-with-text__img--first-{{ section.settings.images_with_text_first_image_mode }}"
+        src="{{ section.settings.images_with_text_first_image | image_url: width: 426 }}"
+        alt="{{ section.settings.images_with_text_first_image.alt | escape }}"
         width="213"
         height="167"
         loading="lazy">
@@ -16,19 +21,19 @@
         {{ section.settings.images_with_text_title }}
       </h3>
     {%- endif -%}
-    {%- if section.settings.image_with_text_link_text != blank -%}
-      <a class="images-with-text__link link-arrow" href="{{ section.settings.image_with_text_link }}">
+    {%- if section.settings.images_with_text_link_text != blank -%}
+      <a class="images-with-text__link link-arrow" href="{{ section.settings.images_with_text_link }}">
         <span class="images-with-text__link--text">
-          {{ section.settings.image_with_text_link_text }}
+          {{ section.settings.images_with_text_link_text }}
         </span>
         {% render 'icon-link-arrow' %}
       </a>
     {%- endif -%}
-    {%- if section.settings.image_with_text_second_image != blank -%}
+    {%- if section.settings.images_with_text_second_image != blank -%}
       <img
-        class="images-with-text__img images-with-text__img--second"
-        src="{{ section.settings.image_with_text_second_image | image_url: width: 426 }}"
-        alt="{{ section.settings.image_with_text_second_image.alt | escape }}"
+        class="images-with-text__img images-with-text__img--second images-with-text__img--second-{{ section.settings.images_with_text_second_image_position }} images-with-text__img--second-{{ section.settings.images_with_text_second_image_mode }}"
+        src="{{ section.settings.images_with_text_second_image | image_url: width: 426 }}"
+        alt="{{ section.settings.images_with_text_second_image.alt | escape }}"
         width="213"
         height="167"
         loading="lazy">
@@ -49,6 +54,12 @@
         "default": "background-1"
       },
       {
+        "type": "text",
+        "id": "images_with_text_name",
+        "label": "Small title",
+        "default": "Small title"
+      },
+      {
         "type": "textarea",
         "id": "images_with_text_title",
         "label": "Heading",
@@ -56,21 +67,76 @@
       },
       {
         "type": "image_picker",
-        "id": "image_with_text_first_image",
+        "id": "images_with_text_first_image",
         "label": "First image"
-      },
-      {
+      }, {
+        "type": "radio",
+        "id": "images_with_text_first_image_position",
+        "label": "First image position",
+        "options": [
+          {
+            "value": "top",
+            "label": "Top"
+          }, {
+            "value": "bottom",
+            "label": "Bottom"
+          }
+        ],
+        "default": "bottom"
+      }, {
+        "type": "radio",
+        "id": "images_with_text_first_image_mode",
+        "label": "First image mode",
+        "options": [
+          {
+            "value": "usually",
+            "label": "Usually"
+          }, {
+            "value": "high",
+            "label": "High"
+          }
+        ],
+        "default": "usually"
+      }, {
         "type": "image_picker",
-        "id": "image_with_text_second_image",
+        "id": "images_with_text_second_image",
         "label": "Second image"
       }, {
+        "type": "radio",
+        "id": "images_with_text_second_image_position",
+        "label": "Second image position",
+        "options": [
+          {
+            "value": "top",
+            "label": "Top"
+          }, {
+            "value": "bottom",
+            "label": "Bottom"
+          }
+        ],
+        "default": "top"
+      }, {
+        "type": "radio",
+        "id": "images_with_text_second_image_mode",
+        "label": "Second image mode",
+        "options": [
+          {
+            "value": "usually",
+            "label": "Usually"
+          }, {
+            "value": "high",
+            "label": "High"
+          }
+        ],
+        "default": "usually"
+      }, {
         "type": "text",
-        "id": "image_with_text_link_text",
+        "id": "images_with_text_link_text",
         "label": "Title link",
         "default": "Link"
       }, {
         "type": "url",
-        "id": "image_with_text_link",
+        "id": "images_with_text_link",
         "label": "Link"
       }
     ],
