@@ -1,6 +1,6 @@
 {{ 'section-images-with-text.css' | asset_url | stylesheet_tag }}
 
-<div class="images-with-text color-{{ section.settings.section_color_scheme }}">
+<div class="images-with-text color-{{ section.settings.section_color_scheme }}{% if section.settings.show_top_border %} main-top__border{% endif %}{% if section.settings.show_bottom_border %} main-bottom__border{% endif %}">
   <div class="images-with-text__box page-width">
     {%- if section.settings.images_with_text_name != blank -%}
       <p class="images-with-text__name">
@@ -138,6 +138,16 @@
         "type": "url",
         "id": "images_with_text_link",
         "label": "Link"
+      }, {
+        "type": "checkbox",
+        "id": "show_top_border",
+        "label": "Show top border",
+        "default": false
+      }, {
+        "type": "checkbox",
+        "id": "show_bottom_border",
+        "label": "Show bottom border",
+        "default": false
       }
     ],
     "presets": [

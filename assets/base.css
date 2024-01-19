@@ -265,6 +265,14 @@ body:has(.section-header .drawer-menu) .announcement-bar-section .page-width {
   font-weight: var(--font-body-weight);
 }
 
+.main-top__border {
+  border-top: 1px solid #000;
+}
+
+.main-bottom__border {
+  border-bottom: 1px solid #000;
+}
+
 h1,
 h2,
 h3,

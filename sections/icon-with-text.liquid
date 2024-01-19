@@ -1,6 +1,6 @@
 {{ 'section-icon-with-text.css' | asset_url | stylesheet_tag }}
 
-<div class="icon-with-text color-{{ section.settings.section_color_scheme }}">
+<div class="icon-with-text color-{{ section.settings.section_color_scheme }}{% if section.settings.show_top_border %} main-top__border{% endif %}{% if section.settings.show_bottom_border %} main-bottom__border{% endif %}">
   <div class="page-width">
     <div class="icon-with-text__items{% if section.blocks.size < 3 %} icon-with-text__items--center{% endif %}">
       {%- for block in section.blocks -%}
@@ -44,6 +44,16 @@
         "id": "section_color_scheme",
         "label": "Color scheme",
         "default": "background-1"
+      }, {
+        "type": "checkbox",
+        "id": "show_top_border",
+        "label": "Show top border",
+        "default": false
+      }, {
+        "type": "checkbox",
+        "id": "show_bottom_border",
+        "label": "Show bottom border",
+        "default": false
       }
     ],
     "blocks": [
