@@ -1,0 +1,88 @@
+{{ 'section-icon-with-text.css' | asset_url | stylesheet_tag }}
+
+<div class="icon-with-text color-{{ section.settings.section_color_scheme }}">
+  <div class="page-width">
+    <div class="icon-with-text__items{% if section.blocks.size < 3 %} icon-with-text__items--center{% endif %}">
+      {%- for block in section.blocks -%}
+        {%- if block.settings.icon_with_text_img != blank or block.settings.icon_with_text_title != blank or block.settings.icon_with_text_text != blank -%}
+          <div class="icon-with-text__item">
+            {%- if block.settings.icon_with_text_img != blank -%}
+              <img
+                class="icon-with-text__item--img"
+                src="{{ block.settings.icon_with_text_img | image_url: width: 250 }}"
+                alt="{{ block.settings.icon_with_text_img.alt | escape }}"
+                width="100"
+                height="100"
+                loading="lazy">
+            {%- endif -%}
+            {%- if block.settings.icon_with_text_title != blank -%}
+              <h5 class="icon-with-text__item--title">
+                {{ block.settings.icon_with_text_title }}
+              </h5>
+            {%- endif -%}
+            {%- if block.settings.icon_with_text_text != blank -%}
+              <p class="icon-with-text__item--text">
+                {{ block.settings.icon_with_text_text }}
+              </p>
+            {%- endif -%}
+          </div>
+        {%- endif -%}
+      {%- endfor -%}
+    </div>
+  </div>
+</div>
+
+
+{% schema %}
+  {
+    "name": "Icon with text",
+    "class": "icon-with-text-section",
+    "max_blocks": 3,
+    "settings": [
+      {
+        "type": "color_scheme",
+        "id": "section_color_scheme",
+        "label": "Color scheme",
+        "default": "background-1"
+      }
+    ],
+    "blocks": [
+      {
+        "type": "column",
+        "name": "Column",
+        "settings": [
+          {
+            "type": "image_picker",
+            "id": "icon_with_text_img",
+            "label": "Icon"
+          }, {
+            "type": "text",
+            "id": "icon_with_text_title",
+            "label": "Title",
+            "default": "Title"
+          }, {
+            "type": "textarea",
+            "id": "icon_with_text_text",
+            "label": "Text",
+            "default": "Text"
+          }
+        ]
+      }
+
+    ],
+    "presets": [
+      {
+        "name": "Icon with text",
+        "blocks": [
+          {
+            "type": "column"
+          }, {
+            "type": "column"
+          }, {
+            "type": "column"
+          }
+        ]
+      }
+    ]
+  }
+{% endschema %}
