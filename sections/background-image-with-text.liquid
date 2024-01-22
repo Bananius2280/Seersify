@@ -1,0 +1,94 @@
+{{ 'section-background-image-with-text.css' | asset_url | stylesheet_tag }}
+
+<div class="background-image-with-text color-{{ section.settings.section_color_scheme }}{% if section.settings.show_top_border %} main-top__border{% endif %}{% if section.settings.show_bottom_border %} main-bottom__border{% endif %}">
+  {%- if section.settings.background_image_with_text_img != blank -%}
+    <img
+      class="background-image-with-text__img"
+      src="{{ section.settings.background_image_with_text_img | image_url: width: 3840 }}"
+      alt="{{ section.settings.background_image_with_text_img.alt | escape }}"
+      width="1920"
+      height="916"
+      loading="lazy">
+  {%- endif -%}
+  {%- if section.settings.background_image_with_text_title != blank or section.settings.background_image_with_text_text != blank -%}
+    <div class="background-image-with-text__box">
+      <div class="background-image-with-text__box--container background-image-with-text__box--container-{{ section.settings.background_image_with_text_select }}">
+        {%- if section.settings.background_image_with_text_title != blank -%}
+          <p class="background-image-with-text__box--title">
+            {{ section.settings.background_image_with_text_title }}
+          </p>
+        {%- endif -%}
+        {%- if section.settings.background_image_with_text_text != blank -%}
+          <h4 class="background-image-with-text__box--text">
+            {{ section.settings.background_image_with_text_text }}
+          </h4>
+        {%- endif -%}
+      </div>
+    </div>
+  {%- endif -%}
+</div>
+
+
+{% schema %}
+  {
+    "name": "Background image & text",
+    "class": "background-image-with-text-section",
+    "settings": [
+      {
+        "type": "color_scheme",
+        "id": "section_color_scheme",
+        "label": "Color scheme",
+        "default": "background-1"
+      },
+      {
+        "type": "image_picker",
+        "id": "background_image_with_text_img",
+        "label": "Background image"
+      },
+      {
+        "type": "text",
+        "id": "background_image_with_text_title",
+        "label": "Title",
+        "default": "Title"
+      },
+      {
+        "type": "textarea",
+        "id": "background_image_with_text_text",
+        "label": "Text",
+        "default": "Text"
+      }, {
+        "type": "radio",
+        "id": "background_image_with_text_select",
+        "label": "Text position",
+        "options": [
+          {
+            "value": "left",
+            "label": "Left"
+          }, {
+            "value": "centered",
+            "label": "Centered"
+          }, {
+            "value": "right",
+            "label": "Right"
+          }
+        ],
+        "default": "left"
+      }, {
+        "type": "checkbox",
+        "id": "show_top_border",
+        "label": "Show top border",
+        "default": false
+      }, {
+        "type": "checkbox",
+        "id": "show_bottom_border",
+        "label": "Show bottom border",
+        "default": false
+      }
+    ],
+    "presets": [
+      {
+        "name": "Background image & text"
+      }
+    ]
+  }
+{% endschema %}

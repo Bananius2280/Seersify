@@ -1,0 +1,75 @@
+.background-image-with-text {
+  position: relative;
+}
+
+.background-image-with-text__img {
+  position: relative;
+  width: 100%;
+  height: auto;
+  max-height: 916px;
+  min-height: 600px;
+  height: auto;
+  display: block;
+  object-fit: cover;
+}
+
+.background-image-with-text__box {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.background-image-with-text__box--container {
+  padding: 0 1.5rem;
+}
+
+.background-image-with-text__box--container-left {
+  margin-right: auto;
+}
+
+.background-image-with-text__box--container-centered {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.background-image-with-text__box--container-right {
+  margin-left: auto;
+}
+
+.background-image-with-text__box--text,
+.background-image-with-text__box--title {
+  width: 100%;
+}
+
+.background-image-with-text__box--title {
+  margin: 0 0 15px;
+}
+
+@media screen and (min-width: 750px) {
+  .background-image-with-text__box--container {
+    padding: 0 2rem;
+  }
+}
+
+@media screen and (max-width: 749px) {
+  .background-image-with-text__img {
+    min-height: 450px;
+  }
+}
+
+@media screen and (min-width: 1150px) {
+
+  .background-image-with-text__box--text,
+  .background-image-with-text__box--title {
+    max-width: 430px;
+  }
+}
+
+@media screen and (min-width: 1670px) {
+  .background-image-with-text__box--container {
+    padding: 0 280px;
+  }
+}

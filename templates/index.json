@@ -125,17 +125,86 @@
         "show_bottom_border": true
       }
     },
-    "big_image_with_text_rRRVXf": {
-      "type": "big-image-with-text",
+    "large_image_with_text_fTWXgX": {
+      "type": "large-image-with-text",
       "settings": {
         "section_color_scheme": "scheme-096ef13d-47e0-4091-a6e3-1669a5b9bf1d",
-        "big_image_with_text_title": "The name Seersify was drawn from the Sanskrit word Seer which reflects intuitive knowledge.",
-        "big_image_with_text_first_text": "We all have it. Seersify believes that intuitive knowledge allows us to make decisions or solve everyday problems with our subjective judgement or ‘gut feeling’.",
-        "big_image_with_text_second_text": "It is considered that intuitive knowledge complements rational knowledge, offering the initial clues for its complete configuration. We need both intuitive and rational knowledge to make the best possible decisions for ourselves. Seersify reflects a marriage of intuition with science.",
-        "big_image_with_text_first_img": "shopify:\/\/shop_images\/FAQ_6.jpg",
-        "big_image_with_text_second_img": "shopify:\/\/shop_images\/Template_30.jpg",
+        "large_image_with_text_title": "The name Seersify was drawn from the Sanskrit word Seer which reflects intuitive knowledge.",
+        "large_image_with_text_first_text": "We all have it. Seersify believes that intuitive knowledge allows us to make decisions or solve everyday problems with our subjective judgement or ‘gut feeling’.",
+        "large_image_with_text_second_text": "It is considered that intuitive knowledge complements rational knowledge, offering the initial clues for its complete configuration. We need both intuitive and rational knowledge to make the best possible decisions for ourselves. Seersify reflects a marriage of intuition with science.",
+        "large_image_with_text_first_img": "shopify:\/\/shop_images\/FAQ_6.jpg",
+        "large_image_with_text_second_img": "shopify:\/\/shop_images\/Template_30.jpg",
         "show_top_border": false,
         "show_bottom_border": false
+      }
+    },
+    "icon_with_text_khnbfW": {
+      "type": "icon-with-text",
+      "blocks": {
+        "column_xReExA": {
+          "type": "column",
+          "settings": {
+            "icon_with_text_img": "shopify:\/\/shop_images\/The_Eco_Set_tick-black_1.svg",
+            "icon_with_text_title": "Multi-Functional",
+            "icon_with_text_text": "At Seersify, our products keep it super simple. Instead of a bunch of complicated steps, we focus on what your skin really needs. Imagine going from a 10-step routine to just three – that's the easy way to happy skin and well-being."
+          }
+        },
+        "column_7gaiKM": {
+          "type": "column",
+          "settings": {
+            "icon_with_text_img": "shopify:\/\/shop_images\/The_Eco_Set_palmoil-black_1.svg",
+            "icon_with_text_title": "Australian Made",
+            "icon_with_text_text": "Feel the love from Australian cosmetic brand. We've put the best of this beautiful land into our products, supporting local talent and caring for the environment while making you look and feel great."
+          }
+        },
+        "column_yg3f6L": {
+          "type": "column",
+          "settings": {
+            "icon_with_text_img": "shopify:\/\/shop_images\/The_Eco_Set_circular2-black_1.svg",
+            "icon_with_text_title": "Evidence-Based",
+            "icon_with_text_text": "We use evidence-based ingredients, chosen for their proven efficacy. Enjoy the confidence that comes with knowing every application is backed by scientific research, delivering visible results and a radiant, healthy complexion."
+          }
+        }
+      },
+      "block_order": [
+        "column_xReExA",
+        "column_7gaiKM",
+        "column_yg3f6L"
+      ],
+      "settings": {
+        "section_color_scheme": "scheme-21bd5b93-d091-4cb6-a15a-e37de14aef4a",
+        "show_top_border": true,
+        "show_bottom_border": true
+      }
+    },
+    "background_image_with_text_ppBXPL": {
+      "type": "background-image-with-text",
+      "settings": {
+        "section_color_scheme": "scheme-58e96f2d-5616-4dd8-b82d-ba401a29739b",
+        "background_image_with_text_img": "shopify:\/\/shop_images\/8_4_2_1.jpg",
+        "background_image_with_text_title": "KEY INGREDIENTS",
+        "background_image_with_text_text": "Hyaluronic Acid\nNiacinamide\nAscorbyl Glucoside\nCaviar Lime\nCeramide Complex\nN.Benthamiana Peptide",
+        "background_image_with_text_select": "right",
+        "show_top_border": false,
+        "show_bottom_border": false
+      }
+    },
+    "images_with_text_yNLJY3": {
+      "type": "images-with-text",
+      "settings": {
+        "section_color_scheme": "scheme-697f2590-b944-4775-9ae3-520302f27367",
+        "images_with_text_name": "OUR MISSION",
+        "images_with_text_title": "We aim to create smart, innovative formulas made with high-tech, active ingredients that show up on your skin with real results. Only scientifically backed solutions for the skin.",
+        "images_with_text_first_image": "shopify:\/\/shop_images\/klara-kulikova-q7xNFbwVb5I-unsplash.jpg",
+        "images_with_text_first_image_position": "top",
+        "images_with_text_first_image_mode": "high",
+        "images_with_text_second_image": "shopify:\/\/shop_images\/FAQ_5_1.jpg",
+        "images_with_text_second_image_position": "bottom",
+        "images_with_text_second_image_mode": "high",
+        "images_with_text_link_text": "READ MORE",
+        "images_with_text_link": "",
+        "show_top_border": false,
+        "show_bottom_border": true
       }
     }
   },
@@ -144,6 +213,9 @@
     "announcement_bar_nk3VjB",
     "images_with_text_6pVkYK",
     "icon_with_text_nAdxem",
-    "big_image_with_text_rRRVXf"
+    "large_image_with_text_fTWXgX",
+    "icon_with_text_khnbfW",
+    "background_image_with_text_ppBXPL",
+    "images_with_text_yNLJY3"
   ]
 }
