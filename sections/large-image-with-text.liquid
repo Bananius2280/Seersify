@@ -1,0 +1,116 @@
+{{ 'section-large-image-with-text.css' | asset_url | stylesheet_tag }}
+
+<div class="large-image-with-text color-{{ section.settings.section_color_scheme }}{% if section.settings.show_top_border %} main-top__border{% endif %}{% if section.settings.show_bottom_border %} main-bottom__border{% endif %}">
+  <div class="page-width">
+    <div class="large-image-with-text__box">
+      {%- if section.settings.large_image_with_text_title != blank or section.settings.large_image_with_text_first_text != blank or section.settings.large_image_with_text_second_text != blank -%}
+        <div class="large-image-with-text__left">
+          {%- if section.settings.large_image_with_text_title != blank or section.settings.large_image_with_text_first_text != blank -%}
+            <div class="large-image-with-text__left--box">
+              {%- if section.settings.large_image_with_text_title != blank -%}
+                <h4 class="large-image-with-text__left--box-title">
+                  {{ section.settings.large_image_with_text_title }}
+                </h4>
+              {%- endif -%}
+              {%- if section.settings.large_image_with_text_first_text != blank -%}
+                <p class="large-image-with-text__left--box-text">
+                  {{ section.settings.large_image_with_text_first_text }}
+                </p>
+              {%- endif -%}
+            </div>
+          {%- endif -%}
+          {%- if section.settings.large_image_with_text_second_text != blank -%}
+            <p class="large-image-with-text__left--text">
+              {{ section.settings.large_image_with_text_second_text }}
+            </p>
+          {%- endif -%}
+        </div>
+      {%- endif -%}
+      {%- if section.settings.large_image_with_text_first_img != blank or section.settings.large_image_with_text_second_img != blank -%}
+        <div class="large-image-with-text__right">
+          {%- if section.settings.large_image_with_text_first_img != blank -%}
+            <img
+              class="large-image-with-text__right--img large-image-with-text__right--first-img"
+              src="{{ section.settings.large_image_with_text_first_img | image_url: width: 1760 }}"
+              alt="{{ section.settings.large_image_with_text_first_img.alt | escape }}"
+              width="880"
+              height="1010"
+              loading="lazy">
+          {%- endif -%}
+          {%- if section.settings.large_image_with_text_second_img != blank -%}
+            <img
+              class="large-image-with-text__right--img large-image-with-text__right--second-img"
+              src="{{ section.settings.large_image_with_text_second_img | image_url: width: 900 }}"
+              alt="{{ section.settings.large_image_with_text_second_img.alt | escape }}"
+              width="450"
+              height="525"
+              loading="lazy">
+          {%- endif -%}
+        </div>
+      {%- endif -%}
+    </div>
+  </div>
+</div>
+
+
+{% schema %}
+  {
+    "name": "Large image with text",
+    "class": "large-image-with-text-section",
+    "settings": [
+      {
+        "type": "color_scheme",
+        "id": "section_color_scheme",
+        "label": "Color scheme",
+        "default": "background-1"
+      },
+      {
+        "type": "header",
+        "content": "Left-hand side"
+      },
+      {
+        "type": "text",
+        "id": "large_image_with_text_title",
+        "label": "Heading",
+        "default": "Title"
+      },
+      {
+        "type": "textarea",
+        "id": "large_image_with_text_first_text",
+        "label": "First text",
+        "default": "First text"
+      }, {
+        "type": "textarea",
+        "id": "large_image_with_text_second_text",
+        "label": "Second text",
+        "default": "Second text"
+      }, {
+        "type": "header",
+        "content": "Right-hand side"
+      }, {
+        "type": "image_picker",
+        "id": "large_image_with_text_first_img",
+        "label": "First image"
+      }, {
+        "type": "image_picker",
+        "id": "large_image_with_text_second_img",
+        "label": "Second image"
+      }, {
+        "type": "checkbox",
+        "id": "show_top_border",
+        "label": "Show top border",
+        "default": false
+      }, {
+        "type": "checkbox",
+        "id": "show_bottom_border",
+        "label": "Show bottom border",
+        "default": false
+      }
+    ],
+    "presets": [
+      {
+        "name": "Large image with text"
+      }
+    ]
+  }
+{% endschema %}

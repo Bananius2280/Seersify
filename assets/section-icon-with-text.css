@@ -4,9 +4,6 @@
 
 .icon-with-text__items {
   display: block;
-  align-items: flex-end;
-  justify-content: center;
-  flex-wrap: wrap;
 }
 
 .icon-with-text__items--center {
@@ -33,9 +30,12 @@
 
 @media only screen and (max-width: 1249px) {
   .icon-with-text__item {
-    margin-bottom: 20px;
     margin-left: 10px;
     margin-right: 10px;
+  }
+
+  .icon-with-text__item+.icon-with-text__item {
+    margin-top: 30px;
   }
 }
 
@@ -44,10 +44,6 @@
     margin-bottom: 0;
     margin-left: 0;
     margin-right: 0;
-  }
-
-  .icon-with-text__item+.icon-with-text__item {
-    margin-top: 30px;
   }
 }
 
@@ -59,11 +55,8 @@
 
   .icon-with-text__items {
     justify-content: space-between;
-  }
-}
-
-@media only screen and (min-width: 850px) {
-  .icon-with-text__items {
+    align-items: flex-end;
+    flex-wrap: wrap;
     display: flex;
   }
 

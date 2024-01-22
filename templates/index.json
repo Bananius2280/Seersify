@@ -28,8 +28,8 @@
         "button"
       ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/FAQ_1.jpg",
-        "image_2": "shopify:\/\/shop_images\/48.jpg",
+        "image": "shopify:\/\/shop_images\/FAQ_1_8e1b5d7b-bcb7-41bd-a32c-d663fecf163c.jpg",
+        "image_2": "shopify:\/\/shop_images\/48_b6ef5404-8951-4c8d-9367-15a82f9ea21d.jpg",
         "image_overlay_opacity": 0,
         "image_height": "large",
         "desktop_content_position": "bottom-left",
@@ -39,7 +39,9 @@
         "image_behavior": "none",
         "mobile_content_alignment": "left",
         "stack_images_on_mobile": false,
-        "show_text_below": false
+        "show_text_below": false,
+        "show_top_border": false,
+        "show_bottom_border": false
       }
     },
     "announcement_bar_nk3VjB": {
@@ -70,11 +72,18 @@
       "type": "images-with-text",
       "settings": {
         "section_color_scheme": "scheme-21bd5b93-d091-4cb6-a15a-e37de14aef4a",
+        "images_with_text_name": "",
         "images_with_text_title": "Seersify is at the helm of leading-edge beauty science, offering customers multifunctional products that do more with your skin",
-        "image_with_text_first_image": "shopify:\/\/shop_images\/FAQ_7.jpg",
-        "image_with_text_second_image": "shopify:\/\/shop_images\/21.jpg",
-        "image_with_text_link_text": "READ MORE",
-        "image_with_text_link": ""
+        "images_with_text_first_image": "shopify:\/\/shop_images\/FAQ_7.jpg",
+        "images_with_text_first_image_position": "bottom",
+        "images_with_text_first_image_mode": "usually",
+        "images_with_text_second_image": "shopify:\/\/shop_images\/21.jpg",
+        "images_with_text_second_image_position": "top",
+        "images_with_text_second_image_mode": "usually",
+        "images_with_text_link_text": "READ MORE",
+        "images_with_text_link": "",
+        "show_top_border": false,
+        "show_bottom_border": true
       }
     },
     "icon_with_text_nAdxem": {
@@ -111,7 +120,22 @@
         "column_nEqJj9"
       ],
       "settings": {
-        "section_color_scheme": "scheme-58e96f2d-5616-4dd8-b82d-ba401a29739b"
+        "section_color_scheme": "scheme-58e96f2d-5616-4dd8-b82d-ba401a29739b",
+        "show_top_border": true,
+        "show_bottom_border": true
+      }
+    },
+    "big_image_with_text_rRRVXf": {
+      "type": "big-image-with-text",
+      "settings": {
+        "section_color_scheme": "scheme-096ef13d-47e0-4091-a6e3-1669a5b9bf1d",
+        "big_image_with_text_title": "The name Seersify was drawn from the Sanskrit word Seer which reflects intuitive knowledge.",
+        "big_image_with_text_first_text": "We all have it. Seersify believes that intuitive knowledge allows us to make decisions or solve everyday problems with our subjective judgement or ‘gut feeling’.",
+        "big_image_with_text_second_text": "It is considered that intuitive knowledge complements rational knowledge, offering the initial clues for its complete configuration. We need both intuitive and rational knowledge to make the best possible decisions for ourselves. Seersify reflects a marriage of intuition with science.",
+        "big_image_with_text_first_img": "shopify:\/\/shop_images\/FAQ_6.jpg",
+        "big_image_with_text_second_img": "shopify:\/\/shop_images\/Template_30.jpg",
+        "show_top_border": false,
+        "show_bottom_border": false
       }
     }
   },
@@ -119,6 +143,7 @@
     "image_banner",
     "announcement_bar_nk3VjB",
     "images_with_text_6pVkYK",
-    "icon_with_text_nAdxem"
+    "icon_with_text_nAdxem",
+    "big_image_with_text_rRRVXf"
   ]
 }
