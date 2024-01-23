@@ -206,6 +206,45 @@
         "show_top_border": false,
         "show_bottom_border": true
       }
+    },
+    "slider_with_text_drGMYE": {
+      "type": "slider-with-text",
+      "blocks": {
+        "slide_p7kgpQ": {
+          "type": "slide",
+          "settings": {
+            "slider_with_text_smal_title": "REVIEWS",
+            "slider_with_text_title": "“As a beauty enthusiast, I am always on the lookout for products that not only promise radiant skin but also deliver noticeable results. Seersify Cosmetics Serum certainly lives up to the hype.”",
+            "slider_with_text_smal_text": "-  Ann Brown"
+          }
+        },
+        "slide_fMRVXN": {
+          "type": "slide",
+          "settings": {
+            "slider_with_text_smal_title": "REVIEWS",
+            "slider_with_text_title": "“As a beauty enthusiast, I am always on the lookout for products that not only promise radiant skin but also deliver noticeable results. Seersify Cosmetics Serum certainly lives up to the hype.”",
+            "slider_with_text_smal_text": "-  Ann Brown"
+          }
+        },
+        "slide_NjRkyg": {
+          "type": "slide",
+          "settings": {
+            "slider_with_text_smal_title": "REVIEWS",
+            "slider_with_text_title": "“As a beauty enthusiast, I am always on the lookout for products that not only promise radiant skin but also deliver noticeable results. Seersify Cosmetics Serum certainly lives up to the hype.”",
+            "slider_with_text_smal_text": "-  Ann Brown"
+          }
+        }
+      },
+      "block_order": [
+        "slide_p7kgpQ",
+        "slide_fMRVXN",
+        "slide_NjRkyg"
+      ],
+      "settings": {
+        "section_color_scheme": "scheme-a2a4ca6d-5693-4406-bf54-30947f735ac9",
+        "show_top_border": false,
+        "show_bottom_border": true
+      }
     }
   },
   "order": [
@@ -216,6 +255,7 @@
     "large_image_with_text_fTWXgX",
     "icon_with_text_khnbfW",
     "background_image_with_text_ppBXPL",
-    "images_with_text_yNLJY3"
+    "images_with_text_yNLJY3",
+    "slider_with_text_drGMYE"
   ]
 }
