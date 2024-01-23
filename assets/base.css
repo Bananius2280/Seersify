@@ -265,11 +265,11 @@ body:has(.section-header .drawer-menu) .announcement-bar-section .page-width {
 }
 
 .main-top__border {
-  border-top: 1px solid #000;
+  border-top: 1px solid #000 !important;
 }
 
 .main-bottom__border {
-  border-bottom: 1px solid #000;
+  border-bottom: 1px solid #000 !important;
 }
 
 h1,
