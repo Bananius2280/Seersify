@@ -7,7 +7,7 @@
 }
 
 .footer__content-top {
-  padding-bottom: 5rem;
+  padding-bottom: 15rem;
   display: block;
 }
 
@@ -35,7 +35,7 @@
 
 @media screen and (min-width: 750px) {
   .footer__content-top .grid {
-    row-gap: 6rem;
+    /* row-gap: 6rem; */
     margin-bottom: 0;
   }
 }
@@ -70,12 +70,12 @@
   }
 }
 
-.footer__localization:empty + .footer__column--info {
+.footer__localization:empty+.footer__column--info {
   align-items: center;
 }
 
 @media screen and (max-width: 749px) {
-  .footer__localization:empty + .footer__column {
+  .footer__localization:empty+.footer__column {
     padding-top: 1.5rem;
   }
 }
@@ -179,6 +179,7 @@
 }
 
 @media screen and (min-width: 750px) {
+
   /* Pushes other components to the right of the flexbox */
   .footer-block__newsletter:not(:only-child) {
     text-align: left;
@@ -197,6 +198,7 @@
   .footer__follow-on-shop {
     margin-bottom: 0.4rem;
   }
+
   /* Follow on shop is the first button but it has siblings*/
   .footer__follow-on-shop:first-child:not(:last-child) {
     justify-content: flex-start;
@@ -215,6 +217,7 @@
 }
 
 @media screen and (max-width: 749px) {
+
   /*
     On a small screen we want all the items to be centered
     because they will be stacked.
@@ -240,7 +243,7 @@
 }
 
 @media screen and (min-width: 750px) {
-  .footer-block__newsletter + .footer__list-social {
+  .footer-block__newsletter+.footer__list-social {
     margin-top: 0;
   }
 }
@@ -306,6 +309,7 @@
     opacity: 0;
     margin-top: -1rem;
   }
+
   100% {
     opacity: 1;
     margin-top: 0;
@@ -321,8 +325,8 @@
     margin-bottom: 0;
   }
 
-  .footer-block__details-content > p,
-  .footer-block__details-content > li {
+  .footer-block__details-content>p,
+  .footer-block__details-content>li {
     padding: 0;
   }
 
@@ -330,14 +334,14 @@
     display: inline;
   }
 
-  .footer-block__details-content > li:not(:last-child) {
+  .footer-block__details-content>li:not(:last-child) {
     margin-right: 1.5rem;
   }
 }
 
 .footer-block__details-content .list-menu__item--link,
 .copyright__content a {
-  color: rgba(var(--color-foreground), 0.75);
+  color: rgba(var(--color-foreground));
 }
 
 .footer-block__details-content .list-menu__item--active {
@@ -346,6 +350,7 @@
 }
 
 @media screen and (min-width: 750px) {
+
   .footer-block__details-content .list-menu__item--link:hover,
   .copyright__content a:hover {
     color: rgb(var(--color-foreground));
@@ -371,7 +376,7 @@
     font-size: 1.4rem;
   }
 
-  .footer-block__details-content > :first-child .list-menu__item--link {
+  .footer-block__details-content> :first-child .list-menu__item--link {
     padding-top: 0;
   }
 }
@@ -393,6 +398,7 @@
 }
 
 @media screen and (max-width: 749px) {
+
   .footer-block-image,
   .footer-block-image.left,
   .footer-block-image.center,
@@ -420,13 +426,13 @@
   text-align: center;
 }
 
-.footer-block:only-child > .footer-block__brand-info > .footer-block__image-wrapper {
+.footer-block:only-child>.footer-block__brand-info>.footer-block__image-wrapper {
   margin-left: auto;
   margin-right: auto;
 }
 
-.footer-block-image > img,
-.footer-block__brand-info > img {
+.footer-block-image>img,
+.footer-block__brand-info>img {
   height: auto;
 }
 
@@ -478,6 +484,7 @@
     padding: 0;
   }
 }
+
 @keyframes animateLocalization {
   0% {
     opacity: 0;
@@ -506,5 +513,74 @@
     .footer__content-top .grid__item {
       padding-left: 3rem;
     }
+  }
+}
+
+.footer__blocks-wrapper {
+  column-gap: 150px;
+}
+
+.footer__content-bottom--box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer__content-bottom--text {
+  max-width: 300px;
+  width: 100%;
+  font-size: 14px;
+  line-height: 170%;
+  margin: 0;
+}
+
+.footer__content-bottom-wrapper__second {
+  justify-content: space-between;
+  align-items: end;
+}
+
+.footer__copyright {
+  margin-top: 0;
+  margin-bottom: 7px;
+}
+
+.footer__content-bottom {
+  border-top: 0;
+  padding-top: 0;
+}
+
+.copyright__content {
+  font-size: 14px;
+  line-height: 140.625%;
+}
+
+.footer-block {
+  max-width: 160px !important;
+  width: 100% !important;
+}
+
+.footer-block li {
+  margin-right: 0 !important;
+}
+
+.footer-block__logo {
+  margin-right: auto;
+  margin-left: 0 !important;
+  max-width: unset !important;
+  width: unset !important;
+}
+
+@media screen and (max-width: 949px) {
+  .footer__blocks-wrapper {
+    display: block;
+  }
+
+  .footer-block .grid__item {
+    padding: 0;
+    margin: 4rem 0;
+  }
+
+  .footer-block {
+    max-width: 100%;
   }
 }
