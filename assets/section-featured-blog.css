@@ -8,8 +8,9 @@
   }
 }
 
-.blog__title {
+.blog-title {
   margin: 0;
+  margin-right: 20px;
 }
 
 .blog__posts.articles-wrapper {
@@ -53,8 +54,138 @@
 /* check for flexbox gap in older Safari versions */
 @supports not (inset: 10px) {
   @media screen and (min-width: 750px) {
-    .blog__posts .article + .article {
+    .blog__posts .article+.article {
       margin-left: var(--grid-desktop-horizontal-spacing);
     }
+  }
+}
+
+.blog-slider {
+  margin-left: 300px;
+  margin-top: 40px;
+}
+
+.blog-top {
+  padding-bottom: 45px;
+}
+
+.blog-top__top {
+  align-items: start;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.blog-link {
+  margin-top: 13px;
+}
+
+.blog-bottom {
+  padding-top: 40px;
+  border-top: 1px solid rgb(var(--color-foreground));
+}
+
+.blog-bottom__top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.blog-bottom__top--link {
+  font-size: 14px;
+  line-height: 140.625%;
+  color: rgb(var(--color-foreground));
+  text-decoration: unset;
+}
+
+.blog-bottom__bottom {
+  margin-top: 45px;
+  margin-left: 300px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  justify-content: center;
+}
+
+.blog-bottom__bottom--img {
+  max-width: 250px;
+  max-height: 250px;
+  width: 100%;
+  min-width: 175px;
+  min-height: 175px;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+}
+
+/* .blog-bottom__bottom--item+.blog-bottom__bottom--item {
+  margin-left: 20px;
+} */
+
+.blog__post {
+  max-width: 422px !important;
+}
+
+.blog__posts {
+  justify-content: space-between;
+  /* gap: 50px; */
+}
+
+.blog-bottom__top--title {
+  margin-right: 20px;
+}
+
+.blog .slider-button--next svg{
+  height: unset !important;
+  transform: unset !important;
+}
+
+.blog .slider-button--prev svg{
+  height: unset !important;
+  transform: rotate(180deg) !important;
+}
+
+.blog .slider-button .icon path {
+  stroke: rgba(var(--color-foreground));
+}
+
+.blog .slider-button {
+  margin: 0 6px;
+}
+
+
+@media screen and (max-width: 1350px) {
+
+  .blog-bottom__bottom,
+  .blog-slider {
+    margin-left: 0;
+  }
+}
+
+@media screen and (max-width: 1050px) {
+
+
+  .blog-bottom__bottom {
+    flex-wrap: wrap;
+  }
+
+  .blog-bottom__bottom--img {
+    max-width: 175px;
+  }
+
+}
+
+@media screen and (min-width: 750px) {
+  .blog-top {
+    padding-bottom: 85px;
+  }
+
+  .blog-bottom {
+    padding-top: 75px;
+  }
+
+  .blog-bottom__bottom {
+    gap: 20px;
   }
 }

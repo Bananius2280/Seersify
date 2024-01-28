@@ -68,6 +68,10 @@
   height: 47px;
 }
 
+.newsletter .newsletter-box .newsletter-form .field__button svg path {
+  stroke: rgba(var(--color-foreground));
+}
+
 .newsletter .newsletter-box .newsletter-form .newsletter-form__button {
   position: unset;
 }

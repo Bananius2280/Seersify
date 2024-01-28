@@ -252,7 +252,77 @@
         "section_color_scheme": "scheme-58e96f2d-5616-4dd8-b82d-ba401a29739b",
         "newsletter_img": "shopify:\/\/shop_images\/13_8_Extend_newsletter_1_1.jpg",
         "newsletter_title": "Subscribe to Seersify newsletter",
+        "newsletter_select": "right",
         "newsletter_text": "For unique discounts and offers"
+      }
+    },
+    "featured_blog_HcxbHM": {
+      "type": "featured-blog",
+      "blocks": {
+        "image_pqrXmL": {
+          "type": "image",
+          "settings": {
+            "instagram_img": "shopify:\/\/shop_images\/FAQ_7_8b7018ce-922f-44be-bc98-7f42d9499df3.jpg",
+            "instagram_img_link": ""
+          }
+        },
+        "image_4FiAXV": {
+          "type": "image",
+          "settings": {
+            "instagram_img": "shopify:\/\/shop_images\/Template_28.jpg",
+            "instagram_img_link": ""
+          }
+        },
+        "image_VKyYJx": {
+          "type": "image",
+          "settings": {
+            "instagram_img": "shopify:\/\/shop_images\/Template_19.jpg",
+            "instagram_img_link": ""
+          }
+        },
+        "image_MyV4VQ": {
+          "type": "image",
+          "settings": {
+            "instagram_img": "shopify:\/\/shop_images\/FAQ_2.jpg",
+            "instagram_img_link": ""
+          }
+        },
+        "image_tqi4UL": {
+          "type": "image",
+          "settings": {
+            "instagram_img": "shopify:\/\/shop_images\/FAQ_4.jpg",
+            "instagram_img_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "image_pqrXmL",
+        "image_4FiAXV",
+        "image_VKyYJx",
+        "image_MyV4VQ",
+        "image_tqi4UL"
+      ],
+      "settings": {
+        "color_scheme": "scheme-697f2590-b944-4775-9ae3-520302f27367",
+        "heading": "Blog Stories",
+        "heading_size": "h4",
+        "link_title": "VIEW ALL",
+        "link_url": "",
+        "blog": "",
+        "post_limit": 3,
+        "columns_desktop": 3,
+        "show_image": true,
+        "show_date": true,
+        "show_author": false,
+        "show_excerpt": false,
+        "instagram_title": "Link title",
+        "instagram_title_size": "h4",
+        "instagram_link_title": "Instagram @seersifyskincare",
+        "instagram_link_url": "",
+        "padding_top": 80,
+        "padding_bottom": 110,
+        "show_top_border": false,
+        "show_bottom_border": false
       }
     }
   },
@@ -266,6 +336,7 @@
     "background_image_with_text_ppBXPL",
     "images_with_text_yNLJY3",
     "slider_with_text_drGMYE",
-    "newsletter_KR9gUY"
+    "newsletter_KR9gUY",
+    "featured_blog_HcxbHM"
   ]
 }
