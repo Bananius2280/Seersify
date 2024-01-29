@@ -2,7 +2,7 @@
 {{ 'component-slider.css' | asset_url | stylesheet_tag }}
 {{ 'component-slideshow.css' | asset_url | stylesheet_tag }}
 
-<div class="products-slider-with-text color-{{ section.settings.section_color_scheme }}{% if section.settings.show_top_border %} main-top__border{% endif %}{% if section.settings.show_bottom_border %} main-bottom__border{% endif %}">
+<div class="products-slider-with-text color-{{ section.settings.section_color_scheme }}{% if section.settings.show_top_border %} main-top__border{% endif %}{% if section.settings.show_bottom_border %} main-bottom__border{% endif %}{% if section.settings.products_slider_with_text_product_list.count == 1 %} products-slider-with-text__one--product{% endif %}">
   {% comment %} <div class="page-width"> {% endcomment %}
     <div class="products-slider-with-text__box">
       <div class="products-slider-with-text__left">
@@ -27,15 +27,15 @@
           <div
             class="slideshow banner grid grid--1-col slider slider--everywhere"
             id="Slider-{{ section.id }}"
+            style="{% if section.settings.products_slider_with_text_product_list.count == 1 %}justify-content: center;{% endif %}"
             aria-live="polite"
             aria-atomic="true">
-
             {%- for product in section.settings.products_slider_with_text_product_list -%}
               <div
-                class="slideshow__slide grid__item grid--1-col slider__slide"
+                class="slideshow__slide grid__item grid--1-col slider__slide "
                 id="Slide-{{ section.id }}-{{ forloop.index }}"
-                {{ block.shopify_attributes }}
                 role="group"
+                {% if section.settings.products_slider_with_text_product_list.count == 1 %}style="margin-right: 0;"{% endif %}
                 aria-roledescription="{{ 'sections.slideshow.slide' | t }}"
                 aria-label="{{ forloop.index }} {{ 'general.slider.of' | t }} {{ forloop.length }}"
                 tabindex="-1">
@@ -45,18 +45,20 @@
                 extend_height: true,
                 placeholder_image: placeholder_image
                 %}
-                </div>
+                </div>          
             {%- endfor -%}
           </div>
-
-
+          
+          {% if section.settings.products_slider_with_text_product_list != blank and section.settings.products_slider_with_text_product_list.count != 1 %}
+<div class="slider-button__box">
           <button
             type="button"
             class="slider-button slider-button--prev products-slider-with-text__slider--prev"
             name="previous"
             aria-label="{{ 'sections.slideshow.previous_slideshow' | t }}"
             aria-controls="Slider-{{ section.id }}">
-              {% render 'icon-newsletter-arrov' %}
+              {% comment %} {% render 'icon-newsletter-arrov' %} {% endcomment %}
+              {% render 'icon-caret' %}
           </button>
 
           <button
@@ -65,9 +67,11 @@
             name="next"
             aria-label="{{ 'sections.slideshow.next_slideshow' | t }}"
             aria-controls="Slider-{{ section.id }}">
-              {% render 'icon-newsletter-arrov' %}
+              {% comment %} {% render 'icon-newsletter-arrov' %} {% endcomment %}
+              {% render 'icon-caret' %}
           </button>
-
+</div>
+{% endif %}
           <noscript>
             <div class="slider-buttons">
               <div class="slider-counter">

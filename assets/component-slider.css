@@ -355,8 +355,7 @@ slider-component.slider-component-full-width {
   background: transparent;
   border: none;
   cursor: pointer;
-  width: 44px;
-  height: 44px;
+  margin: 0 11px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -389,4 +388,15 @@ slider-component.slider-component-full-width {
 
 .slider-button--prev:not([disabled]):hover .icon {
   transform: rotate(90deg) scale(1.1);
+}
+
+@media screen and (max-width: 749px) {
+  .slider-button svg {
+    width: 25px;
+    height: 25px;
+  }
+
+  .slider-button {
+    margin: 0 7px;
+  }
 }

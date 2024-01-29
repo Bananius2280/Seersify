@@ -1,5 +1,5 @@
 .products-slider-with-text {
-  padding: 115px 0 130px 125px;
+  padding: 115px 0 80px 20px;
 }
 
 .products-slider-with-text__box {
@@ -7,25 +7,27 @@
 }
 
 .products-slider-with-text__left {
-  width: 40%;
+  width: 100%;
+  max-width: 630px;
   margin-right: 70px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-
 }
 
 .products-slider-with-text__right {
-  width: 60%;
+  width: 100%;
+}
 
+.products-slider-with-text__right slideshow-component {
+  padding-top: 45px;
+  max-width: 1170px;
 }
 
 .products-slider-with-text .slideshow {
   min-height: 600px;
 
 }
-
-
 
 .products-slider-with-text .card__media,
 .products-slider-with-text .card__content {
@@ -56,6 +58,7 @@
 
 .products-slider-with-text .product-card-wrapper {
   max-width: 375px;
+  height: auto;
 }
 
 .products-slider-with-text .banner:after,
@@ -63,19 +66,76 @@
   z-index: 0;
 }
 
-.products-slider-with-text__slider--prev,
-.products-slider-with-text__slider--next {
-  top: 0;
+.products-slider-with-text__slider--prev {
+  transform: rotate(180deg);
+}
+
+.slider-button__box {
+  display: flex;
   position: absolute;
+  top: 0;
+  right: 20px;
 }
 
 .products-slider-with-text .slider-button {
-  width: 60px;
-  height: 30px;
-  z-index: 10;
+  z-index: 2;
 }
 
-.card__heading a:after {
-  height: 550px;
-  top: unset;
+.products-slider-with-text__left--link {
+  margin-bottom: 70px;
+}
+
+.products-slider-with-text__one--product {
+  padding-right: 20px;
+}
+
+@media screen and (min-width: 1669px) {
+  .products-slider-with-text {
+    padding-left: 125px;
+  }
+
+  .slider-button__box {
+    right: 120px;
+  }
+}
+
+@media screen and (max-width: 749px) {
+  .products-slider-with-text__box {
+    display: block;
+  }
+
+  .products-slider-with-text__left {
+    margin-right: 0;
+    max-width: 100%;
+    margin-bottom: 70px;
+  }
+
+  .slider-button__box {
+    right: 0;
+  }
+
+  .products-slider-with-text {
+    padding: 60px 15px 40px 15px;
+  }
+
+  .products-slider-with-text__left--title {
+    margin-bottom: 15px;
+  }
+
+  .products-slider-with-text__left--link {
+    margin-bottom: 0;
+  }
+
+  .products-slider-with-text .slider-button svg {
+    width: 25px;
+    height: 25px;
+  }
+
+  .products-slider-with-text .slider-button {
+    margin: 0 7px;
+  }
+
+  .products-slider-with-text__one--product {
+    padding-right: 15px;
+  }
 }

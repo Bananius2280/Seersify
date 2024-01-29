@@ -125,6 +125,24 @@
         "show_bottom_border": true
       }
     },
+    "products_slider_with_text_NCFiq6": {
+      "type": "products-slider-with-text",
+      "settings": {
+        "section_color_scheme": "scheme-697f2590-b944-4775-9ae3-520302f27367",
+        "products_slider_with_text_title": "Designed to turn up your skin’s natural brightness, hydrate, gently exfoliate, firm and protect",
+        "products_slider_with_text_link_title": "VIEW ALL",
+        "products_slider_with_text_link_url": "",
+        "products_slider_with_text_product_list": [
+          "hydrapeel-glow-serum",
+          "hyfrapeel-glow-serum-test-1",
+          "hyfrapeel-glow-serum",
+          "hyfrapeel-glow-serum-text-2",
+          "hyfrapeel-glow-serum-text-4"
+        ],
+        "show_top_border": false,
+        "show_bottom_border": false
+      }
+    },
     "large_image_with_text_fTWXgX": {
       "type": "large-image-with-text",
       "settings": {
@@ -308,7 +326,7 @@
         "heading_size": "h4",
         "link_title": "VIEW ALL",
         "link_url": "",
-        "blog": "",
+        "blog": "test",
         "post_limit": 3,
         "columns_desktop": 3,
         "show_image": true,
@@ -331,6 +349,7 @@
     "announcement_bar_nk3VjB",
     "images_with_text_6pVkYK",
     "icon_with_text_nAdxem",
+    "products_slider_with_text_NCFiq6",
     "large_image_with_text_fTWXgX",
     "icon_with_text_khnbfW",
     "background_image_with_text_ppBXPL",
