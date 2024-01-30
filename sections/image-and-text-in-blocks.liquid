@@ -1,0 +1,109 @@
+{{ 'section-image-and-text-in-blocks.css' | asset_url | stylesheet_tag }}
+
+<div class="image-and-text-in-blocks color-{{ section.settings.section_color_scheme }}{% if section.settings.show_top_border %} main-top__border{% endif %}{% if section.settings.show_bottom_border %} main-bottom__border{% endif %}">
+  <div class="page-width">
+    <div class="image-and-text-in-blocks__box">
+      <div class="image-and-text-in-blocks__left">
+        {%- if section.settings.title != blank -%}
+          <span class="image-and-text-in-blocks__left--title">
+            {{ section.settings.title }}
+          </span>
+        {%- endif -%}
+        <div class="image-and-text-in-blocks__left--items">
+          {%- for block in section.blocks -%}
+            <div class="image-and-text-in-blocks__left--item">
+              {%- if block.settings.block_title != blank -%}
+                <h5 class="image-and-text-in-blocks__left--item-title">
+                  {{ block.settings.block_title }}
+                </h5>
+              {%- endif -%}
+              {%- if block.settings.block_text != blank -%}
+                <p class="image-and-text-in-blocks__left--item-text">
+                  {{ block.settings.block_text }}
+                </p>
+              {%- endif -%}
+            </div>
+          {%- endfor -%}
+        </div>
+      </div>
+      {%- if section.settings.image != blank -%}
+        <div class="image-and-text-in-blocks__right">
+          <img
+            class="image-and-text-in-blocks__right--img"
+            src="{{ section.settings.image | image_url: width: 1440 }}"
+            alt="{{ section.settings.image.alt | escape }}"
+            width="720"
+            height="805"
+            loading="lazy">
+        </div>
+      {%- endif -%}
+    </div>
+  </div>
+</div>
+
+{% schema %}
+  {
+    "name": "Image and text in blocks",
+    "class": "image-and-text-in-blocks-section",
+    "settings": [
+      {
+        "type": "color_scheme",
+        "id": "section_color_scheme",
+        "label": "Color scheme",
+        "default": "background-1"
+      },
+      {
+        "type": "text",
+        "id": "title",
+        "label": "Heading",
+        "default": "Heading"
+      },
+      {
+        "type": "image_picker",
+        "id": "image",
+        "label": "Image"
+      },
+      {
+        "type": "checkbox",
+        "id": "show_top_border",
+        "label": "Show top border",
+        "default": false
+      }, {
+        "type": "checkbox",
+        "id": "show_bottom_border",
+        "label": "Show bottom border",
+        "default": false
+      }
+    ],
+    "blocks": [
+      {
+        "type": "text",
+        "name": "Title with text",
+        "limit": 8,
+        "settings": [
+          {
+            "type": "text",
+            "id": "block_title",
+            "label": "Title",
+            "default": "Title"
+          }, {
+            "type": "textarea",
+            "id": "block_text",
+            "label": "Text",
+            "default": "Text"
+          }
+        ]
+      }
+    ],
+    "presets": [
+      {
+        "name": "Image and text in blocks",
+        "blocks": [
+          {
+            "type": "text"
+          }
+        ]
+      }
+    ]
+  }
+{% endschema %}

@@ -342,6 +342,84 @@
         "show_top_border": false,
         "show_bottom_border": false
       }
+    },
+    "image_and_text_in_blocks_GxYw8L": {
+      "type": "image-and-text-in-blocks",
+      "blocks": {
+        "text_EqLcqz": {
+          "type": "text",
+          "settings": {
+            "block_title": "Illuminatiom",
+            "block_text": "Unleash your skin's natural radiance with Hyfrapeel Glow Serum, a daily vitamin C powerhouse."
+          }
+        },
+        "text_igVLNJ": {
+          "type": "text",
+          "settings": {
+            "block_title": "Exfoliation",
+            "block_text": "Experience a gentle exfoliation process with Caviar Lime that effortlessly removes dead skin cells, revealing a fresh and vibrant complexion."
+          }
+        },
+        "text_qRwQQF": {
+          "type": "text",
+          "settings": {
+            "block_title": "Protection",
+            "block_text": "Firm up your skin and shield it from external aggressors with our unique blend of antioxidants, ensuring your skin stays resilient throughout the day."
+          }
+        },
+        "text_JWhjGJ": {
+          "type": "text",
+          "settings": {
+            "block_title": "Hydration",
+            "block_text": "Dive into layers of deep hydration as our serum works to nourish and moisturize your skin, leaving it feeling supple and revitalized."
+          }
+        },
+        "text_Ht4GLD": {
+          "type": "text",
+          "settings": {
+            "block_title": "Vitamin C",
+            "block_text": "Benefit from stabilized Vitamin C, a key ingredient that not only improves pigmentation and skin tone but also acts as a powerful protector against pollutants."
+          }
+        },
+        "text_mG4UCj": {
+          "type": "text",
+          "settings": {
+            "block_title": "Rejuvenation",
+            "block_text": "Let your skin undergo a rejuvenation process while you carry on with your day, thanks to the time-release formula of Hyfrapeel Glow Serum."
+          }
+        },
+        "text_KLBkdz": {
+          "type": "text",
+          "settings": {
+            "block_title": "Improvements",
+            "block_text": "Witness visible improvements in your skin's texture, tone, and overall health, courtesy of our carefully curated blend of potent ingredients.\u2028"
+          }
+        },
+        "text_9jrAgL": {
+          "type": "text",
+          "settings": {
+            "block_title": "Essentials",
+            "block_text": "Elevate your skincare routine with a daily dose of Hyfrapeel Glow Serum, your go-to solution for a radiant and protected complexion."
+          }
+        }
+      },
+      "block_order": [
+        "text_EqLcqz",
+        "text_igVLNJ",
+        "text_qRwQQF",
+        "text_JWhjGJ",
+        "text_Ht4GLD",
+        "text_mG4UCj",
+        "text_KLBkdz",
+        "text_9jrAgL"
+      ],
+      "settings": {
+        "section_color_scheme": "scheme-096ef13d-47e0-4091-a6e3-1669a5b9bf1d",
+        "title": "PRODUCT BENEFITS",
+        "image": "shopify:\/\/shop_images\/FAQ_10_1.jpg",
+        "show_top_border": false,
+        "show_bottom_border": false
+      }
     }
   },
   "order": [
@@ -356,6 +434,7 @@
     "images_with_text_yNLJY3",
     "slider_with_text_drGMYE",
     "newsletter_KR9gUY",
-    "featured_blog_HcxbHM"
+    "featured_blog_HcxbHM",
+    "image_and_text_in_blocks_GxYw8L"
   ]
 }
