@@ -1,0 +1,111 @@
+{{ 'section-number-with-text-in-blocks.css' | asset_url | stylesheet_tag }}
+
+<div class="number-with-text-in-blocks color-{{ section.settings.section_color_scheme }}{% if section.settings.show_top_border %} main-top__border{% endif %}{% if section.settings.show_bottom_border %} main-bottom__border{% endif %}">
+  <div class="page-width">
+    <div class="number-with-text-in-blocks__box">
+      {%- if section.settings.title != blank or section.settings.text != blank -%}
+        <div class="number-with-text-in-blocks__left">
+          {%- if section.settings.title != blank -%}
+            <h3 class="number-with-text-in-blocks__left--title">
+              {{ section.settings.title }}
+            </h3>
+          {%- endif -%}
+          {%- if section.settings.text != blank -%}
+            <p class="number-with-text-in-blocks__left--text">
+              {{ section.settings.text }}
+            </p>
+          {%- endif -%}
+        </div>
+      {%- endif -%}
+      <div class="number-with-text-in-blocks__right">
+        {%- for block in section.blocks -%}
+          <div class="number-with-text-in-blocks__right--item">
+            <h3 class="number-with-text-in-blocks__right--number">
+              0{{ forloop.index }}
+            </h3>
+            <div class="number-with-text-in-blocks__right--box">
+              {%- if block.settings.block_text != blank -%}
+                <h5 class="number-with-text-in-blocks__right--title">
+                  {{ block.settings.block_title }}
+                </h5>
+              {%- endif -%}
+              {%- if block.settings.block_text != blank -%}
+                <p class="number-with-text-in-blocks__right--text">
+                  {{ block.settings.block_text }}
+                </p>
+              {%- endif -%}
+            </div>
+          </div>
+        {%- endfor -%}
+      </div>
+    </div>
+  </div>
+</div>
+
+{% schema %}
+  {
+    "name": "Number with text & blocks",
+    "class": "number-with-text-in-blocks-section",
+    "settings": [
+      {
+        "type": "color_scheme",
+        "id": "section_color_scheme",
+        "label": "Color scheme",
+        "default": "background-1"
+      },
+      {
+        "type": "text",
+        "id": "title",
+        "label": "Heading",
+        "default": "Heading"
+      },
+      {
+        "type": "textarea",
+        "id": "text",
+        "label": "Text",
+        "default": "Text"
+      },
+      {
+        "type": "checkbox",
+        "id": "show_top_border",
+        "label": "Show top border",
+        "default": false
+      }, {
+        "type": "checkbox",
+        "id": "show_bottom_border",
+        "label": "Show bottom border",
+        "default": false
+      }
+    ],
+    "blocks": [
+      {
+        "type": "text",
+        "name": "Number with text",
+        "limit": 6,
+        "settings": [
+          {
+            "type": "text",
+            "id": "block_title",
+            "label": "Title",
+            "default": "Title"
+          }, {
+            "type": "textarea",
+            "id": "block_text",
+            "label": "Text",
+            "default": "Text"
+          }
+        ]
+      }
+    ],
+    "presets": [
+      {
+        "name": "Number with text & blocks",
+        "blocks": [
+          {
+            "type": "text"
+          }
+        ]
+      }
+    ]
+  }
+{% endschema %}

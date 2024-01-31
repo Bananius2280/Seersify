@@ -420,6 +420,68 @@
         "show_top_border": false,
         "show_bottom_border": false
       }
+    },
+    "number_with_text_in_blocks_QAXcCn": {
+      "type": "number-with-text-in-blocks",
+      "blocks": {
+        "text_AwkQmF": {
+          "type": "text",
+          "settings": {
+            "block_title": "Hyaluronic Acid",
+            "block_text": "Embracing diversity and celebrating natural beauty are core values at Seersify. We believe in the uniqueness of every individual, and our products are crafted to support and enhance the natural beauty of all skin types and tones.-"
+          }
+        },
+        "text_8YDdL4": {
+          "type": "text",
+          "settings": {
+            "block_title": "Niacinamide",
+            "block_text": "Embracing diversity and celebrating natural beauty are core values at Seersify. We believe in the uniqueness of every individual, and our products are crafted to support and enhance the natural beauty of all skin types and tones.-"
+          }
+        },
+        "text_3CApK6": {
+          "type": "text",
+          "settings": {
+            "block_title": "Ceramide Complex",
+            "block_text": "Embracing diversity and celebrating natural beauty are core values at Seersify. We believe in the uniqueness of every individual, and our products are crafted to support and enhance the natural beauty of all skin types and tones.-"
+          }
+        },
+        "text_zjEPxQ": {
+          "type": "text",
+          "settings": {
+            "block_title": "N.Benthamiana Peptide",
+            "block_text": "Embracing diversity and celebrating natural beauty are core values at Seersify. We believe in the uniqueness of every individual, and our products are crafted to support and enhance the natural beauty of all skin types and tones."
+          }
+        },
+        "text_KgKqEm": {
+          "type": "text",
+          "settings": {
+            "block_title": "Ascorbyl Glucoside",
+            "block_text": "Embracing diversity and celebrating natural beauty are core values at Seersify. We believe in the uniqueness of every individual, and our products are crafted to support and enhance the natural beauty of all skin types and tones.-"
+          }
+        },
+        "text_Lqx4Ly": {
+          "type": "text",
+          "settings": {
+            "block_title": "Caviar Lime",
+            "block_text": "Embracing diversity and celebrating natural beauty are core values at Seersify. We believe in the uniqueness of every individual, and our products are crafted to support and enhance the natural beauty of all skin types and tones.-"
+          }
+        }
+      },
+      "block_order": [
+        "text_AwkQmF",
+        "text_8YDdL4",
+        "text_3CApK6",
+        "text_zjEPxQ",
+        "text_KgKqEm",
+        "text_Lqx4Ly"
+      ],
+      "settings": {
+        "section_color_scheme": "scheme-58e96f2d-5616-4dd8-b82d-ba401a29739b",
+        "title": "Key ingredients that your skin will love",
+        "text": "*Contain no synthetic fragrance and essential oil.",
+        "show_top_border": false,
+        "show_bottom_border": false
+      }
     }
   },
   "order": [
@@ -435,6 +497,7 @@
     "slider_with_text_drGMYE",
     "newsletter_KR9gUY",
     "featured_blog_HcxbHM",
-    "image_and_text_in_blocks_GxYw8L"
+    "image_and_text_in_blocks_GxYw8L",
+    "number_with_text_in_blocks_QAXcCn"
   ]
 }
