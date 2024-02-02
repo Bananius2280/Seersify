@@ -482,6 +482,24 @@
         "show_top_border": false,
         "show_bottom_border": false
       }
+    },
+    "two_image_with_text_rdYawb": {
+      "type": "two-image-with-text",
+      "settings": {
+        "section_color_scheme": "scheme-a2a4ca6d-5693-4406-bf54-30947f735ac9",
+        "first_image": "shopify:\/\/shop_images\/14_6_2.jpg",
+        "second_image": "shopify:\/\/shop_images\/34.jpg",
+        "image_position": "left",
+        "title": "Elevate your skincare routine with our thoughtfully curated Vitamin C serum for a radiant, protected, and rejuvenated complexion.",
+        "title_width": 540,
+        "text": "Enriched with a potent combination of Niacinamide and Ceramide Complex, our serum strengthens your skin barrier, fostering radiance and promoting a healthy complexion. Enjoy immediate and enduring hydration, delivered by both high and low molecular weight. Hyaluronic Acid, leaving your skin feeling supple and nourished.Infused with N.Benthamiana, an Australian native nicotine plant known for its skin-renewing properties, this serum rewinds the skin to a more flawless and resilient complexion.",
+        "text_width": 540,
+        "text_position": "unset",
+        "padding_top": 115,
+        "padding_bottom": 105,
+        "show_top_border": false,
+        "show_bottom_border": false
+      }
     }
   },
   "order": [
@@ -498,6 +516,7 @@
     "newsletter_KR9gUY",
     "featured_blog_HcxbHM",
     "image_and_text_in_blocks_GxYw8L",
-    "number_with_text_in_blocks_QAXcCn"
+    "number_with_text_in_blocks_QAXcCn",
+    "two_image_with_text_rdYawb"
   ]
 }

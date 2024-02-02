@@ -1,0 +1,194 @@
+{{ 'section-two-image-with-text.css' | asset_url | stylesheet_tag }}
+
+{% style %}
+  .two-image-with-text {
+    padding-top: {{ section.settings.padding_top | times: 0.5 | round: 0 }}px;
+    padding-bottom: {{ section.settings.padding_bottom | times: 0.5 | round: 0 }}px;
+  }
+
+  @media screen and (min-width: 750px) {
+    .two-image-with-text {
+      padding-top: {{ section.settings.padding_top }}px;
+      padding-bottom: {{ section.settings.padding_bottom }}px;
+    }
+  }
+  @media screen and (min-width: 1050px) {
+    .two-image-with-text__second--title {
+      width: {{ section.settings.title_width }}px;
+    }
+
+    .two-image-with-text__second--text {
+      width: {{ section.settings.text_width }}px;
+    }
+  }
+{% endstyle %}
+
+<div class="two-image-with-text color-{{ section.settings.section_color_scheme }}{% if section.settings.show_top_border %} main-top__border{% endif %}{% if section.settings.show_bottom_border %} main-bottom__border{% endif %}">
+  <div class="page-width">
+    <div class="two-image-with-text__items two-image-with-text__items--{{ section.settings.image_position }}">
+      <div class="two-image-with-text__first">
+        {%- if section.settings.first_image != blank -%}
+          <img
+            class="two-image-with-text__first--img"
+            src="{{ section.settings.first_image | image_url: width: 1440 }}"
+            alt="{{ section.settings.first_image.alt | escape }}"
+            width="720"
+            height="820"
+            loading="lazy">
+        {%- endif -%}
+        {%- if section.settings.second_image != blank -%}
+          <img
+            class="two-image-with-text__first--small-img"
+            src="{{ section.settings.second_image | image_url: width: 610 }}"
+            alt="{{ section.settings.second_image.alt | escape }}"
+            width="305"
+            height="355"
+            loading="lazy">
+        {%- endif -%}
+      </div>
+      <div class="two-image-with-text__second two-image-with-text__second--{{ section.settings.text_position }}">
+        {%- if section.settings.title != blank -%}
+          <h4 class="two-image-with-text__second--title">
+            {{ section.settings.title }}
+          </h4>
+        {%- endif -%}
+        {%- if section.settings.text != blank -%}
+          <p class="two-image-with-text__second--text">
+            {{ section.settings.text }}
+          </p>
+        {%- endif -%}
+      </div>
+    </div>
+  </div>
+</div>
+
+{% schema %}
+  {
+    "name": "Two image with text",
+    "class": "two-image-with-text-section",
+    "settings": [
+      {
+        "type": "color_scheme",
+        "id": "section_color_scheme",
+        "label": "Color scheme",
+        "default": "background-1"
+      },
+      {
+        "type": "header",
+        "content": "Block with photos"
+      },
+      {
+        "type": "image_picker",
+        "id": "first_image",
+        "label": "First image"
+      },
+      {
+        "type": "image_picker",
+        "id": "second_image",
+        "label": "Second image"
+      }, {
+        "type": "radio",
+        "id": "image_position",
+        "label": "Position images",
+        "options": [
+          {
+            "value": "left",
+            "label": "Left"
+          }, {
+            "value": "right",
+            "label": "Right"
+          }
+        ],
+        "default": "left"
+      }, {
+        "type": "header",
+        "content": "Block with text"
+      }, {
+        "type": "text",
+        "id": "title",
+        "label": "Heading",
+        "default": "Heading"
+      }, {
+        "type": "range",
+        "id": "title_width",
+        "min": 450,
+        "max": 560,
+        "step": 5,
+        "unit": "px",
+        "label": "Heading width",
+        "default": 450
+      }, {
+        "type": "textarea",
+        "id": "text",
+        "label": "Text",
+        "default": "Text"
+      }, {
+        "type": "range",
+        "id": "text_width",
+        "min": 450,
+        "max": 560,
+        "step": 5,
+        "unit": "px",
+        "label": "Text width",
+        "default": 450
+      }, {
+        "type": "radio",
+        "id": "text_position",
+        "label": "Text position",
+        "info": "Use without a second photo",
+        "options": [
+          {
+            "value": "unset",
+            "label": "Unset"
+          }, {
+            "value": "left",
+            "label": "Left"
+          }, {
+            "value": "center",
+            "label": "Center"
+          }, {
+            "value": "right",
+            "label": "Right"
+          }
+        ],
+        "default": "unset"
+      }, {
+        "type": "header",
+        "content": "Main settings"
+      }, {
+        "type": "range",
+        "id": "padding_top",
+        "min": 50,
+        "max": 130,
+        "step": 1,
+        "unit": "px",
+        "label": "t:sections.all.padding.padding_top",
+        "default": 50
+      }, {
+        "type": "range",
+        "id": "padding_bottom",
+        "min": 50,
+        "max": 130,
+        "step": 1,
+        "unit": "px",
+        "label": "t:sections.all.padding.padding_bottom",
+        "default": 50
+      }, {
+        "type": "checkbox",
+        "id": "show_top_border",
+        "label": "Show top border",
+        "default": false
+      }, {
+        "type": "checkbox",
+        "id": "show_bottom_border",
+        "label": "Show bottom border",
+        "default": false
+      }
+    ],
+    "presets": [
+      {
+        "name": "Two image with text"
+      }
+    ]
+  }
+{% endschema %}
