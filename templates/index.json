@@ -264,16 +264,6 @@
         "show_bottom_border": true
       }
     },
-    "newsletter_KR9gUY": {
-      "type": "newsletter",
-      "settings": {
-        "section_color_scheme": "scheme-58e96f2d-5616-4dd8-b82d-ba401a29739b",
-        "newsletter_img": "shopify:\/\/shop_images\/13_8_Extend_newsletter_1_1.jpg",
-        "newsletter_title": "Subscribe to Seersify newsletter",
-        "newsletter_select": "right",
-        "newsletter_text": "For unique discounts and offers"
-      }
-    },
     "featured_blog_HcxbHM": {
       "type": "featured-blog",
       "blocks": {
@@ -340,165 +330,17 @@
         "padding_top": 80,
         "padding_bottom": 110,
         "show_top_border": false,
-        "show_bottom_border": false
+        "show_bottom_border": true
       }
     },
-    "image_and_text_in_blocks_GxYw8L": {
-      "type": "image-and-text-in-blocks",
-      "blocks": {
-        "text_EqLcqz": {
-          "type": "text",
-          "settings": {
-            "block_title": "Illuminatiom",
-            "block_text": "Unleash your skin's natural radiance with Hyfrapeel Glow Serum, a daily vitamin C powerhouse."
-          }
-        },
-        "text_igVLNJ": {
-          "type": "text",
-          "settings": {
-            "block_title": "Exfoliation",
-            "block_text": "Experience a gentle exfoliation process with Caviar Lime that effortlessly removes dead skin cells, revealing a fresh and vibrant complexion."
-          }
-        },
-        "text_qRwQQF": {
-          "type": "text",
-          "settings": {
-            "block_title": "Protection",
-            "block_text": "Firm up your skin and shield it from external aggressors with our unique blend of antioxidants, ensuring your skin stays resilient throughout the day."
-          }
-        },
-        "text_JWhjGJ": {
-          "type": "text",
-          "settings": {
-            "block_title": "Hydration",
-            "block_text": "Dive into layers of deep hydration as our serum works to nourish and moisturize your skin, leaving it feeling supple and revitalized."
-          }
-        },
-        "text_Ht4GLD": {
-          "type": "text",
-          "settings": {
-            "block_title": "Vitamin C",
-            "block_text": "Benefit from stabilized Vitamin C, a key ingredient that not only improves pigmentation and skin tone but also acts as a powerful protector against pollutants."
-          }
-        },
-        "text_mG4UCj": {
-          "type": "text",
-          "settings": {
-            "block_title": "Rejuvenation",
-            "block_text": "Let your skin undergo a rejuvenation process while you carry on with your day, thanks to the time-release formula of Hyfrapeel Glow Serum."
-          }
-        },
-        "text_KLBkdz": {
-          "type": "text",
-          "settings": {
-            "block_title": "Improvements",
-            "block_text": "Witness visible improvements in your skin's texture, tone, and overall health, courtesy of our carefully curated blend of potent ingredients.\u2028"
-          }
-        },
-        "text_9jrAgL": {
-          "type": "text",
-          "settings": {
-            "block_title": "Essentials",
-            "block_text": "Elevate your skincare routine with a daily dose of Hyfrapeel Glow Serum, your go-to solution for a radiant and protected complexion."
-          }
-        }
-      },
-      "block_order": [
-        "text_EqLcqz",
-        "text_igVLNJ",
-        "text_qRwQQF",
-        "text_JWhjGJ",
-        "text_Ht4GLD",
-        "text_mG4UCj",
-        "text_KLBkdz",
-        "text_9jrAgL"
-      ],
-      "settings": {
-        "section_color_scheme": "scheme-096ef13d-47e0-4091-a6e3-1669a5b9bf1d",
-        "title": "PRODUCT BENEFITS",
-        "image": "shopify:\/\/shop_images\/FAQ_10_1.jpg",
-        "show_top_border": false,
-        "show_bottom_border": false
-      }
-    },
-    "number_with_text_in_blocks_QAXcCn": {
-      "type": "number-with-text-in-blocks",
-      "blocks": {
-        "text_AwkQmF": {
-          "type": "text",
-          "settings": {
-            "block_title": "Hyaluronic Acid",
-            "block_text": "Embracing diversity and celebrating natural beauty are core values at Seersify. We believe in the uniqueness of every individual, and our products are crafted to support and enhance the natural beauty of all skin types and tones.-"
-          }
-        },
-        "text_8YDdL4": {
-          "type": "text",
-          "settings": {
-            "block_title": "Niacinamide",
-            "block_text": "Embracing diversity and celebrating natural beauty are core values at Seersify. We believe in the uniqueness of every individual, and our products are crafted to support and enhance the natural beauty of all skin types and tones.-"
-          }
-        },
-        "text_3CApK6": {
-          "type": "text",
-          "settings": {
-            "block_title": "Ceramide Complex",
-            "block_text": "Embracing diversity and celebrating natural beauty are core values at Seersify. We believe in the uniqueness of every individual, and our products are crafted to support and enhance the natural beauty of all skin types and tones.-"
-          }
-        },
-        "text_zjEPxQ": {
-          "type": "text",
-          "settings": {
-            "block_title": "N.Benthamiana Peptide",
-            "block_text": "Embracing diversity and celebrating natural beauty are core values at Seersify. We believe in the uniqueness of every individual, and our products are crafted to support and enhance the natural beauty of all skin types and tones."
-          }
-        },
-        "text_KgKqEm": {
-          "type": "text",
-          "settings": {
-            "block_title": "Ascorbyl Glucoside",
-            "block_text": "Embracing diversity and celebrating natural beauty are core values at Seersify. We believe in the uniqueness of every individual, and our products are crafted to support and enhance the natural beauty of all skin types and tones.-"
-          }
-        },
-        "text_Lqx4Ly": {
-          "type": "text",
-          "settings": {
-            "block_title": "Caviar Lime",
-            "block_text": "Embracing diversity and celebrating natural beauty are core values at Seersify. We believe in the uniqueness of every individual, and our products are crafted to support and enhance the natural beauty of all skin types and tones.-"
-          }
-        }
-      },
-      "block_order": [
-        "text_AwkQmF",
-        "text_8YDdL4",
-        "text_3CApK6",
-        "text_zjEPxQ",
-        "text_KgKqEm",
-        "text_Lqx4Ly"
-      ],
+    "newsletter_KR9gUY": {
+      "type": "newsletter",
       "settings": {
         "section_color_scheme": "scheme-58e96f2d-5616-4dd8-b82d-ba401a29739b",
-        "title": "Key ingredients that your skin will love",
-        "text": "*Contain no synthetic fragrance and essential oil.",
-        "show_top_border": false,
-        "show_bottom_border": false
-      }
-    },
-    "two_image_with_text_rdYawb": {
-      "type": "two-image-with-text",
-      "settings": {
-        "section_color_scheme": "scheme-a2a4ca6d-5693-4406-bf54-30947f735ac9",
-        "first_image": "shopify:\/\/shop_images\/14_6_2.jpg",
-        "second_image": "shopify:\/\/shop_images\/34.jpg",
-        "image_position": "left",
-        "title": "Elevate your skincare routine with our thoughtfully curated Vitamin C serum for a radiant, protected, and rejuvenated complexion.",
-        "title_width": 540,
-        "text": "Enriched with a potent combination of Niacinamide and Ceramide Complex, our serum strengthens your skin barrier, fostering radiance and promoting a healthy complexion. Enjoy immediate and enduring hydration, delivered by both high and low molecular weight. Hyaluronic Acid, leaving your skin feeling supple and nourished.Infused with N.Benthamiana, an Australian native nicotine plant known for its skin-renewing properties, this serum rewinds the skin to a more flawless and resilient complexion.",
-        "text_width": 540,
-        "text_position": "unset",
-        "padding_top": 115,
-        "padding_bottom": 105,
-        "show_top_border": false,
-        "show_bottom_border": false
+        "newsletter_img": "shopify:\/\/shop_images\/13_8_Extend_newsletter_1_1.jpg",
+        "newsletter_title": "Subscribe to Seersify newsletter",
+        "newsletter_select": "right",
+        "newsletter_text": "For unique discounts and offers"
       }
     }
   },
@@ -513,10 +355,7 @@
     "background_image_with_text_ppBXPL",
     "images_with_text_yNLJY3",
     "slider_with_text_drGMYE",
-    "newsletter_KR9gUY",
     "featured_blog_HcxbHM",
-    "image_and_text_in_blocks_GxYw8L",
-    "number_with_text_in_blocks_QAXcCn",
-    "two_image_with_text_rdYawb"
+    "newsletter_KR9gUY"
   ]
 }

@@ -78,6 +78,7 @@
     },
     "related-products": {
       "type": "related-products",
+      "disabled": true,
       "settings": {
         "heading": "You may also like",
         "heading_size": "h2",
@@ -93,10 +94,201 @@
         "padding_top": 36,
         "padding_bottom": 28
       }
+    },
+    "image_and_text_in_blocks_zHbdVP": {
+      "type": "image-and-text-in-blocks",
+      "blocks": {
+        "text_kGpwBd": {
+          "type": "text",
+          "settings": {
+            "block_title": "Illuminatiom",
+            "block_text": "Unleash your skin's natural radiance with Hyfrapeel Glow Serum, a daily vitamin C powerhouse."
+          }
+        },
+        "text_eLFKDM": {
+          "type": "text",
+          "settings": {
+            "block_title": "Exfoliation",
+            "block_text": "Experience a gentle exfoliation process with Caviar Lime that effortlessly removes dead skin cells, revealing a fresh and vibrant complexion."
+          }
+        },
+        "text_FTeaNX": {
+          "type": "text",
+          "settings": {
+            "block_title": "Protection",
+            "block_text": "Firm up your skin and shield it from external aggressors with our unique blend of antioxidants, ensuring your skin stays resilient throughout the day."
+          }
+        },
+        "text_t7T4Xq": {
+          "type": "text",
+          "settings": {
+            "block_title": "Hydration",
+            "block_text": "Dive into layers of deep hydration as our serum works to nourish and moisturize your skin, leaving it feeling supple and revitalized."
+          }
+        },
+        "text_cDXAqY": {
+          "type": "text",
+          "settings": {
+            "block_title": "Vitamin C",
+            "block_text": "Benefit from stabilized Vitamin C, a key ingredient that not only improves pigmentation and skin tone but also acts as a powerful protector against pollutants."
+          }
+        },
+        "text_fgLC48": {
+          "type": "text",
+          "settings": {
+            "block_title": "Rejuvenation",
+            "block_text": "Let your skin undergo a rejuvenation process while you carry on with your day, thanks to the time-release formula of Hyfrapeel Glow Serum."
+          }
+        },
+        "text_NbANpC": {
+          "type": "text",
+          "settings": {
+            "block_title": "Improvements",
+            "block_text": "Witness visible improvements in your skin's texture, tone, and overall health, courtesy of our carefully curated blend of potent ingredients.\u2028"
+          }
+        },
+        "text_WiKqLA": {
+          "type": "text",
+          "settings": {
+            "block_title": "Essentials",
+            "block_text": "Elevate your skincare routine with a daily dose of Hyfrapeel Glow Serum, your go-to solution for a radiant and protected complexion."
+          }
+        }
+      },
+      "block_order": [
+        "text_kGpwBd",
+        "text_eLFKDM",
+        "text_FTeaNX",
+        "text_t7T4Xq",
+        "text_cDXAqY",
+        "text_fgLC48",
+        "text_NbANpC",
+        "text_WiKqLA"
+      ],
+      "settings": {
+        "section_color_scheme": "scheme-096ef13d-47e0-4091-a6e3-1669a5b9bf1d",
+        "title": "PRODUCT BENEFITS",
+        "image": "shopify:\/\/shop_images\/FAQ_10_1.jpg",
+        "show_top_border": false,
+        "show_bottom_border": true
+      }
+    },
+    "number_with_text_in_blocks_WyarG3": {
+      "type": "number-with-text-in-blocks",
+      "blocks": {
+        "text_P3AGii": {
+          "type": "text",
+          "settings": {
+            "block_title": "Hyaluronic Acid",
+            "block_text": "Embracing diversity and celebrating natural beauty are core values at Seersify. We believe in the uniqueness of every individual, and our products are crafted to support and enhance the natural beauty of all skin types and tones.-"
+          }
+        },
+        "text_g9DJzX": {
+          "type": "text",
+          "settings": {
+            "block_title": "Niacinamide",
+            "block_text": "Embracing diversity and celebrating natural beauty are core values at Seersify. We believe in the uniqueness of every individual, and our products are crafted to support and enhance the natural beauty of all skin types and tones.-"
+          }
+        },
+        "text_bkQmJy": {
+          "type": "text",
+          "settings": {
+            "block_title": "Ceramide Complex",
+            "block_text": "Embracing diversity and celebrating natural beauty are core values at Seersify. We believe in the uniqueness of every individual, and our products are crafted to support and enhance the natural beauty of all skin types and tones.-"
+          }
+        },
+        "text_4Tpy6U": {
+          "type": "text",
+          "settings": {
+            "block_title": "N.Benthamiana Peptide",
+            "block_text": "Embracing diversity and celebrating natural beauty are core values at Seersify. We believe in the uniqueness of every individual, and our products are crafted to support and enhance the natural beauty of all skin types and tones."
+          }
+        },
+        "text_NpMdDd": {
+          "type": "text",
+          "settings": {
+            "block_title": "Ascorbyl Glucoside",
+            "block_text": "Embracing diversity and celebrating natural beauty are core values at Seersify. We believe in the uniqueness of every individual, and our products are crafted to support and enhance the natural beauty of all skin types and tones.-"
+          }
+        },
+        "text_tHhYDw": {
+          "type": "text",
+          "settings": {
+            "block_title": "Caviar Lime",
+            "block_text": "Embracing diversity and celebrating natural beauty are core values at Seersify. We believe in the uniqueness of every individual, and our products are crafted to support and enhance the natural beauty of all skin types and tones.-"
+          }
+        }
+      },
+      "block_order": [
+        "text_P3AGii",
+        "text_g9DJzX",
+        "text_bkQmJy",
+        "text_4Tpy6U",
+        "text_NpMdDd",
+        "text_tHhYDw"
+      ],
+      "settings": {
+        "section_color_scheme": "scheme-58e96f2d-5616-4dd8-b82d-ba401a29739b",
+        "title": "Key ingredients that your skin will love",
+        "text": "*Contain no synthetic fragrance and essential oil.",
+        "show_top_border": false,
+        "show_bottom_border": true
+      }
+    },
+    "two_image_with_text_6PPzL8": {
+      "type": "two-image-with-text",
+      "settings": {
+        "section_color_scheme": "scheme-a2a4ca6d-5693-4406-bf54-30947f735ac9",
+        "first_image": "shopify:\/\/shop_images\/14_6_2.jpg",
+        "second_image": "shopify:\/\/shop_images\/34.jpg",
+        "image_position": "left",
+        "title": "Elevate your skincare routine with our thoughtfully curated Vitamin C serum for a radiant, protected, and rejuvenated complexion.",
+        "title_width": 540,
+        "text": "Enriched with a potent combination of Niacinamide and Ceramide Complex, our serum strengthens your skin barrier, fostering radiance and promoting a healthy complexion. Enjoy immediate and enduring hydration, delivered by both high and low molecular weight. Hyaluronic Acid, leaving your skin feeling supple and nourished.Infused with N.Benthamiana, an Australian native nicotine plant known for its skin-renewing properties, this serum rewinds the skin to a more flawless and resilient complexion.",
+        "text_width": 540,
+        "text_position": "unset",
+        "padding_top": 50,
+        "padding_bottom": 50,
+        "show_top_border": false,
+        "show_bottom_border": true
+      }
+    },
+    "products_slider_with_text_hwKfpq": {
+      "type": "products-slider-with-text",
+      "settings": {
+        "section_color_scheme": "",
+        "products_slider_with_text_title": "Other Products",
+        "products_slider_with_text_link_title": "VIEW ALL",
+        "products_slider_with_text_link_url": "",
+        "products_slider_with_text_product_list": [
+          "hydrapeel-glow-serum",
+          "hyfrapeel-glow-serum-test-1",
+          "hyfrapeel-glow-serum",
+          "hyfrapeel-glow-serum-text-2",
+          "hyfrapeel-glow-serum-text-4"
+        ],
+        "show_top_border": false,
+        "show_bottom_border": true
+      }
+    },
+    "newsletter_7yxA9m": {
+      "type": "newsletter",
+      "settings": {
+        "section_color_scheme": "scheme-58e96f2d-5616-4dd8-b82d-ba401a29739b",
+        "newsletter_img": "shopify:\/\/shop_images\/13_8_Extend_newsletter_1_1.jpg",
+        "newsletter_title": "Subscribe to Seersify newsletter",
+        "newsletter_select": "right",
+        "newsletter_text": "For unique discounts and offers"
+      }
     }
   },
   "order": [
     "main",
-    "related-products"
+    "related-products",
+    "image_and_text_in_blocks_zHbdVP",
+    "number_with_text_in_blocks_WyarG3",
+    "two_image_with_text_6PPzL8",
+    "products_slider_with_text_hwKfpq",
+    "newsletter_7yxA9m"
   ]
 }

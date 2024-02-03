@@ -1,5 +1,7 @@
 .newsletter {
   position: relative;
+  max-height: 610px;
+  min-height: 500px;
 }
 
 .newsletter-img {
@@ -49,7 +51,6 @@
 .newsletter .newsletter-box .newsletter-form .field__input:active,
 .newsletter .newsletter-box .newsletter-form .field__input:focus {
   box-shadow: unset;
-  
 }
 
 
@@ -79,13 +80,11 @@
 .newsletter .newsletter-box .newsletter-form .field__input::placeholder {
   opacity: 1;
   color: rgba(0, 0, 0, 0.50);
-
-
   font-family: var(--font-body-family);
-    font-style: var(--font-body-style);
-    font-weight: var(--font-body-weight);
-    margin: 0;
-    line-height: normal; 
+  font-style: var(--font-body-style);
+  font-weight: var(--font-body-weight);
+  margin: 0;
+  line-height: normal;
 }
 
 .newsletter .newsletter-box .newsletter-form .field__input {
@@ -95,13 +94,11 @@
   background-color: unset;
   border: none;
   border-bottom: 1px solid #000;
-
-
   font-family: var(--font-body-family);
-    font-style: var(--font-body-style);
-    font-weight: var(--font-body-weight);
-    margin: 0;
-    line-height: normal;
+  font-style: var(--font-body-style);
+  font-weight: var(--font-body-weight);
+  margin: 0;
+  line-height: normal;
 }
 
 .newsletter-form__box--left {
@@ -126,9 +123,13 @@
     display: block;
   }
 
-    .newsletter-img {
-      min-height: 400px;
-    }
+  .newsletter {
+    min-height: 400px;
+  }
+
+  .newsletter-img {
+    min-height: 400px;
+  }
 
   .newsletter-box__title {
     max-width: 100%;
