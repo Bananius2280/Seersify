@@ -83,10 +83,10 @@
       "settings": {
         "enable_sticky_info": true,
         "color_scheme": "background-1",
-        "media_size": "large",
-        "constrain_to_viewport": true,
+        "media_size": "medium",
+        "constrain_to_viewport": false,
         "media_fit": "contain",
-        "gallery_layout": "stacked",
+        "gallery_layout": "thumbnail_slider",
         "media_position": "left",
         "image_zoom": "lightbox",
         "mobile_thumbnails": "hide",
@@ -255,8 +255,8 @@
         "show_bottom_border": true
       }
     },
-    "two_image_with_text_6PPzL8": {
-      "type": "two-image-with-text",
+    "two_images_with_text_n4WpTM": {
+      "type": "two-images-with-text",
       "settings": {
         "section_color_scheme": "scheme-a2a4ca6d-5693-4406-bf54-30947f735ac9",
         "first_image": "shopify:\/\/shop_images\/14_6_2.jpg",
@@ -267,8 +267,8 @@
         "text": "Enriched with a potent combination of Niacinamide and Ceramide Complex, our serum strengthens your skin barrier, fostering radiance and promoting a healthy complexion. Enjoy immediate and enduring hydration, delivered by both high and low molecular weight. Hyaluronic Acid, leaving your skin feeling supple and nourished.Infused with N.Benthamiana, an Australian native nicotine plant known for its skin-renewing properties, this serum rewinds the skin to a more flawless and resilient complexion.",
         "text_width": 540,
         "text_position": "unset",
-        "padding_top": 50,
-        "padding_bottom": 50,
+        "padding_top": 115,
+        "padding_bottom": 105,
         "show_top_border": false,
         "show_bottom_border": true
       }
@@ -307,7 +307,7 @@
     "related-products",
     "image_and_text_in_blocks_zHbdVP",
     "number_with_text_in_blocks_WyarG3",
-    "two_image_with_text_6PPzL8",
+    "two_images_with_text_n4WpTM",
     "products_slider_with_text_hwKfpq",
     "newsletter_7yxA9m"
   ]
