@@ -79,7 +79,7 @@
 
 .newsletter .newsletter-box .newsletter-form .field__input::placeholder {
   opacity: 1;
-  color: rgba(0, 0, 0, 0.50);
+  color: rgb(var(--color-foreground));
   font-family: var(--font-body-family);
   font-style: var(--font-body-style);
   font-weight: var(--font-body-weight);
@@ -88,12 +88,13 @@
 }
 
 .newsletter .newsletter-box .newsletter-form .field__input {
+  opacity: 1;
   padding: 0;
   padding-bottom: 4px;
   height: 26px;
   background-color: unset;
   border: none;
-  border-bottom: 1px solid #000;
+  border-bottom: 1px solid rgb(var(--color-foreground));
   font-family: var(--font-body-family);
   font-style: var(--font-body-style);
   font-weight: var(--font-body-weight);

@@ -1,4 +1,4 @@
-{{ 'section-two-image-with-text.css' | asset_url | stylesheet_tag }}
+{{ 'section-two-images-with-text.css' | asset_url | stylesheet_tag }}
 
 {% style %}
   .two-image-with-text {
@@ -36,7 +36,7 @@
             height="820"
             loading="lazy">
         {%- endif -%}
-        {%- if section.settings.second_image != blank -%}
+        {%- if section.settings.second_image != blank and section.settings.first_image != blank -%}
           <img
             class="two-image-with-text__first--small-img"
             src="{{ section.settings.second_image | image_url: width: 610 }}"
@@ -64,8 +64,8 @@
 
 {% schema %}
   {
-    "name": "Two image with text",
-    "class": "two-image-with-text-section",
+    "name": "Two images with text",
+    "class": "two-images-with-text-section",
     "settings": [
       {
         "type": "color_scheme",
@@ -85,11 +85,12 @@
       {
         "type": "image_picker",
         "id": "second_image",
-        "label": "Second image"
+        "label": "Second image",
+        "info": "Doesn't work without the first photo"
       }, {
         "type": "radio",
         "id": "image_position",
-        "label": "Position images",
+        "label": "Images desktop position",
         "options": [
           {
             "value": "left",
@@ -134,7 +135,7 @@
       }, {
         "type": "radio",
         "id": "text_position",
-        "label": "Text position",
+        "label": "Heading desktop position",
         "info": "Use without a second photo",
         "options": [
           {
@@ -187,7 +188,7 @@
     ],
     "presets": [
       {
-        "name": "Two image with text"
+        "name": "Two images with text"
       }
     ]
   }

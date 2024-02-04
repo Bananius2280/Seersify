@@ -19,23 +19,25 @@
       {%- endif -%}
       <div class="number-with-text-in-blocks__right">
         {%- for block in section.blocks -%}
-          <div class="number-with-text-in-blocks__right--item">
-            <h3 class="number-with-text-in-blocks__right--number">
-              0{{ forloop.index }}
-            </h3>
-            <div class="number-with-text-in-blocks__right--box">
-              {%- if block.settings.block_text != blank -%}
-                <h5 class="number-with-text-in-blocks__right--title">
-                  {{ block.settings.block_title }}
-                </h5>
-              {%- endif -%}
-              {%- if block.settings.block_text != blank -%}
-                <p class="number-with-text-in-blocks__right--text">
-                  {{ block.settings.block_text }}
-                </p>
-              {%- endif -%}
+          {%- if block.settings.block_text != blank or block.settings.block_title != blank -%}
+            <div class="number-with-text-in-blocks__right--item">
+              <h3 class="number-with-text-in-blocks__right--number">
+                0{{ forloop.index }}
+              </h3>
+              <div class="number-with-text-in-blocks__right--box">
+                {%- if block.settings.block_title != blank -%}
+                  <h5 class="number-with-text-in-blocks__right--title">
+                    {{ block.settings.block_title }}
+                  </h5>
+                {%- endif -%}
+                {%- if block.settings.block_text != blank -%}
+                  <p class="number-with-text-in-blocks__right--text">
+                    {{ block.settings.block_text }}
+                  </p>
+                {%- endif -%}
+              </div>
             </div>
-          </div>
+          {%- endif -%}
         {%- endfor -%}
       </div>
     </div>

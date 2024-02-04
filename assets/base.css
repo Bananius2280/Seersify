@@ -555,6 +555,10 @@ h6:empty {
   margin-right: 1.5px;
 }
 
+.link-arrow path {
+  fill: rgb(var(--color-foreground));
+}
+
 @media only screen and (min-width: 750px) {
   .link-arrow {
     font-size: 16px;

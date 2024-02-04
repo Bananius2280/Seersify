@@ -27,22 +27,26 @@
 <div class="blog color-{{ section.settings.color_scheme }} gradient{% if section.settings.show_top_border %} main-top__border{% endif %}{% if section.settings.show_bottom_border %} main-bottom__border{% endif %}">
   <div class="page-width isolate{% if posts_displayed < 3 %} page-width-tablet{% endif %} section-{{ section.id }}-padding">
     <div class="blog-top">
-      {%- if section.settings.heading != blank -%}
+      {%- if section.settings.heading != blank or section.settings.link_title != blank -%}
         <div class="blog-top__top">
-          <h4
-            id="SectionHeading-{{ section.id }}"
-            class="blog-title inline-richtext {{ section.settings.heading_size }}{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
-            {% if settings.animations_reveal_on_scroll %}
-            data-cascade
-            {% endif %}>
-            {{ section.settings.heading }}
-          </h4>
-          <a class="blog-link link-arrow" href="{{ section.settings.link_url }}">
-            <span class="">
-              {{ section.settings.link_title }}
-            </span>
-            {% render 'icon-link-arrow' %}
-          </a>
+          {%- if section.settings.heading != blank -%}
+            <h4
+              id="SectionHeading-{{ section.id }}"
+              class="blog-title inline-richtext {{ section.settings.heading_size }}{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
+              {% if settings.animations_reveal_on_scroll %}
+              data-cascade
+              {% endif %}>
+              {{ section.settings.heading }}
+            </h4>
+          {%- endif -%}
+          {%- if section.settings.link_title != blank -%}
+            <a class="blog-link link-arrow" href="{{ section.settings.link_url }}">
+              <span class="">
+                {{ section.settings.link_title }}
+              </span>
+              {% render 'icon-link-arrow' %}
+            </a>
+          {%- endif -%}
         </div>
       {%- endif -%}
 
@@ -103,8 +107,8 @@
                             {{ 'sections.featured_blog.onboarding_title' | t }}
                           </h3>
                         {% comment %} <p class="article-card__excerpt rte-width">
-                                                                                                                                                                                      {{ 'sections.featured_blog.onboarding_content' | t }}
-                                                                                                                                                                        </p> {% endcomment %}
+                                                                                                                                                                                                                                                                    {{ 'sections.featured_blog.onboarding_content' | t }}
+                                                                                                                                                                                                                                                </p> {% endcomment %}
                         </div>
                       </div>
                     </div>
@@ -115,8 +119,8 @@
                           {{ 'sections.featured_blog.onboarding_title' | t }}
                         </h3>
                       {% comment %} <p class="article-card__excerpt rte-width">
-                                                                                                                                                                        {{ 'sections.featured_blog.onboarding_content' | t }}
-                                                                                                                                                          </p> {% endcomment %}
+                                                                                                                                                                                                                                                {{ 'sections.featured_blog.onboarding_content' | t }}
+                                                                                                                                                                                                                            </p> {% endcomment %}
                       </div>
                     </div>
                   </div>

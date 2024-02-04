@@ -6,8 +6,8 @@
         "vendor": {
           "type": "text",
           "settings": {
-            "text": "{{ product.vendor }}",
-            "text_style": "uppercase"
+            "text": "30 ml",
+            "text_style": "body"
           }
         },
         "title": {
@@ -48,6 +48,24 @@
           "settings": {
             "share_label": "Share"
           }
+        },
+        "collapsible_tab_3zU7R4": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Collapsible row",
+            "icon": "check_mark",
+            "content": "",
+            "page": ""
+          }
+        },
+        "collapsible_tab_rBYNd8": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Collapsible row",
+            "icon": "check_mark",
+            "content": "",
+            "page": ""
+          }
         }
       },
       "block_order": [
@@ -58,7 +76,9 @@
         "quantity_selector",
         "buy_buttons",
         "description",
-        "share"
+        "share",
+        "collapsible_tab_3zU7R4",
+        "collapsible_tab_rBYNd8"
       ],
       "settings": {
         "enable_sticky_info": true,

@@ -4,98 +4,110 @@
 
 <div class="products-slider-with-text color-{{ section.settings.section_color_scheme }}{% if section.settings.show_top_border %} main-top__border{% endif %}{% if section.settings.show_bottom_border %} main-bottom__border{% endif %}{% if section.settings.products_slider_with_text_product_list.count == 1 %} products-slider-with-text__one--product{% endif %}">
   {% comment %} <div class="page-width"> {% endcomment %}
-    <div class="products-slider-with-text__box">
+  <div class="products-slider-with-text__box">
+    {%- if section.settings.products_slider_with_text_title != blank or section.settings.products_slider_with_text_link_title != blank -%}
       <div class="products-slider-with-text__left">
-        <h4 class="products-slider-with-text__left--title">
-          {{ section.settings.products_slider_with_text_title }}
-        </h4>
-        <a class="products-slider-with-text__left--link link-arrow" href="{{ section.settings.products_slider_with_text_link_url }}">
-          <span class="products-slider-with-text__left--link-text">
-            {{ section.settings.products_slider_with_text_link_title }}
-          </span>
-          {% render 'icon-link-arrow' %}
-        </a>
-      </div>
-      <div class="products-slider-with-text__right">
-
-        <slideshow-component
-          class="slider-mobile-gutter"
-          role="region"
-          aria-roledescription="{{ 'sections.slideshow.carousel' | t }}"
-          aria-label="{{ section.settings.accessibility_info | escape }}">
-
-          <div
-            class="slideshow banner grid grid--1-col slider slider--everywhere"
-            id="Slider-{{ section.id }}"
-            style="{% if section.settings.products_slider_with_text_product_list.count == 1 %}justify-content: center;{% endif %}"
-            aria-live="polite"
-            aria-atomic="true">
-            {%- for product in section.settings.products_slider_with_text_product_list -%}
-              <div
-                class="slideshow__slide grid__item grid--1-col slider__slide "
-                id="Slide-{{ section.id }}-{{ forloop.index }}"
-                role="group"
-                {% if section.settings.products_slider_with_text_product_list.count == 1 %}style="margin-right: 0;"{% endif %}
-                aria-roledescription="{{ 'sections.slideshow.slide' | t }}"
-                aria-label="{{ forloop.index }} {{ 'general.slider.of' | t }} {{ forloop.length }}"
-                tabindex="-1">
-                {% render 'card-product',
-                card_product: product,
-                media_aspect_ratio: 'adapt',
-                extend_height: true,
-                placeholder_image: placeholder_image
-                %}
-                </div>          
-            {%- endfor -%}
-          </div>
-          
-          {% if section.settings.products_slider_with_text_product_list != blank and section.settings.products_slider_with_text_product_list.count != 1 %}
-<div class="slider-button__box">
-          <button
-            type="button"
-            class="slider-button slider-button--prev products-slider-with-text__slider--prev"
-            name="previous"
-            aria-label="{{ 'sections.slideshow.previous_slideshow' | t }}"
-            aria-controls="Slider-{{ section.id }}">
-              {% comment %} {% render 'icon-newsletter-arrov' %} {% endcomment %}
-              {% render 'icon-caret' %}
-          </button>
-
-          <button
-            type="button"
-            class="slider-button slider-button--next products-slider-with-text__slider--next"
-            name="next"
-            aria-label="{{ 'sections.slideshow.next_slideshow' | t }}"
-            aria-controls="Slider-{{ section.id }}">
-              {% comment %} {% render 'icon-newsletter-arrov' %} {% endcomment %}
-              {% render 'icon-caret' %}
-          </button>
-</div>
-{% endif %}
-          <noscript>
-            <div class="slider-buttons">
-              <div class="slider-counter">
-
-                <a
-                  href="#Slide-{{ section.id }}-{{ forloop.index }}"
-                  class="slider-counter__link link"
-                  aria-label="{{ 'sections.slideshow.load_slide' | t }} {{ forloop.index }} {{ 'general.slider.of' | t }} {{ forloop.length }}">
-                  {{ forloop.index }}
-                </a>
-
-              </div>
-            </div>
-          </noscript>
-
-        </slideshow-component>
-
-        {%- if request.design_mode -%}
-          <script src="{{ 'theme-editor.js' | asset_url }}" defer="defer"></script>
+        {%- if section.settings.products_slider_with_text_title != blank -%}
+          <h4 class="products-slider-with-text__left--title">
+            {{ section.settings.products_slider_with_text_title }}
+          </h4>
         {%- endif -%}
-
+        {%- if section.settings.products_slider_with_text_link_title != blank -%}
+          <a class="products-slider-with-text__left--link link-arrow" href="{{ section.settings.products_slider_with_text_link_url }}">
+            <span class="products-slider-with-text__left--link-text">
+              {{ section.settings.products_slider_with_text_link_title }}
+            </span>
+            {% render 'icon-link-arrow' %}
+          </a>
+        {%- endif -%}
       </div>
+    {%- endif -%}
+    <div class="products-slider-with-text__right">
+
+      <slideshow-component
+        class="slider-mobile-gutter"
+        role="region"
+        aria-roledescription="{{ 'sections.slideshow.carousel' | t }}"
+        aria-label="{{ section.settings.accessibility_info | escape }}">
+
+        <div
+          class="slideshow banner grid grid--1-col slider slider--everywhere"
+          id="Slider-{{ section.id }}"
+          style="{% if section.settings.products_slider_with_text_product_list.count == 1 %}justify-content: center;{% endif %}"
+          aria-live="polite"
+          aria-atomic="true">
+          {%- for product in section.settings.products_slider_with_text_product_list -%}
+            <div
+              class="slideshow__slide grid__item grid--1-col slider__slide "
+              id="Slide-{{ section.id }}-{{ forloop.index }}"
+              role="group"
+              {% if section.settings.products_slider_with_text_product_list.count == 1 %}
+              style="margin-right: 0;"
+              {% endif %}
+              aria-roledescription="{{ 'sections.slideshow.slide' | t }}"
+              aria-label="{{ forloop.index }} {{ 'general.slider.of' | t }} {{ forloop.length }}"
+              tabindex="-1">
+              {% render 'card-product'
+                ,
+ card_product: product
+                ,
+ media_aspect_ratio: 'adapt'
+                ,
+ extend_height: true
+                ,
+ placeholder_image: placeholder_image
+              %}
+            </div>
+          {%- endfor -%}
+        </div>
+
+        {% if section.settings.products_slider_with_text_product_list != blank and section.settings.products_slider_with_text_product_list.count != 1 %}
+          <div class="slider-button__box">
+            <button
+              type="button"
+              class="slider-button slider-button--prev products-slider-with-text__slider--prev"
+              name="previous"
+              aria-label="{{ 'sections.slideshow.previous_slideshow' | t }}"
+              aria-controls="Slider-{{ section.id }}">
+              {% comment %} {% render 'icon-newsletter-arrov' %} {% endcomment %}
+              {% render 'icon-caret' %}
+            </button>
+
+            <button
+              type="button"
+              class="slider-button slider-button--next products-slider-with-text__slider--next"
+              name="next"
+              aria-label="{{ 'sections.slideshow.next_slideshow' | t }}"
+              aria-controls="Slider-{{ section.id }}">
+              {% comment %} {% render 'icon-newsletter-arrov' %} {% endcomment %}
+              {% render 'icon-caret' %}
+            </button>
+          </div>
+        {% endif %}
+        <noscript>
+          <div class="slider-buttons">
+            <div class="slider-counter">
+
+              <a
+                href="#Slide-{{ section.id }}-{{ forloop.index }}"
+                class="slider-counter__link link"
+                aria-label="{{ 'sections.slideshow.load_slide' | t }} {{ forloop.index }} {{ 'general.slider.of' | t }} {{ forloop.length }}">
+                {{ forloop.index }}
+              </a>
+
+            </div>
+          </div>
+        </noscript>
+
+      </slideshow-component>
+
+      {%- if request.design_mode -%}
+        <script src="{{ 'theme-editor.js' | asset_url }}" defer="defer"></script>
+      {%- endif -%}
+
     </div>
-  {% comment %} </div> {% endcomment %}
+  </div>
+{% comment %} </div> {% endcomment %}
 </div>
 
 {% schema %}
