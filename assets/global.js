@@ -749,29 +749,10 @@ class SlideshowComponent extends SliderComponent {
           { once: true }
         );
       });
-    }
-
-    // if (this.isSlideVisible(this.sliderItemsToShow[0]) && this.slider.scrollLeft === 0) {
-    //   this.prevButton.setAttribute('disabled', 'disabled');
-    // } else {
-    //   this.prevButton.removeAttribute('disabled');
-    // }
-
-    // if (this.isSlideVisible(this.sliderItemsToShow[this.sliderItemsToShow.length - 1])) {
-    //   this.nextButton.setAttribute('disabled', 'disabled');
-    // } else {
-    //   this.nextButton.removeAttribute('disabled');
-    // }
-
-    
+    }  
 
     if (this.slider.getAttribute('data-autoplay') === 'true') this.setAutoPlay();
   }
-
-  // isSlideVisible(element, offset = 0) {
-  //   const lastVisibleSlide = this.slider.clientWidth + this.slider.scrollLeft - offset;
-  //   return element.offsetLeft + element.clientWidth <= lastVisibleSlide && element.offsetLeft >= this.slider.scrollLeft;
-  // }
 
   setAutoPlay() {
     this.autoplaySpeed = this.slider.dataset.speed * 1000;

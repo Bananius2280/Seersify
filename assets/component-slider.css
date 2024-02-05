@@ -361,6 +361,16 @@ slider-component.slider-component-full-width {
   justify-content: center;
 }
 
+.slider-button path {
+  stroke: rgba(var(--color-foreground));
+  transition: all 0.3s;
+}
+
+.slider-button[disabled="disabled"] path{
+  stroke: #AEAEAE;
+  transition: all 0.5s;
+}
+
 .slider-button:not([disabled]):hover {
   color: rgb(var(--color-foreground));
 }

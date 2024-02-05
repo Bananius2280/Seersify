@@ -188,8 +188,8 @@
     padding-bottom: 0 !important;
   }
 
- .blog-top .slider--tablet:after {
-    padding-left: 0 !important;
+  .blog-top .slider--tablet:after {
+    margin-left: -1.5rem;
   }
 }
 
