@@ -168,7 +168,7 @@
 }
 
 .article-template {
-  padding: 90px 0 80px;
+  padding: 90px 0 60px;
 }
 
 .article-template__left {
@@ -223,7 +223,7 @@
 
 @media screen and (min-width: 750px) {
   .article-template {
-    padding: 185px 0 155px;
+    padding: 185px 0 125px;
   }
 
   .article-template__hero-container {

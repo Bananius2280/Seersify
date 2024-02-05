@@ -439,6 +439,14 @@ blockquote {
   letter-spacing: 0.18rem;
 }
 
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  -webkit-box-shadow: 0 0 0 30px rgb(var(--color-background)) inset !important;
+  transition: unset !important;
+}
+
 .caption-large,
 .customer .field input,
 .customer select,
@@ -1162,6 +1170,10 @@ summary::-webkit-details-marker {
 
   .slider--tablet.grid--peek .grid__item:first-of-type {
     margin-left: 1.5rem;
+  }
+
+  .blog-top .slider--tablet.grid--peek .grid__item:first-of-type {
+    margin-left: 0;
   }
 
   .grid--2-col-tablet-down .grid__item {
@@ -2184,19 +2196,10 @@ product-info .loading__spinner:not(.hidden) ~ *,
 
 .cart-count-bubble {
   position: absolute;
-  /* background-color: rgb(var(--color-button));
-  color: rgb(var(--color-button-text)); */
-  /* height: 1.7rem;
-  width: 1.7rem; */
-  /* border-radius: 100%; */
   display: flex;
   justify-content: center;
   align-items: center;
-  /* font-size: 0.9rem; */
-  /* bottom: 0.8rem; */
-  /* left: 2.2rem; */
-  /* line-height: calc(1 + 0.1 / var(--font-body-scale)); */
-  right: -20px;
+  right: -25px;
   top: 0px;
 }
 
@@ -2561,7 +2564,7 @@ product-info .loading__spinner:not(.hidden) ~ *,
 
 @media screen and (min-width: 1400px) {
   .header--middle-right .header__inline-menu {
-    padding-right: 100px;
+    padding-right: 80px;
   }
 
   .header__icons {
@@ -2718,6 +2721,15 @@ product-info .loading__spinner:not(.hidden) ~ *,
   height: auto;
   margin: 0 22px;
   text-decoration: unset;
+  font-family: Poppins-Medium, sans-serif;
+  line-height: 140%;
+  letter-spacing: normal;
+}
+
+.header__icon--cart .header-cart__text:hover,
+.header__icon--account span:hover {
+  text-decoration: underline;
+  text-underline-offset: 0.3rem;
 }
 
 .header__icon--menu[aria-expanded='true']::before {
@@ -2941,21 +2953,13 @@ details[open] > .header__submenu {
 }
 
 .header__menu-item {
-  padding: 1.2rem;
+  padding: 1.2rem 2.1rem;
+  font-family: Poppins-Light, sans-serif;
+  letter-spacing: normal;
+  line-height: 140%;
   text-decoration: none;
-  color: rgba(var(--color-foreground), 0.75);
+  color: rgba(var(--color-foreground));
   text-transform: uppercase;
-}
-
-@media screen and (max-width: 1100px) {
-  .header__menu-item {
-    font-size: 12px;
-  }
-
-  .header__icon--cart,
-  .header__icon--account {
-    font-size: 12px;
-  }
 }
 
 @media screen and (max-width: 990px) {

@@ -66,9 +66,9 @@
   z-index: 0;
 }
 
-.products-slider-with-text__slider--prev {
+/* .products-slider-with-text__slider--prev {
   transform: rotate(180deg);
-}
+} */
 
 .slider-button__box {
   display: flex;

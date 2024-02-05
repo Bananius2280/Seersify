@@ -21,12 +21,23 @@
       ],
       "settings": {
         "section_color_scheme": "scheme-697f2590-b944-4775-9ae3-520302f27367",
-        "blog_show_date": true,
+        "blog_show_date": false,
         "blog_show_author": true
+      }
+    },
+    "newsletter_hnAQ8t": {
+      "type": "newsletter",
+      "settings": {
+        "section_color_scheme": "scheme-58e96f2d-5616-4dd8-b82d-ba401a29739b",
+        "newsletter_img": "shopify:\/\/shop_images\/13_8_Extend_newsletter_1_1.jpg",
+        "newsletter_title": "Subscribe to Seersify newsletter",
+        "newsletter_select": "right",
+        "newsletter_text": "For unique discounts and offers"
       }
     }
   },
   "order": [
-    "main"
+    "main",
+    "newsletter_hnAQ8t"
   ]
 }

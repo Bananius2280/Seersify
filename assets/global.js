@@ -672,6 +672,7 @@ class SliderComponent extends HTMLElement {
       );
     }
 
+
     if (this.enableSliderLooping) return;
 
     if (this.isSlideVisible(this.sliderItemsToShow[0]) && this.slider.scrollLeft === 0) {
@@ -715,7 +716,7 @@ class SlideshowComponent extends SliderComponent {
   constructor() {
     super();
     this.sliderControlWrapper = this.querySelector('.slider-buttons');
-    this.enableSliderLooping = true;
+    this.enableSliderLooping = false;
 
     if (!this.sliderControlWrapper) return;
 
@@ -750,8 +751,27 @@ class SlideshowComponent extends SliderComponent {
       });
     }
 
+    // if (this.isSlideVisible(this.sliderItemsToShow[0]) && this.slider.scrollLeft === 0) {
+    //   this.prevButton.setAttribute('disabled', 'disabled');
+    // } else {
+    //   this.prevButton.removeAttribute('disabled');
+    // }
+
+    // if (this.isSlideVisible(this.sliderItemsToShow[this.sliderItemsToShow.length - 1])) {
+    //   this.nextButton.setAttribute('disabled', 'disabled');
+    // } else {
+    //   this.nextButton.removeAttribute('disabled');
+    // }
+
+    
+
     if (this.slider.getAttribute('data-autoplay') === 'true') this.setAutoPlay();
   }
+
+  // isSlideVisible(element, offset = 0) {
+  //   const lastVisibleSlide = this.slider.clientWidth + this.slider.scrollLeft - offset;
+  //   return element.offsetLeft + element.clientWidth <= lastVisibleSlide && element.offsetLeft >= this.slider.scrollLeft;
+  // }
 
   setAutoPlay() {
     this.autoplaySpeed = this.slider.dataset.speed * 1000;
@@ -770,12 +790,15 @@ class SlideshowComponent extends SliderComponent {
     }
   }
 
+
+
   onButtonClick(event) {
     super.onButtonClick(event);
     this.wasClicked = true;
 
     const isFirstSlide = this.currentPage === 1;
     const isLastSlide = this.currentPage === this.sliderItemsToShow.length;
+
 
     if (!isFirstSlide && !isLastSlide) {
       this.applyAnimationToAnnouncementBar(event.currentTarget.name);
@@ -806,7 +829,7 @@ class SlideshowComponent extends SliderComponent {
   update() {
     super.update();
     this.sliderControlButtons = this.querySelectorAll('.slider-counter__link');
-    this.prevButton.removeAttribute('disabled');
+    // this.prevButton.removeAttribute('disabled');
 
     if (!this.sliderControlButtons.length) return;
 

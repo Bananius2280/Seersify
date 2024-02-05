@@ -53,7 +53,7 @@
       <slider-component class="blog-slider slider-mobile-gutter{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}">
         <ul
           id="Slider-{{ section.id }}"
-          class="blog__posts articles-wrapper contains-card contains-card--article{% if settings.blog_card_style == 'standard' %} contains-card--standard{% endif %} grid grid--peek grid--2-col-tablet grid--{{ section.settings.columns_desktop }}-col-desktop slider {% if posts_displayed > 2 %}slider--tablet{% else %}slider--mobile{% endif %}"
+          class="blog__posts articles-wrapper contains-card contains-card--article{% if settings.blog_card_style == 'standard' %} contains-card--standard{% endif %} grid grid--peek grid--2-col-tablet grid--3-col-desktop slider {% if posts_displayed > 2 %}slider--tablet{% else %}slider--mobile{% endif %}"
           role="list">
           {%- if section.settings.blog != blank and section.settings.blog.articles_count > 0 -%}
             {%- for article in section.settings.blog.articles limit: section.settings.post_limit -%}
@@ -237,14 +237,6 @@
         "step": 1,
         "default": 3,
         "label": "t:sections.featured-blog.settings.post_limit.label"
-      }, {
-        "type": "range",
-        "id": "columns_desktop",
-        "min": 1,
-        "max": 4,
-        "step": 1,
-        "default": 3,
-        "label": "t:sections.featured-blog.settings.columns_desktop.label"
       }, {
         "type": "checkbox",
         "id": "show_image",

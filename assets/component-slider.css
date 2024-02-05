@@ -374,12 +374,12 @@ slider-component.slider-component-full-width {
   cursor: not-allowed;
 }
 
-.slider-button--next .icon {
-  transform: rotate(-90deg);
+.slider-button--next .icon, .slider-button--next svg{
+  transform: rotate(0deg);
 }
 
-.slider-button--prev .icon {
-  transform: rotate(90deg);
+.slider-button--prev .icon, .slider-button--prev svg{
+  transform: rotate(180deg);
 }
 
 .slider-button--next:not([disabled]):hover .icon {

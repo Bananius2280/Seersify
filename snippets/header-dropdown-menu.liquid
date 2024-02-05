@@ -89,9 +89,9 @@
             {% endif %}
           >
             <span
-              {%- if link.current %}
+              {% comment %} {%- if link.current %}
                 class="header__active-menu-item"
-              {% endif %}
+              {% endif %} {% endcomment %}
             >
               {{- link.title | escape -}}
             </span>
