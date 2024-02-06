@@ -224,6 +224,10 @@
   }
 }
 
+.banner__media--first {
+  border-right: 1px solid #000;
+}
+
 .banner--adapt,
 .banner--adapt_image.banner--mobile-bottom .banner__media:not(.placeholder) {
   height: auto;
