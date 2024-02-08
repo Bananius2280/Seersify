@@ -3,11 +3,10 @@
     "main": {
       "type": "main-product",
       "blocks": {
-        "vendor": {
+        "text_bngWMf": {
           "type": "text",
           "settings": {
-            "text": "30 ml",
-            "text_style": "body"
+            "text": "Text block"
           }
         },
         "title": {
@@ -15,9 +14,39 @@
           "settings": {
           }
         },
-        "price": {
-          "type": "price",
+        "description": {
+          "type": "description",
           "settings": {
+            "collapsible_description": true,
+            "description_heading": "Description",
+            "description_icon": "none"
+          }
+        },
+        "collapsible_tab_MzpKk8": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Ingredients",
+            "icon": "none",
+            "content": "<p>Enriched with a potent combination of Niacinamide and Ceramide Complex, our serum strengthens your skin barrier, fostering radiance and promoting a healthy complexion. Enjoy immediate and enduring hydration, delivered by both high and low molecular weight. Hyaluronic Acid, leaving your skin feeling supple and nourished.Infused with N.Benthamiana, an Australian native nicotine plant known for its skin-renewing properties, this serum rewinds the skin to a more flawless and resilient complexion. <\/p>",
+            "page": ""
+          }
+        },
+        "collapsible_tab_LaJDJa": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "How to use",
+            "icon": "none",
+            "content": "<p>Enriched with a potent combination of Niacinamide and Ceramide Complex, our serum strengthens your skin barrier, fostering radiance and promoting a healthy complexion. Enjoy immediate and enduring hydration, delivered by both high and low molecular weight. Hyaluronic Acid, leaving your skin feeling supple and nourished.Infused with N.Benthamiana, an Australian native nicotine plant known for its skin-renewing properties, this serum rewinds the skin to a more flawless and resilient complexion. <\/p>",
+            "page": ""
+          }
+        },
+        "collapsible_tab_rBYNd8": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Suitable for",
+            "icon": "none",
+            "content": "<p>Enriched with a potent combination of Niacinamide and Ceramide Complex, our serum strengthens your skin barrier, fostering radiance and promoting a healthy complexion. Enjoy immediate and enduring hydration, delivered by both high and low molecular weight. Hyaluronic Acid, leaving your skin feeling supple and nourished.Infused with N.Benthamiana, an Australian native nicotine plant known for its skin-renewing properties, this serum rewinds the skin to a more flawless and resilient complexion. <\/p>",
+            "page": ""
           }
         },
         "variant_picker": {
@@ -26,74 +55,37 @@
             "picker_type": "button"
           }
         },
-        "quantity_selector": {
-          "type": "quantity_selector",
-          "settings": {
-          }
-        },
         "buy_buttons": {
           "type": "buy_buttons",
           "settings": {
-            "show_dynamic_checkout": true,
+            "show_dynamic_checkout": false,
             "show_gift_card_recipient": true
-          }
-        },
-        "description": {
-          "type": "description",
-          "settings": {
-          }
-        },
-        "share": {
-          "type": "share",
-          "settings": {
-            "share_label": "Share"
-          }
-        },
-        "collapsible_tab_3zU7R4": {
-          "type": "collapsible_tab",
-          "settings": {
-            "heading": "Collapsible row",
-            "icon": "check_mark",
-            "content": "",
-            "page": ""
-          }
-        },
-        "collapsible_tab_rBYNd8": {
-          "type": "collapsible_tab",
-          "settings": {
-            "heading": "Collapsible row",
-            "icon": "check_mark",
-            "content": "",
-            "page": ""
           }
         }
       },
       "block_order": [
-        "vendor",
+        "text_bngWMf",
         "title",
-        "price",
-        "variant_picker",
-        "quantity_selector",
-        "buy_buttons",
         "description",
-        "share",
-        "collapsible_tab_3zU7R4",
-        "collapsible_tab_rBYNd8"
+        "collapsible_tab_MzpKk8",
+        "collapsible_tab_LaJDJa",
+        "collapsible_tab_rBYNd8",
+        "variant_picker",
+        "buy_buttons"
       ],
       "settings": {
         "enable_sticky_info": true,
-        "color_scheme": "background-1",
-        "media_size": "medium",
+        "color_scheme": "scheme-697f2590-b944-4775-9ae3-520302f27367",
+        "media_size": "large",
         "constrain_to_viewport": false,
         "media_fit": "contain",
         "gallery_layout": "thumbnail_slider",
-        "media_position": "left",
         "image_zoom": "lightbox",
         "mobile_thumbnails": "hide",
         "hide_variants": true,
         "enable_video_looping": false,
-        "padding_top": 36,
-        "padding_bottom": 12
+        "padding_top": 0,
+        "padding_bottom": 0
       }
     },
     "related-products": {

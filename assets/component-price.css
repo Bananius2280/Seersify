@@ -99,3 +99,19 @@
   text-transform: uppercase;
   color: rgba(var(--color-foreground), 0.7);
 }
+
+.price-item__mixup--first {
+  display: none;
+}
+
+.price-item__mixup--second {
+  display: block;
+}
+
+.product .price-item__mixup--first{
+  display: block;
+}
+
+.product .price-item__mixup--second {
+  display: none;
+}
