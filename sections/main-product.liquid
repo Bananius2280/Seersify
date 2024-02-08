@@ -64,6 +64,9 @@
   {% comment %} <div class="page-width"> {% endcomment %}
     <div class="product product--{{ section.settings.media_size }} product--left product--{{ section.settings.gallery_layout }} product--mobile-{{ section.settings.mobile_thumbnails }} grid grid--1-col {% if product.media.size > 0 %}grid--2-col-tablet{% else %}product--no-media{% endif %}">
     <div class="grid__item product-img product__media-wrapper">
+    {% if section.settings.product_breadcrumbs %}
+      {%- render 'breadcrumbs' -%}
+    {% endif %}
       {% render 'product-media-gallery', variant_images: variant_images %}
     </div>
     <div class="product__info-wrapper product-content grid__item{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}">
@@ -2241,10 +2244,6 @@
       "id": "media_size",
       "options": [
         {
-          "value": "small",
-          "label": "t:sections.main-product.settings.media_size.options__1.label"
-        },
-        {
           "value": "medium",
           "label": "t:sections.main-product.settings.media_size.options__2.label"
         },
@@ -2355,6 +2354,12 @@
       "id": "enable_video_looping",
       "default": false,
       "label": "t:sections.main-product.settings.enable_video_looping.label"
+    },
+    {
+      "type": "checkbox",
+      "id": "product_breadcrumbs",
+      "default": true,
+      "label": "Breadcrumbs"
     },
     {
       "type": "header",

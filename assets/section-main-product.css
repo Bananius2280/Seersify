@@ -500,6 +500,10 @@ a.product__text {
   text-transform: uppercase;
 }
 
+.section-main-product .product .product-img {
+  position: relative;
+}
+
 @media screen and (min-width: 1670px) {
   .section-main-product .product__info-wrapper {
     margin-right: auto;
@@ -514,7 +518,7 @@ a.product__text {
   }
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1220px) {
   .section-main-product .product {
     display: block;
   }
