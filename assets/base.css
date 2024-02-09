@@ -313,16 +313,24 @@ h5,
 
 h1,
 .h1 {
-  font-size: 120px;
+  font-size: 60px;
   line-height: 108%;
   letter-spacing: -2.4px;
 }
 
-@media only screen and (min-width: 750px) {
-  /* h1,
+@media only screen and (min-width: 950px) {
+  h1,
   .h1 {
     font-size: 120px;
-  } */
+  }
+}
+
+@media only screen and (max-width: 749px) {
+
+  h1,
+  .h1 {
+    font-size: 45px;
+  }
 }
 
 h2,
@@ -2446,7 +2454,7 @@ product-info .loading__spinner:not(.hidden) ~ *,
 
 /* section-header */
 .section-header.shopify-section-group-header-group {
-  z-index: 3;
+  z-index: 5;
 }
 
 .shopify-section-header-sticky {

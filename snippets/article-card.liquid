@@ -75,7 +75,7 @@
         {%- endif -%}
         <div class="card__content">
           <div class="card__information">
-            <h3 class="card__heading{% if show_excerpt %} h5{% endif %}">
+            <h3 class="card__heading h5">
               <a href="{{ article.url }}" class="full-unstyled-link">
                 {{ article.title | truncate: 75 | escape }}
               </a>
@@ -87,6 +87,9 @@
               {%- if show_author -%}
                 <p>{{ article.author }}</p>
               {%- endif -%}
+              {% if section.settings.show_tags %}
+                <p>{{ article.tags }}</p>
+              {% endif %}
             </div>
             {%- if show_excerpt -%}
               {%- if article.excerpt.size > 0 or article.content.size > 0 -%}
@@ -121,8 +124,15 @@
             {%- if show_author -%}
               <p>{{ article.author }}</p>
             {%- endif -%}
+            {% if section.settings.show_tags %}
+              <div class="card__information-tags">
+              {% for tag in article.tags %}
+                <p>{{ tag }}</p>
+              {% endfor %}
+              </div>
+            {% endif %}
           </div>
-          <h3 class="card__heading{% if show_excerpt %} h5{% endif %}">
+          <h3 class="card__heading h5">
             <a href="{{ article.url }}" class="full-unstyled-link">
               {{ article.title | truncate: 75 | escape }}
             </a>

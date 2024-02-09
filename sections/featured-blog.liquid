@@ -106,9 +106,6 @@
                           <h3 class="card__heading h5">
                             {{ 'sections.featured_blog.onboarding_title' | t }}
                           </h3>
-                        {% comment %} <p class="article-card__excerpt rte-width">
-                                                                                                                                                                                                                                                                    {{ 'sections.featured_blog.onboarding_content' | t }}
-                                                                                                                                                                                                                                                </p> {% endcomment %}
                         </div>
                       </div>
                     </div>
@@ -118,9 +115,6 @@
                         <h3 class="card__heading h5">
                           {{ 'sections.featured_blog.onboarding_title' | t }}
                         </h3>
-                      {% comment %} <p class="article-card__excerpt rte-width">
-                                                                                                                                                                                                                                                {{ 'sections.featured_blog.onboarding_content' | t }}
-                                                                                                                                                                                                                            </p> {% endcomment %}
                       </div>
                     </div>
                   </div>
@@ -253,6 +247,11 @@
         "id": "show_author",
         "default": false,
         "label": "t:sections.featured-blog.settings.show_author.label"
+      }, {
+        "type": "checkbox",
+        "id": "show_tags",
+        "default": false,
+        "label": "Show tags"
       }, {
         "type": "checkbox",
         "id": "show_excerpt",

@@ -56,6 +56,12 @@
   padding-top: 0.4rem;
 }
 
+.card__information-tags {
+  display: flex;
+  column-gap: 5px;
+  flex-wrap: wrap;
+}
+
 .article-card__footer {
   letter-spacing: 0.1rem;
   font-size: 1.4rem;
@@ -162,6 +168,10 @@
 .blog-top .article-card__info p {
   margin: 0;
   text-transform: uppercase;
+}
+
+.blog-top .article-card__info  .circle-divider:after {
+  display: none;
 }
 
 .blog-top .article-card__info {
