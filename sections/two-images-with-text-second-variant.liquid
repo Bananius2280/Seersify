@@ -16,33 +16,41 @@
   <div class="page-width">
     <div class="two-images-with-text-second__box">
       <div class="two-images-with-text-second__left">
-        <div class="two-images-with-text-second__left--top">
+        {%- if section.settings.img != blank -%}
+          <div class="two-images-with-text-second__left--top">
+            <img
+              class="two-images-with-text-second__left--img"
+              src="{{ section.settings.img | image_url: width: 660 }}"
+              alt="{{ section.settings.img.alt | escape }}"
+              width="330"
+              height="380"
+              loading="lazy">
+          </div>
+        {%- endif -%}
+        <div class="two-images-with-text-second__left--bottom">
+          {%- if section.settings.title != blank -%}
+            <h4 class="two-images-with-text-second__left--bottom-title">
+              {{ section.settings.title }}
+            </h4>
+          {%- endif -%}
+          {%- if section.settings.text != blank -%}
+            <p class="two-images-with-text-second__left--bottom-text">
+              {{ section.settings.text }}
+            </p>
+          {%- endif -%}
+        </div>
+      </div>
+      {%- if section.settings.large_img != blank -%}
+        <div class="two-images-with-text-second__right">
           <img
-            class="two-images-with-text-second__left--img"
-            src="{{ section.settings.img | image_url: width: 660 }}"
-            alt="{{ section.settings.img.alt | escape }}"
-            width="330"
-            height="380"
+            class="two-images-with-text-second__right--img"
+            src="{{ section.settings.large_img | image_url: width: 1440 }}"
+            alt="{{ section.settings.large_img.alt | escape }}"
+            width="720"
+            height="850"
             loading="lazy">
         </div>
-        <div class="two-images-with-text-second__left--bottom">
-          <h4 class="two-images-with-text-second__left--bottom-title">
-            {{ section.settings.title }}
-          </h4>
-          <p class="two-images-with-text-second__left--bottom-text">
-            {{ section.settings.text }}
-          </p>
-        </div>
-      </div>
-      <div class="two-images-with-text-second__right">
-        <img
-          class="two-images-with-text-second__right--img"
-          src="{{ section.settings.large_img | image_url: width: 1440 }}"
-          alt="{{ section.settings.large_img.alt | escape }}"
-          width="720"
-          height="850"
-          loading="lazy">
-      </div>
+      {%- endif -%}
     </div>
   </div>
 </div>
