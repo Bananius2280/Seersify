@@ -1,0 +1,123 @@
+{{ 'section-two-images-with-text-second-variant.css' | asset_url | stylesheet_tag }}
+
+{%- style -%}
+  .two-images-with-text-second__left--img {
+    max-width: {{ section.settings.width_img }}px;
+  }
+
+  @media screen and (min-width: 1000px) {
+    .two-images-with-text-second__left--bottom {
+      max-width: {{ section.settings.width_text }}px;
+    }
+  }
+{%- endstyle -%}
+
+<div class="two-images-with-text-second color-{{ section.settings.section_color_scheme }}{% if section.settings.show_top_border %} main-top__border{% endif %}{% if section.settings.show_bottom_border %} main-bottom__border{% endif %}">
+  <div class="page-width">
+    <div class="two-images-with-text-second__box">
+      <div class="two-images-with-text-second__left">
+        <div class="two-images-with-text-second__left--top">
+          <img
+            class="two-images-with-text-second__left--img"
+            src="{{ section.settings.img | image_url: width: 660 }}"
+            alt="{{ section.settings.img.alt | escape }}"
+            width="330"
+            height="380"
+            loading="lazy">
+        </div>
+        <div class="two-images-with-text-second__left--bottom">
+          <h4 class="two-images-with-text-second__left--bottom-title">
+            {{ section.settings.title }}
+          </h4>
+          <p class="two-images-with-text-second__left--bottom-text">
+            {{ section.settings.text }}
+          </p>
+        </div>
+      </div>
+      <div class="two-images-with-text-second__right">
+        <img
+          class="two-images-with-text-second__right--img"
+          src="{{ section.settings.large_img | image_url: width: 1440 }}"
+          alt="{{ section.settings.large_img.alt | escape }}"
+          width="720"
+          height="850"
+          loading="lazy">
+      </div>
+    </div>
+  </div>
+</div>
+
+{% schema %}
+  {
+    "name": "Two img & text second var",
+    "class": "two-images-with-text-second-variant-section",
+    "settings": [
+      {
+        "type": "color_scheme",
+        "id": "section_color_scheme",
+        "label": "Color scheme",
+        "default": "background-1"
+      },
+      {
+        "type": "header",
+        "content": "Left-hand side"
+      },
+      {
+        "type": "image_picker",
+        "id": "img",
+        "label": "Image"
+      },
+      {
+        "type": "range",
+        "id": "width_img",
+        "min": 250,
+        "max": 350,
+        "step": 5,
+        "unit": "px",
+        "label": "Max width img",
+        "default": 270
+      }, {
+        "type": "text",
+        "id": "title",
+        "label": "Title",
+        "default": "Title"
+      }, {
+        "type": "textarea",
+        "id": "text",
+        "label": "Text",
+        "default": "Welcome to my shop!"
+      }, {
+        "type": "range",
+        "id": "width_text",
+        "min": 350,
+        "max": 450,
+        "step": 5,
+        "unit": "px",
+        "label": "Max width text",
+        "default": 370
+      }, {
+        "type": "header",
+        "content": "Right-hand side"
+      }, {
+        "type": "image_picker",
+        "id": "large_img",
+        "label": "Image"
+      }, {
+        "type": "checkbox",
+        "id": "show_top_border",
+        "label": "Show top border",
+        "default": false
+      }, {
+        "type": "checkbox",
+        "id": "show_bottom_border",
+        "label": "Show bottom border",
+        "default": false
+      }
+    ],
+    "presets": [
+      {
+        "name": "Two img & text second var"
+      }
+    ]
+  }
+{% endschema %}
