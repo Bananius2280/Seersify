@@ -30,12 +30,12 @@
         <div class="two-images-with-text-second__left--bottom">
           {%- if section.settings.title != blank -%}
             <h4 class="two-images-with-text-second__left--bottom-title">
-              {{ section.settings.title }}
+              {{ section.settings.title | escape }}
             </h4>
           {%- endif -%}
           {%- if section.settings.text != blank -%}
             <p class="two-images-with-text-second__left--bottom-text">
-              {{ section.settings.text }}
+              {{ section.settings.text | escape }}
             </p>
           {%- endif -%}
         </div>

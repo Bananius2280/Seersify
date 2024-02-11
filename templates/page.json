@@ -2,13 +2,81 @@
   "sections": {
     "main": {
       "type": "main-page",
+      "disabled": true,
       "settings": {
         "padding_top": 28,
         "padding_bottom": 28
       }
+    },
+    "rich_text_ibrURW": {
+      "type": "rich-text",
+      "blocks": {
+        "caption_CXPhFX": {
+          "type": "caption",
+          "settings": {
+            "caption": "WHAT TO EXPECT from seersify?"
+          }
+        },
+        "heading_3AzkXh": {
+          "type": "heading",
+          "settings": {
+            "heading": "Luxurious, fast absorbing, and with best-in-class results, all Seersify products are formulated by a team of cosmetic chemists and scientists",
+            "heading_size": "h3"
+          }
+        },
+        "text_BWy94y": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Along with the help of technology, Seersify aims to simplify product formulations and create a skin routine that’s right for you, making the seemingly complex, simple. Seersify combines the beautiful qualities of organic and natural ingredients with scientifically proven formulas to create a perfect balance of high-performing hybrid products which offer your skin more than meets the eye.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "caption_CXPhFX",
+        "heading_3AzkXh",
+        "text_BWy94y"
+      ],
+      "settings": {
+        "color_scheme": "scheme-096ef13d-47e0-4091-a6e3-1669a5b9bf1d",
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "padding_top": 70,
+        "padding_bottom": 120,
+        "show_top_border": false,
+        "show_bottom_border": false
+      }
+    },
+    "two_images_with_text_second_variant_3TPBfH": {
+      "type": "two-images-with-text-second-variant",
+      "settings": {
+        "section_color_scheme": "scheme-697f2590-b944-4775-9ae3-520302f27367",
+        "img": "shopify:\/\/shop_images\/FAQ_8.jpg",
+        "width_img": 330,
+        "title": "Nature-infused skincare science",
+        "text": "The Seersify formulas are based on the skin as a living organ, providing it with nutrients to thrive, and the efficacy of formulas is a true merge of science and nature with transparency being Seersify’s guiding light.",
+        "width_text": 420,
+        "large_img": "shopify:\/\/shop_images\/9_1.jpg",
+        "show_top_border": false,
+        "show_bottom_border": false
+      }
+    },
+    "two_images_with_text_third_variant_Wywh6M": {
+      "type": "two-images-with-text-third-variant",
+      "settings": {
+        "section_color_scheme": "scheme-697f2590-b944-4775-9ae3-520302f27367",
+        "title": "Seersify wants you to do more with less",
+        "large_img": "shopify:\/\/shop_images\/9_1_1.jpg",
+        "img": "shopify:\/\/shop_images\/32.jpg",
+        "text": "Add a balanced life that encompasses healthy living and a healthy approach to beauty, Seersify is a holistic beauty brand with scientific knowledge and innovative ingredients as the vantage point.",
+        "show_top_border": false,
+        "show_bottom_border": false
+      }
     }
   },
   "order": [
-    "main"
+    "main",
+    "rich_text_ibrURW",
+    "two_images_with_text_second_variant_3TPBfH",
+    "two_images_with_text_third_variant_Wywh6M"
   ]
 }

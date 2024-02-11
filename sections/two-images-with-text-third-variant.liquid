@@ -1,0 +1,102 @@
+{{ 'section-two-images-with-text-third-variant.css' | asset_url | stylesheet_tag }}
+
+<div class="two-images-with-text-third color-{{ section.settings.section_color_scheme }}{% if section.settings.show_top_border %} main-top__border{% endif %}{% if section.settings.show_bottom_border %} main-bottom__border{% endif %}">
+  <div class="page-width">
+    <div class="two-images-with-text-third__box">
+      {%- if section.settings.title != blank -%}
+        <div class="two-images-with-text-third__left">
+          <h4 class="two-images-with-text-third__left--title">
+            {{ section.settings.title | escape }}
+          </h4>
+        </div>
+      {%- endif -%}
+      {%- if section.settings.large_img != blank -%}
+        <div class="two-images-with-text-third__center">
+          <img
+            class="two-images-with-text-third__center--large-img"
+            src="{{ section.settings.large_img | image_url: width: 1540 }}"
+            alt="{{ section.settings.large_img.alt | escape }}"
+            width="770"
+            height="900"
+            loading="lazy">
+          {%- if section.settings.img != blank -%}
+            <img
+              class="two-images-with-text-third__center--img"
+              src="{{ section.settings.img | image_url: width: 660 }}"
+              alt="{{ section.settings.img.alt | escape }}"
+              width="330"
+              height="380"
+              loading="lazy">
+          {%- endif -%}
+        </div>
+      {%- endif -%}
+      <div class="two-images-with-text-third__right">
+        {%- if section.settings.text -%}
+          <p class="two-images-with-text-third__left--text">
+            {{ section.settings.text | escape }}
+          </p>
+        {%- endif -%}
+      </div>
+    </div>
+  </div>
+</div>
+
+{% schema %}
+  {
+    "name": "Two img & text third var",
+    "class": "two-images-with-text-third-variant-section",
+    "settings": [
+      {
+        "type": "color_scheme",
+        "id": "section_color_scheme",
+        "label": "Color scheme",
+        "default": "background-1"
+      },
+      {
+        "type": "header",
+        "content": "Left-hand side"
+      },
+      {
+        "type": "text",
+        "id": "title",
+        "label": "Title",
+        "default": "Title"
+      },
+      {
+        "type": "header",
+        "content": "Middle-hand side"
+      }, {
+        "type": "image_picker",
+        "id": "large_img",
+        "label": "Image"
+      }, {
+        "type": "image_picker",
+        "id": "img",
+        "label": "Small image"
+      }, {
+        "type": "header",
+        "content": "Right-hand side"
+      }, {
+        "type": "textarea",
+        "id": "text",
+        "label": "Text",
+        "default": "Text"
+      }, {
+        "type": "checkbox",
+        "id": "show_top_border",
+        "label": "Show top border",
+        "default": false
+      }, {
+        "type": "checkbox",
+        "id": "show_bottom_border",
+        "label": "Show bottom border",
+        "default": false
+      }
+    ],
+    "presets": [
+      {
+        "name": "Two img & text third var"
+      }
+    ]
+  }
+{% endschema %}
