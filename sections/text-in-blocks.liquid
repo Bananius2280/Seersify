@@ -1,0 +1,94 @@
+{{ 'section-text-in-blocks.css' | asset_url | stylesheet_tag }}
+
+<div class="text-in-blocks color-{{ section.settings.section_color_scheme }}{% if section.settings.show_top_border %} main-top__border{% endif %}{% if section.settings.show_bottom_border %} main-bottom__border{% endif %}">
+  <div class="page-width">
+    <div class="text-in-blocks__items">
+      {%- for block in section.blocks -%}
+        {%- case block.type -%}
+          {% when 'heading' %}
+            {%- if block.settings.title != blank -%}
+              <div class="text-in-blocks__item text-in-blocks__item--box-heading">
+                <h4 class="text-in-blocks__item--heading">
+                  {{ block.settings.title | escape }}
+                </h4>
+              </div>
+            {%- endif -%}
+          {% when 'text' %}
+            <div class="text-in-blocks__item">
+              {%- if block.settings.block_title != blank -%}
+                <h5 class="text-in-blocks__item--title">
+                  {{ block.settings.block_title | escape }}
+                </h5>
+              {%- endif -%}
+              {%- if block.settings.block_text != blank -%}
+                <p class="text-in-blocks__item--text">
+                  {{ block.settings.block_text | escape }}
+                </p>
+              {%- endif -%}
+            </div>
+        {%- endcase -%}
+      {%- endfor -%}
+    </div>
+  </div>
+</div>
+{% schema %}
+  {
+    "name": "Text in blocks",
+    "class": "text-in-blocks-section",
+    "settings": [
+      {
+        "type": "color_scheme",
+        "id": "section_color_scheme",
+        "label": "Color scheme",
+        "default": "background-1"
+      }, {
+        "type": "checkbox",
+        "id": "show_top_border",
+        "label": "Show top border",
+        "default": false
+      }, {
+        "type": "checkbox",
+        "id": "show_bottom_border",
+        "label": "Show bottom border",
+        "default": false
+      }
+    ],
+    "blocks": [
+      {
+        "type": "heading",
+        "name": "Title",
+        "limit": 1,
+        "settings": [
+          {
+            "type": "text",
+            "id": "title",
+            "label": "Title",
+            "default": "Title"
+          }
+        ]
+      }, {
+        "type": "text",
+        "name": "Text",
+        "limit": 5,
+        "settings": [
+          {
+            "type": "text",
+            "id": "block_title",
+            "label": "Title",
+            "default": "Title"
+          }, {
+            "type": "textarea",
+            "id": "block_text",
+            "label": "Text",
+            "default": "Text"
+          }
+        ]
+      }
+    ],
+    "presets": [
+      {
+        "name": "Text in blocks"
+      }
+    ]
+  }
+{% endschema %}
