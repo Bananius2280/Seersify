@@ -3,7 +3,7 @@
 <div class="background-image-with-text color-{{ section.settings.section_color_scheme }}{% if section.settings.show_top_border %} main-top__border{% endif %}{% if section.settings.show_bottom_border %} main-bottom__border{% endif %}">
   {%- if section.settings.background_image_with_text_img != blank -%}
     <img
-      class="background-image-with-text__img"
+      class="background-image-with-text__img background-image-with-text__img--{{ section.settings.background_image_with_text_select }}"
       src="{{ section.settings.background_image_with_text_img | image_url: width: 3840 }}"
       alt="{{ section.settings.background_image_with_text_img.alt | escape }}"
       width="1920"
@@ -18,11 +18,33 @@
             {{ section.settings.background_image_with_text_title }}
           </p>
         {%- endif -%}
-        {%- if section.settings.background_image_with_text_text != blank -%}
-          <h4 class="background-image-with-text__box--text">
-            {{ section.settings.background_image_with_text_text }}
-          </h4>
-        {%- endif -%}
+
+        <h4 class="background-image-with-text__box--text">
+          {%- if section.settings.text_1 != blank -%}
+            <span>{{ section.settings.text_1 }}</span>
+          {%- endif -%}
+          {%- if section.settings.text_2 != blank -%}
+            <span>{{ section.settings.text_2 }}</span>
+          {%- endif -%}
+          {%- if section.settings.text_3 != blank -%}
+            <span>{{ section.settings.text_3 }}</span>
+          {%- endif -%}
+          {%- if section.settings.text_4 != blank -%}
+            <span>{{ section.settings.text_4 }}</span>
+          {%- endif -%}
+          {%- if section.settings.text_5 != blank -%}
+            <span>{{ section.settings.text_5 }}</span>
+          {%- endif -%}
+          {%- if section.settings.text_6 != blank -%}
+            <span>{{ section.settings.text_6 }}</span>
+          {%- endif -%}
+          {%- if section.settings.text_7 != blank -%}
+            <span>{{ section.settings.text_7 }}</span>
+          {%- endif -%}
+          {%- if section.settings.text_8 != blank -%}
+            <span>{{ section.settings.text_8 }}</span>
+          {%- endif -%}
+        </h4>
       </div>
     </div>
   {%- endif -%}
@@ -52,11 +74,49 @@
         "default": "Title"
       },
       {
-        "type": "textarea",
-        "id": "background_image_with_text_text",
-        "label": "Text",
-        "default": "Text"
+        "type": "text",
+        "id": "text_1",
+        "label": "First title",
+        "default": "First title"
       }, {
+        "type": "text",
+        "id": "text_2",
+        "label": "Second title",
+        "default": "Second title"
+      }, {
+        "type": "text",
+        "id": "text_3",
+        "label": "Third title",
+        "default": "Third title"
+      }, {
+        "type": "text",
+        "id": "text_4",
+        "label": "Fourth title",
+        "default": "Fourth title"
+      }, {
+        "type": "text",
+        "id": "text_5",
+        "label": "Fifth title",
+        "default": "Fifth title"
+      }, {
+        "type": "text",
+        "id": "text_6",
+        "label": "Sixth title",
+        "default": "Sixth title"
+      },
+      {
+        "type": "text",
+        "id": "text_7",
+        "label": "Seventh title",
+        "default": "Seventh title"
+      },
+      {
+        "type": "text",
+        "id": "text_8",
+        "label": "Eighth title",
+        "default": "Eighth title"
+      },
+       {
         "type": "radio",
         "id": "background_image_with_text_select",
         "label": "Desktop text position",

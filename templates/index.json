@@ -50,7 +50,8 @@
         "announcement_TJnbCG": {
           "type": "announcement",
           "settings": {
-            "text": "NATURE-INFUSED SKINCARE SCIENCE     NATURE-INFUSED SKINCARE SCIENCE     NATURE-INFUSED SKINCARE SCIENCE     NATURE-INFUSED SKINCARE SCIENCE     NATURE-INFUSED SKINCARE SCIENCE     NATURE-INFUSED SKINCARE SCIENCE     NATURE-INFUSED SKINCARE SCIENCE     N",
+            "text": "NATURE-INFUSED SKINCARE SCIENCE",
+            "checkbox_text": true,
             "link": ""
           }
         }
@@ -124,7 +125,7 @@
       "type": "products-slider-with-text",
       "settings": {
         "section_color_scheme": "scheme-697f2590-b944-4775-9ae3-520302f27367",
-        "products_slider_with_text_title": "Designed to turn up your skin’s natural brightness, hydrate, gently exfoliate, firm and protect",
+        "products_slider_with_text_title": "Designed to turn up your skin's natural brightness, hydrate, gently exfoliate, firm and protect",
         "products_slider_with_text_link_title": "VIEW ALL",
         "products_slider_with_text_link_url": "",
         "products_slider_with_text_product_list": [
@@ -196,10 +197,17 @@
         "section_color_scheme": "scheme-58e96f2d-5616-4dd8-b82d-ba401a29739b",
         "background_image_with_text_img": "shopify:\/\/shop_images\/8_4_2_1.jpg",
         "background_image_with_text_title": "KEY INGREDIENTS",
-        "background_image_with_text_text": "Hyaluronic Acid\nNiacinamide\nAscorbyl Glucoside\nCaviar Lime\nCeramide Complex\nN.Benthamiana Peptide",
+        "text_1": "Hyaluronic Acid",
+        "text_2": "Niacinamide",
+        "text_3": "Ascorbyl Glucoside",
+        "text_4": "Caviar Lime",
+        "text_5": "Ceramide Complex",
+        "text_6": "N.Benthamiana Peptide",
+        "text_7": "",
+        "text_8": "",
         "background_image_with_text_select": "right",
         "show_top_border": false,
-        "show_bottom_border": false
+        "show_bottom_border": true
       }
     },
     "images_with_text_yNLJY3": {
@@ -227,7 +235,7 @@
           "type": "slide",
           "settings": {
             "slider_with_text_smal_title": "REVIEWS",
-            "slider_with_text_title": "“As a beauty enthusiast, I am always on the lookout for products that not only promise radiant skin but also deliver noticeable results. Seersify Cosmetics Serum certainly lives up to the hype.”",
+            "slider_with_text_title": "\"As a beauty enthusiast, I am always on the lookout for products that not only promise radiant skin but also deliver noticeable results. Seersify Cosmetics Serum certainly lives up to the hype.\"",
             "slider_with_text_smal_text": "-  Ann Brown"
           }
         },
@@ -235,7 +243,7 @@
           "type": "slide",
           "settings": {
             "slider_with_text_smal_title": "REVIEWS",
-            "slider_with_text_title": "“As a beauty enthusiast, I am always on the lookout for products that not only promise radiant skin but also deliver noticeable results. Seersify Cosmetics Serum certainly lives up to the hype.”",
+            "slider_with_text_title": "\"As a beauty enthusiast, I am always on the lookout for products that not only promise radiant skin but also deliver noticeable results. Seersify Cosmetics Serum certainly lives up to the hype.\"",
             "slider_with_text_smal_text": "-  Ann Brown"
           }
         },
@@ -243,7 +251,7 @@
           "type": "slide",
           "settings": {
             "slider_with_text_smal_title": "REVIEWS",
-            "slider_with_text_title": "“As a beauty enthusiast, I am always on the lookout for products that not only promise radiant skin but also deliver noticeable results. Seersify Cosmetics Serum certainly lives up to the hype.”",
+            "slider_with_text_title": "\"As a beauty enthusiast, I am always on the lookout for products that not only promise radiant skin but also deliver noticeable results. Seersify Cosmetics Serum certainly lives up to the hype.\"",
             "slider_with_text_smal_text": "-  Ann Brown"
           }
         }
@@ -316,6 +324,7 @@
         "show_image": true,
         "show_date": false,
         "show_author": true,
+        "show_tags": false,
         "show_excerpt": false,
         "instagram_title": "Follow our journey",
         "instagram_title_size": "h4",

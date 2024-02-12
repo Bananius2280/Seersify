@@ -4,7 +4,7 @@
 <div class="newsletter color-{{ section.settings.section_color_scheme }}{% if section.settings.show_top_border %} main-top__border{% endif %}{% if section.settings.show_bottom_border %} main-bottom__border{% endif %}">
   {%- if section.settings.newsletter_img != blank -%}
     <img
-      class="newsletter-img"
+      class="newsletter-img newsletter-img--{{ section.settings.newsletter_select }}"
       src="{{ section.settings.newsletter_img | image_url: width: 3840 }}"
       alt="{{ section.settings.newsletter_img.alt | escape }}"
       width="1920"

@@ -2384,6 +2384,15 @@ product-info .loading__spinner:not(.hidden) ~ *,
   justify-content: center;
 }
 
+.announcement-bar__message--checkbox {
+  flex-direction: unset;
+  align-items: center;
+}
+
+.announcement-bar__message--checkbox span + span {
+  margin-left: 15px;
+}
+
 @media screen and (min-width: 750px) {
   .announcement-bar__message {
     font-size: 19px;
@@ -2392,6 +2401,10 @@ product-info .loading__spinner:not(.hidden) ~ *,
   .announcement-bar,
   .announcement-bar__announcement {
     min-height: 80px;
+  }
+
+  .announcement-bar__message--checkbox span+span {
+    margin-left: 20px;
   }
 }
 

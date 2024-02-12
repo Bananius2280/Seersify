@@ -4,6 +4,10 @@
   flex-direction: column;
 }
 
+.image-banner, .banner__media, .banner__content, .section-image-banner {
+  max-height: 100vh;
+}
+
 .banner__box {
   text-align: center;
 }
