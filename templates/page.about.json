@@ -19,14 +19,16 @@
         "section_color_scheme": "scheme-697f2590-b944-4775-9ae3-520302f27367",
         "first_image": "shopify:\/\/shop_images\/clay-banks-8SXaMMWCTGc-unsplash.jpg",
         "second_image": "shopify:\/\/shop_images\/FAQ_2_61f4d5db-1752-48f6-903d-5362625dbbfe.jpg",
+        "second_image_width": 330,
         "image_position": "right",
+        "image_position_absolute": true,
         "title": "Seersify is at the helm of leading-edge beauty science",
         "title_width": 530,
         "text": "Seersify is a brand at the helm of leading-edge beauty science, made right here in Australia, using much of what this beautiful landscape has to offer. Be prepared to activate your senses of touch and sight for a sensorial and tactical journey to better skin as you age gracefully through life.",
         "text_width": 450,
         "text_position": "unset",
         "padding_top": 80,
-        "padding_bottom": 80,
+        "padding_bottom": 50,
         "show_top_border": false,
         "show_bottom_border": true
       }
@@ -36,7 +38,9 @@
       "settings": {
         "section_color_scheme": "scheme-a140e0c0-469f-4878-a95a-ac27442892d5",
         "first_image": "shopify:\/\/shop_images\/18_1.jpg",
+        "second_image_width": 305,
         "image_position": "left",
+        "image_position_absolute": false,
         "title": "Meet Patti Moolchaem - the founder of Seersify",
         "title_width": 465,
         "text": "Seersify is truly a labour of love for founder, Patti Moolchaem. The supercharged skincare range was born out of a desire to demystify skincare, make it accessible and simple, and – above all else – efficacious. Patti has been working on Seersify behind the scenes for several years before launching in 2023.",
@@ -53,7 +57,9 @@
       "settings": {
         "section_color_scheme": "scheme-697f2590-b944-4775-9ae3-520302f27367",
         "first_image": "shopify:\/\/shop_images\/18_2.jpg",
+        "second_image_width": 305,
         "image_position": "right",
+        "image_position_absolute": false,
         "title": "Patti has a deep understanding of how health and science work together",
         "title_width": 530,
         "text": "A 15-year nursing background coupled with academic health research and cosmetic science is a cocktail of specialties that have made Patti a perfect candidate to start her very own skincare range. The full circle moment was a health scare of her own, which led to undergoing medical treatments with some adverse effects. This led her to holistic health care including yoga, meditation and the right nutrition, and ultimately, back to total health. Something new was in order.",
@@ -71,7 +77,9 @@
         "section_color_scheme": "scheme-a2a4ca6d-5693-4406-bf54-30947f735ac9",
         "first_image": "shopify:\/\/shop_images\/18_1.jpg",
         "second_image": "shopify:\/\/shop_images\/FAQ_12_1.jpg",
+        "second_image_width": 305,
         "image_position": "left",
+        "image_position_absolute": false,
         "title": "Patti wanted to do something that combined her passion for beauty and science, so she put her lens on the beauty industry.",
         "title_width": 570,
         "text": "Studying cosmetic science with leading internally recognised education providers in Australia and the UK, coupled with intensive lab hours working with experienced cosmetic scientists led Patti to formulate her very first sample products. With an appreciation of the combined treatments Patti took to improve her health, she realised the power of science and nature and wanted to apply it to the Seersify skincare formulations. After personally trialling and testing products on her 40+ skin and witnessing the improvement she set out to create, Patti decided that she wanted to share Seersify with the world.",
@@ -95,6 +103,14 @@
         "large_img": "shopify:\/\/shop_images\/9_1.jpg",
         "show_top_border": false,
         "show_bottom_border": false
+      }
+    },
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "padding_top": 28,
+        "padding_bottom": 28
       }
     },
     "rich_text_ibrURW": {
@@ -152,7 +168,9 @@
       "settings": {
         "section_color_scheme": "scheme-a140e0c0-469f-4878-a95a-ac27442892d5",
         "first_image": "shopify:\/\/shop_images\/FAQ_2_1.jpg",
+        "second_image_width": 305,
         "image_position": "left",
+        "image_position_absolute": false,
         "title": "Seersify believes that beauty is personal and diverse",
         "title_width": 535,
         "text": "Everyone can and should be happy in their skin regardless of age and skin colour. Beauty is also about your sense of self, accepting and expressing the best of yourself. Seersify doesn’t view skin issues as a problem but as an imbalance stage from intrinsic and extrinsic factors, including hormonal, environmental, genetic and lifestyle. All Seersify products are formulated to support the skin to get back to a healthy balance.",
