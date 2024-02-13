@@ -6,19 +6,23 @@
       {%- for block in section.blocks -%}
         {%- if block.settings.icon_with_text_img != blank or block.settings.icon_with_text_title != blank or block.settings.icon_with_text_text != blank -%}
           <div class="icon-with-text__item">
-            {%- if block.settings.icon_with_text_img != blank -%}
-              <img
-                class="icon-with-text__item--img"
-                src="{{ block.settings.icon_with_text_img | image_url: width: 250 }}"
-                alt="{{ block.settings.icon_with_text_img.alt | escape }}"
-                width="100"
-                height="100"
-                loading="lazy">
-            {%- endif -%}
-            {%- if block.settings.icon_with_text_title != blank -%}
-              <h5 class="icon-with-text__item--title">
-                {{ block.settings.icon_with_text_title }}
-              </h5>
+            {%- if block.settings.icon_with_text_img != blank or block.settings.icon_with_text_title != blank -%}
+              <div class="icon-with-text__item--box">
+                {%- if block.settings.icon_with_text_img != blank -%}
+                  <img
+                    class="icon-with-text__item--img"
+                    src="{{ block.settings.icon_with_text_img | image_url: width: 250 }}"
+                    alt="{{ block.settings.icon_with_text_img.alt | escape }}"
+                    width="100"
+                    height="100"
+                    loading="lazy">
+                {%- endif -%}
+                {%- if block.settings.icon_with_text_title != blank -%}
+                  <h5 class="icon-with-text__item--title">
+                    {{ block.settings.icon_with_text_title }}
+                  </h5>
+                {%- endif -%}
+              </div>
             {%- endif -%}
             {%- if block.settings.icon_with_text_text != blank -%}
               <p class="icon-with-text__item--text">
