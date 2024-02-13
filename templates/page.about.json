@@ -130,6 +130,19 @@
         "show_top_border": false,
         "show_bottom_border": false
       }
+    },
+    "image_banner_second_variant_z3HHfG": {
+      "type": "image-banner-second-variant",
+      "settings": {
+        "section_color_scheme": "scheme-096ef13d-47e0-4091-a6e3-1669a5b9bf1d",
+        "img": "shopify:\/\/shop_images\/FAQ_13.jpg",
+        "left_title": "Welcome to the",
+        "right_title": "world of Seersify",
+        "small_img": "shopify:\/\/shop_images\/FAQ_11_1.jpg",
+        "text": "Witness visible improvements in your skin's texture, tone, and overall health, courtesy of our carefully curated blend of potent ingredients.\u2028",
+        "show_top_border": false,
+        "show_bottom_border": false
+      }
     }
   },
   "order": [
@@ -137,6 +150,7 @@
     "rich_text_ibrURW",
     "two_images_with_text_second_variant_3TPBfH",
     "two_images_with_text_third_variant_Wywh6M",
-    "text_in_blocks_CzNRkK"
+    "text_in_blocks_CzNRkK",
+    "image_banner_second_variant_z3HHfG"
   ]
 }

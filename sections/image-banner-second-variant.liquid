@@ -1,0 +1,91 @@
+{{ 'section-image-banner-second-variant.css' | asset_url | stylesheet_tag }}
+
+<div class="image-banner-second-variant color-{{ section.settings.section_color_scheme }}{% if section.settings.show_top_border %} main-top__border{% endif %}{% if section.settings.show_bottom_border %} main-bottom__border{% endif %}">
+  <div class="page-width">
+    <div class="image-banner-second-variant__box">
+      <div class="image-banner-second-variant__left">
+        <img
+          class="image-banner-second-variant__left--img"
+          src="{{ section.settings.img | image_url: width: 1660 }}"
+          alt="{{ section.settings.img.alt | escape }}"
+          width="830"
+          height="570"
+          loading="lazy">
+        <h1 class="image-banner-second-variant__left--title">
+          {{ section.settings.left_title | escape }}<span>{{ section.settings.right_title | escape }}</span>
+        </h1>
+      </div>
+      <div class="image-banner-second-variant__right">
+        <img
+          class="image-banner-second-variant__right--img"
+          src="{{ section.settings.small_img | image_url: width: 600 }}"
+          alt="{{ section.settings.small_img.alt | escape }}"
+          width="300"
+          height="290"
+          loading="lazy">
+        <p class="image-banner-second-variant__right--text">
+          {{ section.settings.text | escape }}
+        </p>
+      </div>
+    </div>
+    <h1 class="image-banner-second-variant__title">
+      {{ section.settings.right_title | escape }}
+    </h1>
+  </div>
+</div>
+
+{% schema %}
+  {
+    "name": "Image banner second var",
+    "class": "image-and-text-in-blocks-section",
+    "settings": [
+      {
+        "type": "color_scheme",
+        "id": "section_color_scheme",
+        "label": "Color scheme",
+        "default": "background-1"
+      },
+      {
+        "type": "image_picker",
+        "id": "img",
+        "label": "Image"
+      },
+      {
+        "type": "text",
+        "id": "left_title",
+        "label": "Left title",
+        "default": "Left title"
+      },
+      {
+        "type": "text",
+        "id": "right_title",
+        "label": "Right title",
+        "default": "Right title"
+      }, {
+        "type": "image_picker",
+        "id": "small_img",
+        "label": "Small image"
+      }, {
+        "type": "textarea",
+        "id": "text",
+        "label": "Text",
+        "default": "Text"
+      }, {
+        "type": "checkbox",
+        "id": "show_top_border",
+        "label": "Show top border",
+        "default": false
+      }, {
+        "type": "checkbox",
+        "id": "show_bottom_border",
+        "label": "Show bottom border",
+        "default": false
+      }
+    ],
+    "presets": [
+      {
+        "name": "Image banner second var"
+      }
+    ]
+  }
+{% endschema %}
