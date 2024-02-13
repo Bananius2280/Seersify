@@ -6,6 +6,10 @@
     padding-bottom: {{ section.settings.padding_bottom | times: 0.5 | round: 0 }}px;
   }
 
+  .section-{{ section.id }} .two-image-with-text__first--small-img {
+    width: {{ section.settings.second_image_width }}px;
+  }
+
   @media screen and (min-width: 750px) {
     .section-{{ section.id }}-padding {
       padding-top: {{ section.settings.padding_top }}px;
@@ -14,11 +18,13 @@
   }
   @media screen and (min-width: 1050px) {
     .section-{{ section.id }} .two-image-with-text__second--title {
-      width: {{ section.settings.title_width }}px;
+      max-width: {{ section.settings.title_width }}px;
+      width: 100%;
     }
 
     .section-{{ section.id }} .two-image-with-text__second--text {
-      width: {{ section.settings.text_width }}px;
+      max-width: {{ section.settings.text_width }}px;
+      width: 100%;
     }
   }
 {% endstyle %}
@@ -26,7 +32,7 @@
 <div class="two-image-with-text section-{{ section.id }} section-{{ section.id }}-padding color-{{ section.settings.section_color_scheme }}{% if section.settings.show_top_border %} main-top__border{% endif %}{% if section.settings.show_bottom_border %} main-bottom__border{% endif %}">
   <div class="page-width">
     <div class="two-image-with-text__items two-image-with-text__items--{{ section.settings.image_position }}">
-      <div class="two-image-with-text__first">
+      <div class="two-image-with-text__first{% if section.settings.image_position_absolute %} two-image-with-text__first--absolute{% endif %}">
         {%- if section.settings.first_image != blank -%}
           <img
             class="two-image-with-text__first--img"
@@ -47,7 +53,7 @@
         {%- endif -%}
       </div>
       <div class="two-image-with-text__second two-image-with-text__second--{{ section.settings.text_position }}">
-<div class="two-image-with-text__second--box">
+        <div class="two-image-with-text__second--box">
         {%- if section.settings.title != blank -%}
           <h4 class="two-image-with-text__second--title">
             {{ section.settings.title }}
@@ -57,7 +63,7 @@
           <p class="two-image-with-text__second--text">
             {{ section.settings.text }}
           </p>
-</div>
+        </div>
         {%- endif -%}
       </div>
     </div>
@@ -87,9 +93,20 @@
       {
         "type": "image_picker",
         "id": "second_image",
-        "label": "Second image",
+        "label": "Small image",
         "info": "Doesn't work without the first photo"
-      }, {
+      },
+      {
+        "type": "range",
+        "id": "second_image_width",
+        "min": 300,
+        "max": 330,
+        "step": 5,
+        "unit": "px",
+        "label": "Max width small image",
+        "default": 305
+      },
+      {
         "type": "radio",
         "id": "image_position",
         "label": "Images desktop position",
@@ -103,7 +120,14 @@
           }
         ],
         "default": "left"
-      }, {
+      },
+      {
+        "type": "checkbox",
+        "id": "image_position_absolute",
+        "label": "Images move to the bottom section",
+        "default": false
+      },
+      {
         "type": "header",
         "content": "Block with text"
       }, {
