@@ -1,29 +1,29 @@
 {{ 'section-two-images-with-text.css' | asset_url | stylesheet_tag }}
 
 {% style %}
-  .two-image-with-text {
+  .section-{{ section.id }}-padding {
     padding-top: {{ section.settings.padding_top | times: 0.5 | round: 0 }}px;
     padding-bottom: {{ section.settings.padding_bottom | times: 0.5 | round: 0 }}px;
   }
 
   @media screen and (min-width: 750px) {
-    .two-image-with-text {
+    .section-{{ section.id }}-padding {
       padding-top: {{ section.settings.padding_top }}px;
       padding-bottom: {{ section.settings.padding_bottom }}px;
     }
   }
   @media screen and (min-width: 1050px) {
-    .two-image-with-text__second--title {
+    .section-{{ section.id }} .two-image-with-text__second--title {
       width: {{ section.settings.title_width }}px;
     }
 
-    .two-image-with-text__second--text {
+    .section-{{ section.id }} .two-image-with-text__second--text {
       width: {{ section.settings.text_width }}px;
     }
   }
 {% endstyle %}
 
-<div class="two-image-with-text color-{{ section.settings.section_color_scheme }}{% if section.settings.show_top_border %} main-top__border{% endif %}{% if section.settings.show_bottom_border %} main-bottom__border{% endif %}">
+<div class="two-image-with-text section-{{ section.id }} section-{{ section.id }}-padding color-{{ section.settings.section_color_scheme }}{% if section.settings.show_top_border %} main-top__border{% endif %}{% if section.settings.show_bottom_border %} main-bottom__border{% endif %}">
   <div class="page-width">
     <div class="two-image-with-text__items two-image-with-text__items--{{ section.settings.image_position }}">
       <div class="two-image-with-text__first">
@@ -47,6 +47,7 @@
         {%- endif -%}
       </div>
       <div class="two-image-with-text__second two-image-with-text__second--{{ section.settings.text_position }}">
+<div class="two-image-with-text__second--box">
         {%- if section.settings.title != blank -%}
           <h4 class="two-image-with-text__second--title">
             {{ section.settings.title }}
@@ -56,6 +57,7 @@
           <p class="two-image-with-text__second--text">
             {{ section.settings.text }}
           </p>
+</div>
         {%- endif -%}
       </div>
     </div>
@@ -113,7 +115,7 @@
         "type": "range",
         "id": "title_width",
         "min": 450,
-        "max": 560,
+        "max": 570,
         "step": 5,
         "unit": "px",
         "label": "Heading width",
@@ -127,7 +129,7 @@
         "type": "range",
         "id": "text_width",
         "min": 450,
-        "max": 560,
+        "max": 570,
         "step": 5,
         "unit": "px",
         "label": "Text width",

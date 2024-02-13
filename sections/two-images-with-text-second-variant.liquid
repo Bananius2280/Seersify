@@ -1,18 +1,18 @@
 {{ 'section-two-images-with-text-second-variant.css' | asset_url | stylesheet_tag }}
 
 {%- style -%}
-  .two-images-with-text-second__left--img {
+  .section-{{ section.id }} .two-images-with-text-second__left--img {
     max-width: {{ section.settings.width_img }}px;
   }
 
   @media screen and (min-width: 1000px) {
-    .two-images-with-text-second__left--bottom {
+    .section-{{ section.id }} .two-images-with-text-second__left--bottom {
       max-width: {{ section.settings.width_text }}px;
     }
   }
 {%- endstyle -%}
 
-<div class="two-images-with-text-second color-{{ section.settings.section_color_scheme }}{% if section.settings.show_top_border %} main-top__border{% endif %}{% if section.settings.show_bottom_border %} main-bottom__border{% endif %}">
+<div class="two-images-with-text-second section-{{ section.id }} color-{{ section.settings.section_color_scheme }}{% if section.settings.show_top_border %} main-top__border{% endif %}{% if section.settings.show_bottom_border %} main-bottom__border{% endif %}">
   <div class="page-width">
     <div class="two-images-with-text-second__box">
       <div class="two-images-with-text-second__left">

@@ -4,33 +4,46 @@
   <div class="page-width">
     <div class="image-banner-second-variant__box">
       <div class="image-banner-second-variant__left">
-        <img
-          class="image-banner-second-variant__left--img"
-          src="{{ section.settings.img | image_url: width: 1660 }}"
-          alt="{{ section.settings.img.alt | escape }}"
-          width="830"
-          height="570"
-          loading="lazy">
-        <h1 class="image-banner-second-variant__left--title">
-          {{ section.settings.left_title | escape }}<span>{{ section.settings.right_title | escape }}</span>
-        </h1>
+        {%- if section.settings.img != blank -%}
+          <img
+            class="image-banner-second-variant__left--img"
+            src="{{ section.settings.img | image_url: width: 1660 }}"
+            alt="{{ section.settings.img.alt | escape }}"
+            width="830"
+            height="570"
+            loading="lazy">
+        {%- endif -%}
+        {%- if section.settings.left_title != blank -%}
+          <h1 class="image-banner-second-variant__left--title">
+            {{ section.settings.left_title | escape }}
+            {%- if section.settings.right_title != blank -%}
+              <span>{{ section.settings.right_title | escape }}</span>
+            {%- endif -%}
+          </h1>
+        {%- endif -%}
       </div>
       <div class="image-banner-second-variant__right">
-        <img
-          class="image-banner-second-variant__right--img"
-          src="{{ section.settings.small_img | image_url: width: 600 }}"
-          alt="{{ section.settings.small_img.alt | escape }}"
-          width="300"
-          height="290"
-          loading="lazy">
-        <p class="image-banner-second-variant__right--text">
-          {{ section.settings.text | escape }}
-        </p>
+        {%- if section.settings.small_img != blank -%}
+          <img
+            class="image-banner-second-variant__right--img"
+            src="{{ section.settings.small_img | image_url: width: 600 }}"
+            alt="{{ section.settings.small_img.alt | escape }}"
+            width="300"
+            height="290"
+            loading="lazy">
+        {%- endif -%}
+        {%- if section.settings.text != blank -%}
+          <p class="image-banner-second-variant__right--text">
+            {{ section.settings.text | escape }}
+          </p>
+        {%- endif -%}
       </div>
     </div>
-    <h1 class="image-banner-second-variant__title">
-      {{ section.settings.right_title | escape }}
-    </h1>
+    {%- if section.settings.right_title != blank -%}
+      <h1 class="image-banner-second-variant__title">
+        {{ section.settings.right_title | escape }}
+      </h1>
+    {%- endif -%}
   </div>
 </div>
 

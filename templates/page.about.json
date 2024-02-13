@@ -1,11 +1,100 @@
 {
   "sections": {
-    "main": {
-      "type": "main-page",
-      "disabled": true,
+    "image_banner_second_variant_z3HHfG": {
+      "type": "image-banner-second-variant",
       "settings": {
-        "padding_top": 28,
-        "padding_bottom": 28
+        "section_color_scheme": "scheme-096ef13d-47e0-4091-a6e3-1669a5b9bf1d",
+        "img": "shopify:\/\/shop_images\/FAQ_13.jpg",
+        "left_title": "Welcome to the",
+        "right_title": "world of Seersify",
+        "small_img": "shopify:\/\/shop_images\/FAQ_11_1.jpg",
+        "text": "Witness visible improvements in your skin's texture, tone, and overall health, courtesy of our carefully curated blend of potent ingredients.\u2028",
+        "show_top_border": false,
+        "show_bottom_border": true
+      }
+    },
+    "two_images_with_text_XmH6hL": {
+      "type": "two-images-with-text",
+      "settings": {
+        "section_color_scheme": "scheme-697f2590-b944-4775-9ae3-520302f27367",
+        "first_image": "shopify:\/\/shop_images\/clay-banks-8SXaMMWCTGc-unsplash.jpg",
+        "second_image": "shopify:\/\/shop_images\/FAQ_2_61f4d5db-1752-48f6-903d-5362625dbbfe.jpg",
+        "image_position": "right",
+        "title": "Seersify is at the helm of leading-edge beauty science",
+        "title_width": 530,
+        "text": "Seersify is a brand at the helm of leading-edge beauty science, made right here in Australia, using much of what this beautiful landscape has to offer. Be prepared to activate your senses of touch and sight for a sensorial and tactical journey to better skin as you age gracefully through life.",
+        "text_width": 450,
+        "text_position": "unset",
+        "padding_top": 80,
+        "padding_bottom": 80,
+        "show_top_border": false,
+        "show_bottom_border": true
+      }
+    },
+    "two_images_with_text_6XJmgk": {
+      "type": "two-images-with-text",
+      "settings": {
+        "section_color_scheme": "scheme-a140e0c0-469f-4878-a95a-ac27442892d5",
+        "first_image": "shopify:\/\/shop_images\/18_1.jpg",
+        "image_position": "left",
+        "title": "Meet Patti Moolchaem - the founder of Seersify",
+        "title_width": 465,
+        "text": "Seersify is truly a labour of love for founder, Patti Moolchaem. The supercharged skincare range was born out of a desire to demystify skincare, make it accessible and simple, and – above all else – efficacious. Patti has been working on Seersify behind the scenes for several years before launching in 2023.",
+        "text_width": 450,
+        "text_position": "center",
+        "padding_top": 115,
+        "padding_bottom": 120,
+        "show_top_border": false,
+        "show_bottom_border": true
+      }
+    },
+    "two_images_with_text_XnNBNg": {
+      "type": "two-images-with-text",
+      "settings": {
+        "section_color_scheme": "scheme-697f2590-b944-4775-9ae3-520302f27367",
+        "first_image": "shopify:\/\/shop_images\/18_2.jpg",
+        "image_position": "right",
+        "title": "Patti has a deep understanding of how health and science work together",
+        "title_width": 530,
+        "text": "A 15-year nursing background coupled with academic health research and cosmetic science is a cocktail of specialties that have made Patti a perfect candidate to start her very own skincare range. The full circle moment was a health scare of her own, which led to undergoing medical treatments with some adverse effects. This led her to holistic health care including yoga, meditation and the right nutrition, and ultimately, back to total health. Something new was in order.",
+        "text_width": 490,
+        "text_position": "unset",
+        "padding_top": 110,
+        "padding_bottom": 130,
+        "show_top_border": false,
+        "show_bottom_border": true
+      }
+    },
+    "two_images_with_text_dx9xBG": {
+      "type": "two-images-with-text",
+      "settings": {
+        "section_color_scheme": "scheme-a2a4ca6d-5693-4406-bf54-30947f735ac9",
+        "first_image": "shopify:\/\/shop_images\/18_1.jpg",
+        "second_image": "shopify:\/\/shop_images\/FAQ_12_1.jpg",
+        "image_position": "left",
+        "title": "Patti wanted to do something that combined her passion for beauty and science, so she put her lens on the beauty industry.",
+        "title_width": 570,
+        "text": "Studying cosmetic science with leading internally recognised education providers in Australia and the UK, coupled with intensive lab hours working with experienced cosmetic scientists led Patti to formulate her very first sample products. With an appreciation of the combined treatments Patti took to improve her health, she realised the power of science and nature and wanted to apply it to the Seersify skincare formulations. After personally trialling and testing products on her 40+ skin and witnessing the improvement she set out to create, Patti decided that she wanted to share Seersify with the world.",
+        "text_width": 545,
+        "text_position": "unset",
+        "padding_top": 115,
+        "padding_bottom": 105,
+        "show_top_border": false,
+        "show_bottom_border": true
+      }
+    },
+    "two_images_with_text_second_variant_3TPBfH": {
+      "type": "two-images-with-text-second-variant",
+      "settings": {
+        "section_color_scheme": "scheme-697f2590-b944-4775-9ae3-520302f27367",
+        "img": "shopify:\/\/shop_images\/FAQ_8.jpg",
+        "width_img": 330,
+        "title": "Nature-infused skincare science",
+        "text": "The Seersify formulas are based on the skin as a living organ, providing it with nutrients to thrive, and the efficacy of formulas is a true merge of science and nature with transparency being Seersify’s guiding light.",
+        "width_text": 420,
+        "large_img": "shopify:\/\/shop_images\/9_1.jpg",
+        "show_top_border": false,
+        "show_bottom_border": false
       }
     },
     "rich_text_ibrURW": {
@@ -46,20 +135,6 @@
         "show_bottom_border": false
       }
     },
-    "two_images_with_text_second_variant_3TPBfH": {
-      "type": "two-images-with-text-second-variant",
-      "settings": {
-        "section_color_scheme": "scheme-697f2590-b944-4775-9ae3-520302f27367",
-        "img": "shopify:\/\/shop_images\/FAQ_8.jpg",
-        "width_img": 330,
-        "title": "Nature-infused skincare science",
-        "text": "The Seersify formulas are based on the skin as a living organ, providing it with nutrients to thrive, and the efficacy of formulas is a true merge of science and nature with transparency being Seersify’s guiding light.",
-        "width_text": 420,
-        "large_img": "shopify:\/\/shop_images\/9_1.jpg",
-        "show_top_border": false,
-        "show_bottom_border": false
-      }
-    },
     "two_images_with_text_third_variant_Wywh6M": {
       "type": "two-images-with-text-third-variant",
       "settings": {
@@ -69,7 +144,38 @@
         "img": "shopify:\/\/shop_images\/32.jpg",
         "text": "Add a balanced life that encompasses healthy living and a healthy approach to beauty, Seersify is a holistic beauty brand with scientific knowledge and innovative ingredients as the vantage point.",
         "show_top_border": false,
-        "show_bottom_border": false
+        "show_bottom_border": true
+      }
+    },
+    "two_images_with_text_Y3W6PN": {
+      "type": "two-images-with-text",
+      "settings": {
+        "section_color_scheme": "scheme-a140e0c0-469f-4878-a95a-ac27442892d5",
+        "first_image": "shopify:\/\/shop_images\/FAQ_2_1.jpg",
+        "image_position": "left",
+        "title": "Seersify believes that beauty is personal and diverse",
+        "title_width": 535,
+        "text": "Everyone can and should be happy in their skin regardless of age and skin colour. Beauty is also about your sense of self, accepting and expressing the best of yourself. Seersify doesn’t view skin issues as a problem but as an imbalance stage from intrinsic and extrinsic factors, including hormonal, environmental, genetic and lifestyle. All Seersify products are formulated to support the skin to get back to a healthy balance.",
+        "text_width": 510,
+        "text_position": "center",
+        "padding_top": 50,
+        "padding_bottom": 50,
+        "show_top_border": false,
+        "show_bottom_border": true
+      }
+    },
+    "two_images_with_text_second_variant_8jWYVy": {
+      "type": "two-images-with-text-second-variant",
+      "settings": {
+        "section_color_scheme": "scheme-697f2590-b944-4775-9ae3-520302f27367",
+        "img": "shopify:\/\/shop_images\/FAQ_9.jpg",
+        "width_img": 265,
+        "title": "Seersify’s mission is clear and ambitious",
+        "text": "We aim to create smart, innovative formulas made with high-tech, active ingredients that show up on your skin with real results. No misinformation or loaded claims, just scientifically backed solutions for the skin.",
+        "width_text": 450,
+        "large_img": "shopify:\/\/shop_images\/FAQ_4_779be890-c612-471b-9e53-dda01f1dfa46.jpg",
+        "show_top_border": false,
+        "show_bottom_border": true
       }
     },
     "text_in_blocks_CzNRkK": {
@@ -128,29 +234,33 @@
       "settings": {
         "section_color_scheme": "scheme-5667bba3-4559-4d2f-9f96-94b33f834f41",
         "show_top_border": false,
-        "show_bottom_border": false
+        "show_bottom_border": true
       }
     },
-    "image_banner_second_variant_z3HHfG": {
-      "type": "image-banner-second-variant",
+    "newsletter_QGzy3J": {
+      "type": "newsletter",
       "settings": {
-        "section_color_scheme": "scheme-096ef13d-47e0-4091-a6e3-1669a5b9bf1d",
-        "img": "shopify:\/\/shop_images\/FAQ_13.jpg",
-        "left_title": "Welcome to the",
-        "right_title": "world of Seersify",
-        "small_img": "shopify:\/\/shop_images\/FAQ_11_1.jpg",
-        "text": "Witness visible improvements in your skin's texture, tone, and overall health, courtesy of our carefully curated blend of potent ingredients.\u2028",
-        "show_top_border": false,
-        "show_bottom_border": false
+        "section_color_scheme": "scheme-58e96f2d-5616-4dd8-b82d-ba401a29739b",
+        "newsletter_img": "shopify:\/\/shop_images\/13_8_Extend_newsletter_1_1.jpg",
+        "newsletter_title": "Subscribe to Seersify newsletter",
+        "newsletter_select": "right",
+        "newsletter_text": "For unique discounts and offers"
       }
     }
   },
   "order": [
+    "image_banner_second_variant_z3HHfG",
+    "two_images_with_text_XmH6hL",
+    "two_images_with_text_6XJmgk",
+    "two_images_with_text_XnNBNg",
+    "two_images_with_text_dx9xBG",
+    "two_images_with_text_second_variant_3TPBfH",
     "main",
     "rich_text_ibrURW",
-    "two_images_with_text_second_variant_3TPBfH",
     "two_images_with_text_third_variant_Wywh6M",
+    "two_images_with_text_Y3W6PN",
+    "two_images_with_text_second_variant_8jWYVy",
     "text_in_blocks_CzNRkK",
-    "image_banner_second_variant_z3HHfG"
+    "newsletter_QGzy3J"
   ]
 }
