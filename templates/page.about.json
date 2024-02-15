@@ -105,14 +105,6 @@
         "show_bottom_border": false
       }
     },
-    "main": {
-      "type": "main-page",
-      "disabled": true,
-      "settings": {
-        "padding_top": 28,
-        "padding_bottom": 28
-      }
-    },
     "rich_text_ibrURW": {
       "type": "rich-text",
       "blocks": {
@@ -273,7 +265,6 @@
     "two_images_with_text_XnNBNg",
     "two_images_with_text_dx9xBG",
     "two_images_with_text_second_variant_3TPBfH",
-    "main",
     "rich_text_ibrURW",
     "two_images_with_text_third_variant_Wywh6M",
     "two_images_with_text_Y3W6PN",

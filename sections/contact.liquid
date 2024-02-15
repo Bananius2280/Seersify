@@ -1,0 +1,173 @@
+{{ 'section-contact.css' | asset_url | stylesheet_tag }}
+
+<div class="contacts color-{{ section.settings.section_color_scheme }}{% if section.settings.show_top_border %} main-top__border{% endif %}{% if section.settings.show_bottom_border %} main-bottom__border{% endif %}">
+  <div class="page-width">
+    <div class="contacts-top">
+      {%- if section.settings.email != blank or section.settings.address != blank or section.settings.phone != blank or section.settings.social != blank -%}
+        <div class="contacts-top__left">
+          {%- if section.settings.email != blank -%}
+            <div class="contacts-top__left--item">
+              <span class="contacts-top__left--item-title">
+                EMAIL
+              </span>
+              <a
+                class="contacts-top__left--item-link"
+                href="mailto:{{ section.settings.email }}"
+                target="_blank">
+                {{ section.settings.email | escape }}
+              </a>
+            </div>
+          {%- endif -%}
+          {%- if section.settings.address != blank -%}
+            <div class="contacts-top__left--item">
+              <span class="contacts-top__left--item-title">
+                MAILING ADDRESS
+              </span>
+              <a
+                class="contacts-top__left--item-link"
+                href="{{ section.settings.address_link }}"
+                target="_blank">
+                {{ section.settings.address | escape }}
+              </a>
+            </div>
+          {%- endif -%}
+          {%- if section.settings.phone != blank -%}
+            <div class="contacts-top__left--item">
+              <span class="contacts-top__left--item-title">
+                PHONE NUMBER
+              </span>
+              <a
+                class="contacts-top__left--item-link"
+                href="tel:+{{ section.settings.phone_without_signs }}"
+                target="_blank">
+                {{ section.settings.phone | escape }}
+              </a>
+            </div>
+          {%- endif -%}
+          {%- if section.settings.social != blank -%}
+            <div class="contacts-top__left--item">
+              <span class="contacts-top__left--item-title">
+                SOCIAL MEDIA
+              </span>
+              <ul class="contacts-top__left--item-lists list-unstyled">
+                {%- for link in section.settings.social.links -%}
+                  <li>
+                    <a
+                      href="{{ link.url }}"
+                      target="_blank"
+                      class="link contacts-top__left--item-list">
+                      {{ link.title }}
+                    </a>
+                  </li>
+                {%- endfor -%}
+              </ul>
+            </div>
+          {%- endif -%}
+        </div>
+      {%- endif -%}
+      {%- if section.settings.img != blank -%}
+        <div class="contacts-top__right">
+          <img
+            class="contacts-top__right--img"
+            src="{{ section.settings.img | image_url: width: 2600 }}"
+            alt="{{ section.settings.img.alt | escape }}"
+            width="1300"
+            height="645"
+            loading="lazy">
+        </div>
+      {%- endif -%}
+    </div>
+    {%- if section.settings.title != blank or section.settings.text != blank -%}
+      <div class="contacts-bottom">
+        {%- if section.settings.title != blank -%}
+          <h1 class="contacts-bottom__title">
+            {{ section.settings.title | escape }}
+          </h1>
+        {%- endif -%}
+        {%- if section.settings.text != blank -%}
+          <p class="contacts-bottom__text">
+            {{ section.settings.text | escape }}
+          </p>
+        {%- endif -%}
+      </div>
+    {%- endif -%}
+  </div>
+</div>
+
+{% schema %}
+  {
+    "name": "Contact",
+    "class": "contact-section",
+    "settings": [
+      {
+        "type": "color_scheme",
+        "id": "section_color_scheme",
+        "label": "Color scheme",
+        "default": "background-1"
+      },
+      {
+        "type": "header",
+        "content": "Contact Information"
+      },
+      {
+        "type": "text",
+        "id": "email",
+        "label": "Email",
+        "default": "Email"
+      },
+      {
+        "type": "text",
+        "id": "address",
+        "label": "Address",
+        "default": "Address"
+      }, {
+        "type": "url",
+        "id": "address_link",
+        "label": "Address link"
+      }, {
+        "type": "text",
+        "id": "phone",
+        "label": "Phone number",
+        "default": "Number"
+      }, {
+        "type": "text",
+        "id": "phone_without_signs",
+        "label": "Phone number without signs",
+        "info": "Enter a phone number without signs, just numbers"
+      }, {
+        "type": "link_list",
+        "id": "social",
+        "label": "Social media"
+      }, {
+        "type": "image_picker",
+        "id": "img",
+        "label": "Image"
+      }, {
+        "type": "text",
+        "id": "title",
+        "label": "Heading",
+        "default": "Heading"
+      }, {
+        "type": "textarea",
+        "id": "text",
+        "label": "Text",
+        "default": "Text"
+      }, {
+        "type": "checkbox",
+        "id": "show_top_border",
+        "label": "Show top border",
+        "default": false
+      }, {
+        "type": "checkbox",
+        "id": "show_bottom_border",
+        "label": "Show bottom border",
+        "default": false
+      }
+    ],
+    "presets": [
+      {
+        "name": "Contact"
+      }
+    ]
+  }
+{% endschema %}
