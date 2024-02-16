@@ -1,5 +1,5 @@
 .two-images-with-text-second {
-  padding: 130px 0 110px;
+  padding: 115px 0 105px;
 }
 
 .two-images-with-text-second__left {
@@ -43,7 +43,7 @@
   margin: auto;
 }
 
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 1050px) {
 
   .two-images-with-text-second__left {
     margin-right: 50px;

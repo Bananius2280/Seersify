@@ -82,17 +82,23 @@
   }
 }
 
-@media screen and (max-width: 749px) {
-  .two-images-with-text-third {
-    padding: 60px 0 80px;
+@media screen and (max-width: 1051px) {
+.two-images-with-text-third {
+    padding: 80px 0 110px;
   }
+}
 
+@media screen and (max-width: 749px) {
   .two-images-with-text-third__center--large-img {
     max-width: 500px;
   }
 
   .two-images-with-text-third__center--img {
     width: 170px;
+  }
+
+  .two-images-with-text-third {
+    padding: 60px 0 80px;
   }
 }
 

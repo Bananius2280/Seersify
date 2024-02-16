@@ -79,7 +79,7 @@
 
 @media screen and (max-width: 749px) {
   .background-image-with-text__img {
-    min-height: 475px;
+    min-height: 360px;
   }
 
   .background-image-with-text__box {
@@ -90,7 +90,7 @@
   }
 
   .background-image-with-text__box--container {
-    margin: 100px 0;
+    margin: 60px 0;
   }
 
   .background-image-with-text__img {

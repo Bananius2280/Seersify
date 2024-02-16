@@ -1,7 +1,8 @@
 {{ 'section-image-banner-second-variant.css' | asset_url | stylesheet_tag }}
 
 <div class="image-banner-second-variant color-{{ section.settings.section_color_scheme }}{% if section.settings.show_top_border %} main-top__border{% endif %}{% if section.settings.show_bottom_border %} main-bottom__border{% endif %}">
-  <div class="page-width">
+<div class="image-banner-second-variant__flex">
+  <div class="page-width" style="width: 100%;">
     <div class="image-banner-second-variant__box">
       <div class="image-banner-second-variant__left">
         {%- if section.settings.img != blank -%}
@@ -45,6 +46,7 @@
       </h1>
     {%- endif -%}
   </div>
+</div>
 </div>
 
 {% schema %}

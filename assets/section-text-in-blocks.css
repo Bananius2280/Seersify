@@ -23,12 +23,6 @@
   margin: 0;
 }
 
-@media screen and (max-width: 1449px) {
-  .text-in-blocks__items {
-    justify-content: center;
-  }
-}
-
 @media screen and (min-width: 950px) {
   .text-in-blocks__items {
     display: flex;
@@ -44,6 +38,19 @@
     margin: 0;
   }
 }
+
+@media screen and (max-width: 1449px) {
+  .text-in-blocks__items {
+    justify-content: space-evenly;
+    row-gap: 60px;
+  }
+}
+
+@media screen and (max-width: 1051px) {
+.text-in-blocks {
+    padding: 100px 0 120px;
+  }
+} 
 
 @media screen and (max-width: 749px) {
 .text-in-blocks {
