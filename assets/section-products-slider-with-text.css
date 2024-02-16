@@ -42,6 +42,7 @@
 .products-slider-with-text .card__inner {
   height: 470px;
   max-height: 470px;
+  background-color: transparent;
 }
 
 .products-slider-with-text .card__information {

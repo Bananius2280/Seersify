@@ -3523,6 +3523,11 @@ details-disclosure > details {
   }
 }
 
+  .card__inner {
+    background-color: transparent;
+  }
+  
+
 /* Element Hovers: Vertical Lift, 3d Lift */
 
 @media (prefers-reduced-motion: no-preference) and (hover: hover) {
