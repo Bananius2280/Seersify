@@ -52,7 +52,7 @@
         {%- endif -%}
         {%- if section.settings.second_image != blank and section.settings.first_image != blank -%}
           <img
-            class="two-image-with-text__first--small-img"
+            class="two-image-with-text__first--small-img{% if template.name == 'product' %} two-image-with-text__first--small-img__product{% endif %}"
             src="{{ section.settings.second_image | image_url: width: 610 }}"
             alt="{{ section.settings.second_image.alt | escape }}"
             width="305"

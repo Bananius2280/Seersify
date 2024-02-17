@@ -6,7 +6,7 @@
   display: block;
 }
 
-.text-in-blocks__item + .text-in-blocks__item {
+.text-in-blocks__item+.text-in-blocks__item {
   margin-top: 30px;
 }
 
@@ -47,13 +47,13 @@
 }
 
 @media screen and (max-width: 1051px) {
-.text-in-blocks {
-    padding: 100px 0 120px;
+  .text-in-blocks {
+    padding: 80px 0 80px;
   }
-} 
+}
 
 @media screen and (max-width: 749px) {
-.text-in-blocks {
-  padding: 70px 0 90px;
-}
+  .text-in-blocks {
+    padding: 65px 0 65px;
+  }
 }

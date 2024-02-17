@@ -117,7 +117,7 @@
       ],
       "settings": {
         "section_color_scheme": "scheme-58e96f2d-5616-4dd8-b82d-ba401a29739b",
-        "show_top_border": true,
+        "show_top_border": false,
         "show_bottom_border": true
       }
     },

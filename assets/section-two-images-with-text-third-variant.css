@@ -83,8 +83,8 @@
 }
 
 @media screen and (max-width: 1051px) {
-.two-images-with-text-third {
-    padding: 80px 0 110px;
+  .two-images-with-text-third {
+    padding: 80px 0 80px;
   }
 }
 
@@ -98,7 +98,7 @@
   }
 
   .two-images-with-text-third {
-    padding: 60px 0 80px;
+    padding: 65px 0 65px;
   }
 }
 

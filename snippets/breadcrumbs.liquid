@@ -63,13 +63,15 @@
     aria-label="breadcrumbs">
     <ol class="breadcrumbs__list">
       <li class="breadcrumbs__item">
-        <a class="breadcrumbs__link" href="/">Home /</a>
+        <a class="breadcrumbs__link" href="/">Home</a>
+        <span>/</span>
       </li>
       <li class="breadcrumbs__item">
         <a
           id="bread"
           class="breadcrumbs__link"
-          href="https://pine-pressed-flowers.myshopify.com/collections/all">SHOP /</a>
+          href="/collections/all">SHOP</a>
+          <span>/</span>
       </li>
       {%- case t -%}
         {%- when 'page' -%}
@@ -82,15 +84,12 @@
         {% when 'product' %}
           {% if collection.url %}
             <li class="breadcrumbs__item">
-              {{ collection.title | link_to: collection.url }} /
+              {{ collection.title | link_to: collection.url }}
+              <span>/</span>
             </li>
           {% endif %}
           <li class="breadcrumbs__item">
-            <a
-              class="breadcrumbs__link"
-              href="{{ product.url }}"
-              aria-current="page">
-              {{ ' ' | append: product.title }}</a>
+            {{ ' ' | append: product.title }}
           </li>
         {%- when 'collection' and collection.handle -%}
           {%- if current_tags -%}

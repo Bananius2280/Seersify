@@ -68,6 +68,12 @@
   }
 }
 
+@media screen and (max-width: 1049px) {
+  .slider-with-text {
+    padding: 75px 0;
+  }
+}
+
 @media screen and (max-width: 749px) {
   .slider-with-text {
     padding: 55px 0;

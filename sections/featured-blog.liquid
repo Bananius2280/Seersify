@@ -5,14 +5,21 @@
 
 {%- style -%}
   .section-{{ section.id }}-padding {
-    padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
-    padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
+    padding-top: 80px;
+    padding-bottom: 80px;
   }
 
-  @media screen and (min-width: 750px) {
+  @media screen and (min-width: 1050px) {
     .section-{{ section.id }}-padding {
       padding-top: {{ section.settings.padding_top }}px;
       padding-bottom: {{ section.settings.padding_bottom }}px;
+    }
+  }
+
+  @media screen and (max-width: 749px) {
+    .section-{{ section.id }}-padding {
+      padding-top: 65px;
+      padding-bottom: 65px;
     }
   }
 {%- endstyle -%}

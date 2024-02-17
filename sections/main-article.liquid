@@ -1,7 +1,7 @@
 {{ 'section-blog-post.css' | asset_url | stylesheet_tag }}
 
 <article
-  class="article-template color-{{ section.settings.section_color_scheme }}"
+  class="article-template color-{{ section.settings.section_color_scheme }}{% if section.settings.show_top_border %} main-top__border{% endif %}{% if section.settings.show_bottom_border %} main-bottom__border{% endif %}"
   itemscope
   itemtype="http://schema.org/BlogPosting">
   <div class="page-width">
@@ -331,6 +331,17 @@
         "id": "blog_show_author",
         "default": false,
         "label": "t:sections.main-article.blocks.title.settings.blog_show_author.label"
+      },
+      {
+        "type": "checkbox",
+        "id": "show_top_border",
+        "label": "Show top border",
+        "default": false
+      }, {
+        "type": "checkbox",
+        "id": "show_bottom_border",
+        "label": "Show bottom border",
+        "default": false
       }
     ],
     "blocks": [
@@ -341,28 +352,7 @@
         "name": "t:sections.main-article.blocks.featured_image.name",
         "limit": 1,
         "settings": [
-          {
-            "type": "select",
-            "id": "image_height",
-            "options": [
-              {
-                "value": "adapt",
-                "label": "t:sections.main-article.blocks.featured_image.settings.image_height.options__1.label"
-              }, {
-                "value": "small",
-                "label": "t:sections.main-article.blocks.featured_image.settings.image_height.options__2.label"
-              }, {
-                "value": "medium",
-                "label": "t:sections.main-article.blocks.featured_image.settings.image_height.options__3.label"
-              }, {
-                "value": "large",
-                "label": "t:sections.main-article.blocks.featured_image.settings.image_height.options__4.label"
-              }
-            ],
-            "default": "adapt",
-            "label": "t:sections.main-article.blocks.featured_image.settings.image_height.label",
-            "info": "t:sections.main-article.blocks.featured_image.settings.image_height.info"
-          }
+          
         ]
       }, {
         "type": "content",

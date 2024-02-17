@@ -1,5 +1,5 @@
 .two-images-with-text-second {
-  padding: 115px 0 105px;
+  padding: 80px 0 80px;
 }
 
 .two-images-with-text-second__left {
@@ -60,9 +60,16 @@
   }
 }
 
+@media screen and (max-width: 1049px) {
+  .two-images-with-text-second__left {
+    flex-direction: unset;
+    gap: 30px;
+  }
+}
+
 @media screen and (max-width: 749px) {
   .two-images-with-text-second {
-    padding: 80px 0 70px;
+    padding: 65px 0 65px;
   }
 
   .two-images-with-text-second__left--bottom {
@@ -75,5 +82,12 @@
 
   .two-images-with-text-second__left {
     margin-bottom: 30px;
+  }
+}
+
+@media screen and (max-width: 549px) {
+  .two-images-with-text-second__left {
+    flex-direction: column;
+    gap: unset;
   }
 }

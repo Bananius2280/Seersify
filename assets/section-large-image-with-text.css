@@ -6,15 +6,6 @@
   display: block;
 }
 
-.large-image-with-text__left {
-  /* max-width: 700px;
-  width: 100%;
-  margin-right: 30px; */
-  /* display: flex; */
-  /* flex-direction: column;
-  justify-content: space-between; */
-}
-
 .large-image-with-text__left--box {
   z-index: 2;
 }
@@ -75,7 +66,7 @@
   }
 }
 
-@media only screen and (max-width: 1050px) {
+@media only screen and (max-width: 1049px) {
   .large-image-with-text__right--second-img {
     left: unset;
     display: block;
@@ -83,6 +74,10 @@
     right: 0;
     top: unset;
     transform: unset;
+  }
+
+  .large-image-with-text {
+    padding: 80px 0;
   }
 }
 
@@ -137,7 +132,6 @@
   }
 
   .large-image-with-text__right--second-img {
-    /* width: 130px; */
     width: 170px;
   }
 

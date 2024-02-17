@@ -89,9 +89,9 @@
   }
 }
 
-@media screen and (max-width: 1051px) { 
+@media screen and (max-width: 1049px) { 
 .image-banner-second-variant {
-    padding: 105px 0 90px;
+    padding: 80px 0 80px;
   }
 }
 
@@ -113,7 +113,7 @@
   }
 
   .image-banner-second-variant {
-    padding: 80px 0 70px;
+    padding: 65px 0 65px;
   }
 }
 

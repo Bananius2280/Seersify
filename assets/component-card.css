@@ -120,6 +120,33 @@
   width: calc(100% - 2 * var(--image-padding));
 }
 
+.card__product--tag {
+  display: none;
+  width: 86px;
+  height: 86px;
+  justify-content: center;
+  flex-direction: column;
+  border-radius: 50%;
+  background-color: #405920;
+  color: #fff;
+  font-family: MavelText-Medium, sans-serif;
+  font-size: 25px;
+  line-height: 140%;
+  letter-spacing: -0.5px;
+  position: absolute;
+  top: 30px;
+  right: 83px;
+  z-index: 2;
+}
+
+.card__product--tag span {
+  margin-top: 4px;
+}
+
+.slider__slide-new .card__product--tag {
+  display: flex;
+}
+
 .card--standard .card__media {
   margin: var(--image-padding);
 }

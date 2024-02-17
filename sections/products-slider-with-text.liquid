@@ -37,8 +37,9 @@
           aria-live="polite"
           aria-atomic="true">
           {%- for product in section.settings.products_slider_with_text_product_list -%}
+            
             <div
-              class="slideshow__slide grid__item grid--1-col slider__slide "
+              class="slideshow__slide grid__item grid--1-col slider__slide{% for tag in product.tags %}{% if tag == 'new' %} slider__slide-new{% endif %}{% endfor %}"
               id="Slide-{{ section.id }}-{{ forloop.index }}"
               role="group"
               {% if section.settings.products_slider_with_text_product_list.count == 1 %}
@@ -47,6 +48,7 @@
               aria-roledescription="{{ 'sections.slideshow.slide' | t }}"
               aria-label="{{ forloop.index }} {{ 'general.slider.of' | t }} {{ forloop.length }}"
               tabindex="-1">
+              
               {% render 'card-product'
                 ,
  card_product: product

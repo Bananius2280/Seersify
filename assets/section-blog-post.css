@@ -3,7 +3,7 @@
   margin-bottom: 45px;
 }
 
-.article-template__hero-small {
+/* .article-template__hero-small {
   height: 20rem;
 }
 
@@ -13,10 +13,10 @@
 
 .article-template__hero-large {
   height: 40rem;
-}
+} */
 
 @media screen and (min-width: 750px) and (max-width: 1399px) {
-  .article-template__hero-small {
+  /* .article-template__hero-small {
     height: 35rem;
   }
 
@@ -26,11 +26,11 @@
 
   .article-template__hero-large {
     height: 65rem;
-  }
+  } */
 }
 
 @media screen and (min-width: 1400px) {
-  .article-template__hero-small {
+  /* .article-template__hero-small {
     height: 45rem;
   }
 
@@ -40,7 +40,7 @@
 
   .article-template__hero-large {
     height: 82rem;
-  }
+  } */
 }
 
 .article-template header {
@@ -81,7 +81,7 @@
 
 .article-template__content {
   margin-top: 3rem;
-  margin-bottom: 3rem;
+  margin-bottom: 0;
   width: 100%;
 }
 
@@ -145,6 +145,10 @@
   margin-bottom: 3rem;
 }
 
+.article-template__right .article-template__right--img {
+  position: unset !important;
+}
+
 @media screen and (min-width: 750px) {
   .article-template__comment-fields {
     display: grid;
@@ -168,7 +172,7 @@
 }
 
 .article-template {
-  padding: 90px 0 60px;
+  padding: 65px 0 30px;
 }
 
 .article-template__left {
@@ -193,7 +197,11 @@
   margin-bottom: 20px;
 }
 
-@media screen and (min-width: 1200px) {
+.article-template__hero-container {
+  margin-bottom: 85px;
+}
+
+@media screen and (min-width: 1050px) {
   .article-template__box {
     display: flex;
     justify-content: space-between;
@@ -219,15 +227,23 @@
   .article-template__left header {
     margin: 0;
   }
-}
 
-@media screen and (min-width: 750px) {
   .article-template {
     padding: 185px 0 125px;
   }
+}
+
+@media screen and (max-width: 1050px) {
+  .article-template {
+    padding: 100px 0 80px;
+  }
 
   .article-template__hero-container {
-    margin-bottom: 85px;
+    margin-bottom: 60px;
+  }
+
+  .article-template__hero-container {
+    max-width: 750px;
   }
 }
 
@@ -247,5 +263,13 @@
   .article-template__left .circle-divider,
   .article-template__left--name {
     font-size: 14px;
+  }
+
+  .article-template {
+    padding: 65px 0 60px;
+  }
+
+  .article-template__hero-container {
+    margin-bottom: 40px;
   }
 }

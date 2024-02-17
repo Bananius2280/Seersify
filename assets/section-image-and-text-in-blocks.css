@@ -23,7 +23,7 @@
 
 .image-and-text-in-blocks__left--items {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   flex-wrap: wrap;
   gap: 25px;
 }
@@ -68,6 +68,10 @@
   .image-and-text-in-blocks__left {
     margin-bottom: 0;
   }
+
+    .image-and-text-in-blocks__left--items {
+      justify-content: space-between;
+    }
 }
 
 @media screen and (max-width: 749px) {

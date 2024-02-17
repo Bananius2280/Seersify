@@ -22,7 +22,9 @@
       "settings": {
         "section_color_scheme": "scheme-697f2590-b944-4775-9ae3-520302f27367",
         "blog_show_date": false,
-        "blog_show_author": true
+        "blog_show_author": true,
+        "show_top_border": false,
+        "show_bottom_border": true
       }
     },
     "newsletter_hnAQ8t": {

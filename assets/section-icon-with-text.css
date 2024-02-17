@@ -1,5 +1,5 @@
 .icon-with-text {
-  padding: 65px 0 65px;
+  padding: 85px 0 85px;
 }
 
 .icon-with-text__items {
@@ -65,7 +65,7 @@
   }
 }
 
-@media only screen and (min-width: 750px) {
+@media only screen and (min-width: 1050px) {
   .icon-with-text {
     padding: 135px 0 135px;
   }
@@ -89,4 +89,8 @@
   .icon-with-text__item--title {
     margin-bottom: 0;
   }
+
+    .icon-with-text {
+      padding: 65px 0 65px;
+    }
 }

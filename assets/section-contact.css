@@ -75,9 +75,21 @@
   }
 }
 
+@media only screen and (max-width: 1049px) {
+  .contacts {
+    padding: 80px 0;
+  }
+}
+
+@media only screen and (max-width: 950px) {
+  .contacts-bottom__title {
+    margin-bottom: 10px;
+  }
+}
+
 @media screen and (max-width: 751px) {
   .contacts {
-    padding: 60px 0;
+    padding: 65px 0;
   }
 
   .contacts-bottom__text {
