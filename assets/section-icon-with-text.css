@@ -17,7 +17,16 @@
 
 .icon-with-text__item--img {
   margin-bottom: 25px;
-  object-fit: cover;
+  object-fit: contain;
+  width: 125px;
+  height: 70px;
+  margin-left: -15px;
+}
+
+.icon-with-text__item--img-square {
+  width: 110px;
+  height: 110px;
+  margin-bottom: 0;
 }
 
 .icon-with-text__item--title {
@@ -29,10 +38,10 @@
 }
 
 @media only screen and (max-width: 1249px) {
-  .icon-with-text__item {
+  /* .icon-with-text__item {
     margin-left: 10px;
     margin-right: 10px;
-  }
+  } */
 
   .icon-with-text__item+.icon-with-text__item {
     margin-top: 30px;
@@ -55,7 +64,7 @@
 
   .icon-with-text__items {
     justify-content: space-between;
-    align-items: flex-end;
+    align-items: flex-start;
     flex-wrap: wrap;
     display: flex;
   }
@@ -74,10 +83,18 @@
 
 @media only screen and (max-width: 749px) {
   .icon-with-text__item--img {
-    width: 50px;
-    height: 50px;
+    width: 70px;
+    height: 40px;
     margin-bottom: 0;
   }
+
+  .icon-with-text__item--img-square {
+    width: 60px;
+    height: 60px;
+    margin-left: -10px;
+  }
+
+
 
   .icon-with-text__item--box {
     display: flex;
@@ -90,7 +107,11 @@
     margin-bottom: 0;
   }
 
-    .icon-with-text {
-      padding: 65px 0 65px;
-    }
+  .icon-with-text {
+    padding: 65px 0 65px;
+  }
+
+  .icon-with-text__item--box-square {
+    margin-bottom: 0;
+  }
 }

@@ -88,7 +88,7 @@
         "column_89zAUF": {
           "type": "column",
           "settings": {
-            "icon_with_text_img": "shopify:\/\/shop_images\/The_Eco_Set_tick-black.svg",
+            "icon_with_text_img": "shopify:\/\/shop_images\/The_Eco_Set_tick-black_2.svg",
             "icon_with_text_title": "Transparency",
             "icon_with_text_text": "Seersify values transparency, ensuring openness and honesty in every aspect of our brand. From ingredient sourcing to product formulations, we are committed to providing clear and truthful information to our customers."
           }
@@ -96,7 +96,7 @@
         "column_dJqUDA": {
           "type": "column",
           "settings": {
-            "icon_with_text_img": "shopify:\/\/shop_images\/The_Eco_Set_circular-black.svg",
+            "icon_with_text_img": "shopify:\/\/shop_images\/The_Eco_Set_circular-black_2c1b3be1-4158-4a65-a250-521359fcc225.svg",
             "icon_with_text_title": "Innovation",
             "icon_with_text_text": "Seersify places a high value on innovation. We are dedicated to pushing the boundaries of skincare, incorporating the latest advancements in technology and scientific research to create products that set new standards in the industry."
           }
@@ -104,7 +104,7 @@
         "column_nEqJj9": {
           "type": "column",
           "settings": {
-            "icon_with_text_img": "shopify:\/\/shop_images\/The_Eco_Set_earth-black.svg",
+            "icon_with_text_img": "shopify:\/\/shop_images\/The_Eco_Set_earth-black_44a34abf-ff01-461c-bec6-701f25082e02.svg",
             "icon_with_text_title": "Diversity",
             "icon_with_text_text": "Embracing diversity and celebrating natural beauty are core values at Seersify. We believe in the uniqueness of every individual, and our products are crafted to support and enhance the natural beauty of all skin types and tones.-"
           }
@@ -117,6 +117,7 @@
       ],
       "settings": {
         "section_color_scheme": "scheme-58e96f2d-5616-4dd8-b82d-ba401a29739b",
+        "make_icons_square": false,
         "show_top_border": false,
         "show_bottom_border": true
       }
@@ -187,6 +188,7 @@
       ],
       "settings": {
         "section_color_scheme": "scheme-21bd5b93-d091-4cb6-a15a-e37de14aef4a",
+        "make_icons_square": true,
         "show_top_border": true,
         "show_bottom_border": true
       }

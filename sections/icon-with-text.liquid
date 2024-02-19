@@ -7,10 +7,10 @@
         {%- if block.settings.icon_with_text_img != blank or block.settings.icon_with_text_title != blank or block.settings.icon_with_text_text != blank -%}
           <div class="icon-with-text__item">
             {%- if block.settings.icon_with_text_img != blank or block.settings.icon_with_text_title != blank -%}
-              <div class="icon-with-text__item--box">
+              <div class="icon-with-text__item--box{% if section.settings.make_icons_square %} icon-with-text__item--box-square{% endif %}">
                 {%- if block.settings.icon_with_text_img != blank -%}
                   <img
-                    class="icon-with-text__item--img"
+                    class="icon-with-text__item--img{% if section.settings.make_icons_square %} icon-with-text__item--img-square{% endif %}"
                     src="{{ block.settings.icon_with_text_img | image_url: width: 250 }}"
                     alt="{{ block.settings.icon_with_text_img.alt | escape }}"
                     width="100"
@@ -48,7 +48,14 @@
         "id": "section_color_scheme",
         "label": "Color scheme",
         "default": "background-1"
-      }, {
+      },
+      {
+        "type": "checkbox",
+        "id": "make_icons_square",
+        "label": "Make icons square",
+        "default": false
+      }, 
+       {
         "type": "checkbox",
         "id": "show_top_border",
         "label": "Show top border",
@@ -68,6 +75,7 @@
           {
             "type": "image_picker",
             "id": "icon_with_text_img",
+            "info": "Insert icons of the same size",
             "label": "Icon"
           }, {
             "type": "text",

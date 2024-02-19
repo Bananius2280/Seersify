@@ -77,7 +77,6 @@
         "enable_sticky_info": true,
         "color_scheme": "scheme-697f2590-b944-4775-9ae3-520302f27367",
         "media_size": "large",
-        "constrain_to_viewport": false,
         "media_fit": "contain",
         "media__background": "{{ product.metafields.custom.background_image_for_product.value }}",
         "gallery_layout": "thumbnail_slider",
