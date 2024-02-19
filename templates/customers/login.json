@@ -3,12 +3,27 @@
     "main": {
       "type": "main-login",
       "settings": {
-        "padding_top": 36,
-        "padding_bottom": 36
+        "section_color_scheme": "scheme-697f2590-b944-4775-9ae3-520302f27367",
+        "login_img": "shopify:\/\/shop_images\/18_2_b0c71823-9d60-453a-b514-e06266b47ad0.jpg",
+        "padding_top": 135,
+        "padding_bottom": 155,
+        "show_top_border": false,
+        "show_bottom_border": true
+      }
+    },
+    "newsletter_chYQai": {
+      "type": "newsletter",
+      "settings": {
+        "section_color_scheme": "scheme-58e96f2d-5616-4dd8-b82d-ba401a29739b",
+        "newsletter_img": "shopify:\/\/shop_images\/13_8_Extend_newsletter_1_1.jpg",
+        "newsletter_title": "Subscribe to Seersify newsletter",
+        "newsletter_select": "right",
+        "newsletter_text": "For unique discounts and offers"
       }
     }
   },
   "order": [
-    "main"
+    "main",
+    "newsletter_chYQai"
   ]
 }

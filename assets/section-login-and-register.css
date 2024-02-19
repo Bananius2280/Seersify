@@ -1,0 +1,206 @@
+  .main-login__box,
+  .main-register__box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px;
+  }
+
+  .shopify-section .main-login .login,
+  .shopify-section .main-register .register {
+    max-width: 570px;
+    width: 100%;
+    text-align: left;
+    margin-left: 160px;
+    padding: 0;
+  }
+
+  .login-img,
+  .register-img {
+    max-width: 720px;
+    height: auto;
+    width: 100%;
+    max-height: 790px;
+    object-fit: cover;
+    display: block;
+  }
+
+  .login-text {
+    font-size: 14px;
+    line-height: 140.625%;
+  }
+
+  .main-login button,
+  .main-register button {
+    width: 100%;
+    max-width: unset;
+    margin-bottom: 7px;
+    margin-top: 65px;
+    text-underline-offset: 1.5px;
+    letter-spacing: -0.48px;
+    text-transform: uppercase;
+    font-family: Poppins-Regular, sans-serif;
+  }
+
+  .main-login .customer form,
+  .main-register .customer form {
+    margin-top: 50px;
+  }
+
+  .login-box,
+  .register-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .login-box a,
+  .register-box a {
+    margin: unset;
+    font-size: 12px;
+    line-height: 140.625%;
+    color: rgba(0, 0, 0, 0.50);
+    text-underline-offset: 1.5px;
+  }
+
+  .main-login .customer a:hover,
+  .main-register .customer a:hover {
+    text-decoration-thickness: 0;
+  }
+
+  .main-login .form__message:focus-visible,
+  .main-register .form__message:focus-visible {
+    outline: unset;
+    box-shadow: unset;
+  }
+
+  .main-login .errors li,
+  .main-register .errors li {
+    font-size: 14px;
+  }
+
+  .main-login .errors ul,
+  .main-register .errors ul {
+    margin-top: 10px;
+  }
+
+  .main-login #recover:target~#login-text,
+  .main-login #recover:target~#login-text+div,
+  .main-register #recover:target~#login-text,
+  .main-register #recover:target~#login-text+div {
+    display: none;
+  }
+
+  .login p,
+  .register p {
+    margin: 0;
+  }
+
+  .shopify-section .main-login .login .field::after,
+  .shopify-section .main-login .login .field:hover,
+  .shopify-section .main-login .login .field__input:active,
+  .shopify-section .main-login .login .field__input:focus,
+  .shopify-section .main-register .register .field::after,
+  .shopify-section .main-register .register .field:hover,
+  .shopify-section .main-register .register .field__input:active,
+  .shopify-section .main-register .register .field__input:focus {
+    box-shadow: unset;
+  }
+
+  .shopify-section .main-login .login .field__input::placeholder,
+  .shopify-section .main-register .register .field__input::placeholder {
+    opacity: 1;
+    color: rgba(0, 0, 0, 0.50);
+    font-family: var(--font-body-family);
+    font-style: var(--font-body-style);
+    font-weight: var(--font-body-weight);
+    margin: 0;
+    line-height: normal;
+  }
+
+  .shopify-section .main-login .login .field__input,
+  .shopify-section .main-register .register .field__input {
+    opacity: 1;
+    padding: 0;
+    padding-bottom: 4px;
+    height: 26px;
+    font-size: 14px;
+    background-color: unset;
+    border: none;
+    border-bottom: 1px solid rgb(var(--color-foreground));
+    font-family: var(--font-body-family);
+    font-style: var(--font-body-style);
+    font-weight: var(--font-body-weight);
+    margin: 0;
+    line-height: normal;
+  }
+
+  .main-login .field+.field,
+  .main-register .field+.field {
+    margin-top: 40px;
+  }
+
+  .shopify-section .main-login .main-login__box .login-without__img,
+  .shopify-section .main-register .main-register__box .register-without__img {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  @media screen and (max-width: 1669px) {
+
+    .shopify-section .main-login .login,
+    .shopify-section .main-register .register {
+      margin-left: 100px;
+    }
+  }
+
+  @media screen and (max-width: 1249px) {
+
+    .shopify-section .main-login .login,
+    .shopify-section .main-register .register {
+      margin-left: 0;
+    }
+  }
+
+  @media screen and (max-width: 1050px) {
+
+    .shopify-section .main-login .login,
+    .shopify-section .main-register .register {
+      margin-left: 0;
+    }
+  }
+
+  @media screen and (max-width: 749px) {
+
+    .main-login__box,
+    .main-register__box {
+      flex-direction: column-reverse;
+    }
+
+    .login-img,
+    .register-img {
+      max-width: 400px;
+      max-height: 500px;
+    }
+
+    .shopify-section .main-login .login,
+    .shopify-section .main-register .register {
+      max-width: unset;
+      margin: 0;
+    }
+
+    .main-login .customer form,
+    .main-register .customer form {
+      margin-top: 25px;
+    }
+
+    .main-login button,
+    .main-register button {
+      margin-top: 45px;
+    }
+
+    .main-login .field+.field,
+    .main-register .field+.field {
+      margin-top: 20px;
+    }
+  }
