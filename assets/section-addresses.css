@@ -1,0 +1,69 @@
+.main-addresses {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+  margin: 0 !important;
+  max-width: unset !important;
+}
+
+.main-addresses .main-addresses__inputs {
+  max-width: 720px;
+  margin: auto;
+  width: 100%;
+}
+
+.main-addresses__title {
+  margin-top: 30px;
+}
+
+.main-addresses .page-width form .field::after,
+.main-addresses .page-width form .field:hover,
+.main-addresses .page-width form .field__input:active,
+.main-addresses .page-width form .field__input:focus,
+.main-addresses .page-width form .field::after,
+.main-addresses .page-width form .field:hover,
+.main-addresses .page-width form .field__input:active,
+.main-addresses .page-width form .field__input:focus {
+  box-shadow: unset !important;
+}
+
+.main-addresses .page-width form .field__input::placeholder,
+.main-addresses .page-width form .field__input::placeholder {
+  opacity: 1;
+  opacity: 0.5;
+  color: rgb(var(--color-foreground));
+  font-family: var(--font-body-family);
+  font-style: var(--font-body-style);
+  font-weight: var(--font-body-weight);
+  margin: 0;
+  line-height: normal;
+}
+
+.main-addresses .page-width form .field__input,
+.main-addresses .page-width form .field__input {
+  opacity: 1;
+  padding: 0;
+  padding-bottom: 4px;
+  height: 26px;
+  font-size: 14px;
+  background-color: unset;
+  border: none;
+  border-bottom: 1px solid rgb(var(--color-foreground));
+  font-family: var(--font-body-family);
+  font-style: var(--font-body-style);
+  font-weight: var(--font-body-weight);
+  margin: 0;
+  line-height: normal;
+}
+
+.main-addresses__buttons button {
+  width: 48%;
+  margin: 0 !important;
+}
+
+.main-addresses__buttons {
+  text-align: left;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 40px;
+}

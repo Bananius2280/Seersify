@@ -59,7 +59,7 @@
     margin: unset;
     font-size: 12px;
     line-height: 140.625%;
-    color: rgba(0, 0, 0, 0.50);
+    opacity: 0.5;
     text-underline-offset: 1.5px;
   }
 
@@ -110,7 +110,8 @@
   .shopify-section .main-login .login .field__input::placeholder,
   .shopify-section .main-register .register .field__input::placeholder {
     opacity: 1;
-    color: rgba(0, 0, 0, 0.50);
+    opacity: 0.5;
+    color: rgb(var(--color-foreground));
     font-family: var(--font-body-family);
     font-style: var(--font-body-style);
     font-weight: var(--font-body-weight);
