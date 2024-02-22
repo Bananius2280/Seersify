@@ -167,6 +167,11 @@
   .main-account .customer-top .customer-top__link {
     font-size: 14px
   }
+
+  .customer .customer-bottom tbody td::before {
+    opacity: 0.5;
+    color: rgba(var(--color-foreground));
+  }
 }
 
 @media only screen and (max-width: 549px) {
