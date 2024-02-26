@@ -49,6 +49,10 @@ cart-items.is-empty .title-wrapper-with-link,
   .cart__empty-text {
     margin: 0 0 3rem;
   }
+
+  .drawer .cart__empty-text {
+    margin: 0 0 2rem;
+  }
 }
 
 cart-items {

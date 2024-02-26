@@ -31,7 +31,7 @@
         <div class="drawer__inner-empty">
           <div class="cart-drawer__warnings center{% if settings.cart_drawer_collection != blank %} cart-drawer__warnings--has-collection{% endif %}">
             <div class="cart-drawer__empty-content">
-              <h2 class="cart__empty-text">{{ 'sections.cart.empty' | t }}</h2>
+              <h4 class="cart__empty-text">{{ 'sections.cart.empty' | t }}</h4>
               <button
                 class="drawer__close"
                 type="button"
@@ -60,7 +60,7 @@
         </div>
       {%- endif -%}
       <div class="drawer__header">
-        <h2 class="drawer__heading">{{ 'sections.cart.title' | t }}</h2>
+        <h3 class="drawer__heading">{{ 'sections.cart.title' | t }}</h3>
         <button
           class="drawer__close"
           type="button"
@@ -135,7 +135,7 @@
                             <p class="caption-with-letter-spacing light">{{ item.product.vendor }}</p>
                           {%- endif -%}
 
-                          <a href="{{ item.url }}" class="cart-item__name h4 break">
+                          <a href="{{ item.url }}" class="cart-item__name h5 break">
                             {{- item.product.title | escape -}}
                           </a>
 
