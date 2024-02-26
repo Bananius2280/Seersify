@@ -34,6 +34,10 @@
   width: 100%;
 }
 
+.main-order__box .main-order__left .main-order__left--text {
+  margin-bottom: 50px;
+}
+
 .main-order .main-order__box table {
   box-shadow: unset;
   border: unset;
@@ -146,6 +150,10 @@
   .main-order .main-order__box tbody td::before {
     opacity: 0.5;
     color: rgba(var(--color-foreground));
+  }
+
+  .main-order__box .main-order__left .main-order__left--text {
+    margin-bottom: 20px;
   }
 }
 
