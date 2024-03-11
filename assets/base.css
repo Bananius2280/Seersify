@@ -2278,8 +2278,11 @@ product-info .loading__spinner:not(.hidden) ~ *,
   flex-wrap: wrap;
   align-content: center;
   grid-area: announcements;
-  min-height: 60px;
   overflow: hidden;
+}
+
+.main-divider .announcement-bar {
+  min-height: 60px;
 }
 
 .announcement-bar .slider--everywhere {
@@ -2395,12 +2398,15 @@ product-info .loading__spinner:not(.hidden) ~ *,
 }
 
 @media screen and (min-width: 750px) {
-  .announcement-bar__message {
+  .main-divider .announcement-bar__message {
     font-size: 19px;
   }
 
-  .announcement-bar,
-  .announcement-bar__announcement {
+  .announcement-bar__message {
+    font-size: 16px;
+  }
+
+  .main-divider .announcement-bar, .divider .announcement-bar__announcement{
     min-height: 80px;
   }
 
@@ -2442,6 +2448,14 @@ product-info .loading__spinner:not(.hidden) ~ *,
 .announcement-bar-slider--fade-out-previous .announcement-bar__message {
   --announcement-translate-to: -1.5rem;
   animation-name: translateAnnouncementSlideOut;
+}
+
+.announcement-bar-slider .slider-button--next svg{
+  transform: rotate(270deg);
+}
+
+.announcement-bar-slider .slider-button--prev svg {
+  transform: rotate(90deg);
 }
 
 @keyframes translateAnnouncementSlideIn {

@@ -44,10 +44,10 @@
         "show_bottom_border": false
       }
     },
-    "announcement_bar_nk3VjB": {
-      "type": "announcement-bar",
+    "divider_PDR8xH": {
+      "type": "divider",
       "blocks": {
-        "announcement_TJnbCG": {
+        "announcement_rrwMxp": {
           "type": "announcement",
           "settings": {
             "text": "NATURE-INFUSED SKINCARE SCIENCE",
@@ -57,7 +57,7 @@
         }
       },
       "block_order": [
-        "announcement_TJnbCG"
+        "announcement_rrwMxp"
       ],
       "settings": {
         "color_scheme": "",
@@ -77,7 +77,7 @@
         "images_with_text_second_image_position": "top",
         "images_with_text_second_image_mode": "usually",
         "images_with_text_link_text": "READ MORE",
-        "images_with_text_link": "",
+        "images_with_text_link": "shopify:\/\/pages\/about",
         "show_top_border": false,
         "show_bottom_border": true
       }
@@ -128,13 +128,9 @@
         "section_color_scheme": "scheme-697f2590-b944-4775-9ae3-520302f27367",
         "products_slider_with_text_title": "Designed to turn up your skin's natural brightness, hydrate, gently exfoliate, firm and protect",
         "products_slider_with_text_link_title": "VIEW ALL",
-        "products_slider_with_text_link_url": "",
+        "products_slider_with_text_link_url": "shopify:\/\/collections\/all",
         "products_slider_with_text_product_list": [
-          "hydrapeel-glow-serum",
-          "hyfrapeel-glow-serum-test-1",
-          "hyfrapeel-glow-serum",
-          "hyfrapeel-glow-serum-text-2",
-          "hyfrapeel-glow-serum-text-4"
+          "hydrapeel-glow-serum"
         ],
         "show_top_border": false,
         "show_bottom_border": false
@@ -225,7 +221,7 @@
         "images_with_text_second_image_position": "bottom",
         "images_with_text_second_image_mode": "high",
         "images_with_text_link_text": "READ MORE",
-        "images_with_text_link": "",
+        "images_with_text_link": "shopify:\/\/pages\/about",
         "show_top_border": false,
         "show_bottom_border": true
       }
@@ -320,7 +316,7 @@
         "heading": "Blog Stories",
         "heading_size": "h4",
         "link_title": "VIEW ALL",
-        "link_url": "",
+        "link_url": "shopify:\/\/blogs\/inspiring-stories",
         "blog": "inspiring-stories",
         "post_limit": 3,
         "show_image": true,
@@ -331,7 +327,7 @@
         "instagram_title": "Follow our journey",
         "instagram_title_size": "h4",
         "instagram_link_title": "Instagram @seersifyskincare",
-        "instagram_link_url": "",
+        "instagram_link_url": "https:\/\/www.instagram.com\/seersifyskincare\/?igsh=dnNqejMyZmt0M3Z1&utm_source=qr",
         "padding_top": 80,
         "padding_bottom": 110,
         "show_top_border": false,
@@ -351,7 +347,7 @@
   },
   "order": [
     "image_banner",
-    "announcement_bar_nk3VjB",
+    "divider_PDR8xH",
     "images_with_text_6pVkYK",
     "icon_with_text_nAdxem",
     "products_slider_with_text_NCFiq6",

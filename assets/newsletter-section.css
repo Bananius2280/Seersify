@@ -224,6 +224,15 @@
   margin-top: 1.5rem;
 }
 
+.newsletter-form__message {
+  line-height: unset;
+}
+
+.newsletter-form__message:focus-visible {
+  box-shadow: unset;
+  outline: unset;
+}
+
 .newsletter__button {
   margin-top: 3rem;
   width: fit-content;

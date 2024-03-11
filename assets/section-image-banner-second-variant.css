@@ -42,6 +42,16 @@
   margin-bottom: 12px;
 }
 
+@media screen and (max-width: 1400px) and (min-width: 1250px) {
+  .image-banner-second-variant__title {
+    font-size: 100px !important;
+  }
+
+    .image-banner-second-variant__left--title {
+    font-size: 100px !important;
+  }
+}
+
 @media screen and (min-width: 1250px) {
   .image-banner-second-variant__flex {
     min-height: calc(100vh - 82px);
@@ -89,8 +99,8 @@
   }
 }
 
-@media screen and (max-width: 1049px) { 
-.image-banner-second-variant {
+@media screen and (max-width: 1049px) {
+  .image-banner-second-variant {
     padding: 80px 0 80px;
   }
 }

@@ -78,7 +78,7 @@
         "color_scheme": "scheme-697f2590-b944-4775-9ae3-520302f27367",
         "media_size": "large",
         "media_fit": "contain",
-        "media__background": "{{ product.metafields.custom.background_image_for_product.value }}",
+        "media__background": "shopify:\/\/shop_images\/46_1.jpg",
         "gallery_layout": "thumbnail_slider",
         "image_zoom": "lightbox",
         "mobile_thumbnails": "hide",
@@ -274,13 +274,9 @@
         "section_color_scheme": "",
         "products_slider_with_text_title": "Other Products",
         "products_slider_with_text_link_title": "VIEW ALL",
-        "products_slider_with_text_link_url": "",
+        "products_slider_with_text_link_url": "shopify:\/\/collections\/all",
         "products_slider_with_text_product_list": [
-          "hydrapeel-glow-serum",
-          "hyfrapeel-glow-serum-test-1",
-          "hyfrapeel-glow-serum",
-          "hyfrapeel-glow-serum-text-2",
-          "hyfrapeel-glow-serum-text-4"
+          "hydrapeel-glow-serum"
         ],
         "show_top_border": false,
         "show_bottom_border": true
