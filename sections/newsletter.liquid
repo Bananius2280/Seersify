@@ -1,7 +1,7 @@
 {{ 'component-newsletter.css' | asset_url | stylesheet_tag }}
 {{ 'newsletter-section.css' | asset_url | stylesheet_tag }}
 
-<div class="newsletter color-{{ section.settings.section_color_scheme }}{% if section.settings.show_top_border %} main-top__border{% endif %}{% if section.settings.show_bottom_border %} main-bottom__border{% endif %}">
+<div class="newsletter color-{{ section.settings.section_color_scheme }}{% if section.settings.show_top_border %} main-top__border{% endif %}{% if section.settings.show_bottom_border %} main-bottom__border{% endif %}" id="newsletterSection">
   {%- if section.settings.newsletter_img != blank -%}
     <img
       class="newsletter-img newsletter-img--{{ section.settings.newsletter_select }}"
@@ -51,13 +51,6 @@
                 aria-describedby="Newsletter-success--{{ section.id }}"
                 {% endif %}
                 placeholder="Email">
-              {% comment %} <input
-                                  id="NewsletterForm--{{ section.id }}"
-                                  type="email"
-                                  name="contact[email]"
-                                  value="{{ form.email }}"
-                                  placeholder="Email"
-                                > {% endcomment %}
               <button
                 type="submit"
                 class="newsletter-form__button field__button"
@@ -68,11 +61,11 @@
               </button>
             </div>
             {%- if form.errors -%}
-              <small class="newsletter-form__message form__message" id="Newsletter-error--{{ section.id }}">
+              <h3 class="newsletter-form__message form__message" id="Newsletter-error--{{ section.id }}">
                 {%- render 'icon-error' -%}
                 {{- form.errors.translated_fields.email | capitalize }}
                 {{ form.errors.messages.email -}}
-              </small>
+              </h3>
             {%- endif -%}
           </div>
           {%- if form.posted_successfully? -%}
@@ -91,6 +84,28 @@
   </div>
 
 </div>
+
+<script>
+  var live_url = window.location.href;
+  var result = live_url.includes('form_type=customer');
+  //var input_val = document.querySelector('#NewsletterForm--footer').value.length;
+  var input_val = document.querySelector('[id*="NewsletterForm"]').value.length;
+
+  if (result && input_val != 0) {
+    const add_ele = document.createElement("h3");
+    add_ele.innerHTML = `<svg aria-hidden="true" focusable="false" class="icon icon-error" viewBox="0 0 13 13">
+    <circle cx="6.5" cy="6.50049" r="5.5" stroke="white" stroke-width="2"/>
+    <circle cx="6.5" cy="6.5" r="5.5" fill="#EB001B" stroke="#EB001B" stroke-width="0.7"/>
+    <path d="M5.87413 3.52832L5.97439 7.57216H7.02713L7.12739 3.52832H5.87413ZM6.50076 9.66091C6.88091 9.66091 7.18169 9.37267 7.18169 9.00504C7.18169 8.63742 6.88091 8.34917 6.50076 8.34917C6.12061 8.34917 5.81982 8.63742 5.81982 9.00504C5.81982 9.37267 6.12061 9.66091 6.50076 9.66091Z" fill="white"/>
+    <path d="M5.87413 3.17832H5.51535L5.52424 3.537L5.6245 7.58083L5.63296 7.92216H5.97439H7.02713H7.36856L7.37702 7.58083L7.47728 3.537L7.48617 3.17832H7.12739H5.87413ZM6.50076 10.0109C7.06121 10.0109 7.5317 9.57872 7.5317 9.00504C7.5317 8.43137 7.06121 7.99918 6.50076 7.99918C5.94031 7.99918 5.46982 8.43137 5.46982 9.00504C5.46982 9.57872 5.94031 10.0109 6.50076 10.0109Z" fill="white" stroke="#EB001B" stroke-width="0.7">
+    </svg>You have already subscribed!`;
+    document.querySelector('.newsletter-form__field-wrapper').appendChild(add_ele);
+    add_ele.classList.add('newsletter_already_subscribe', 'newsletter-form__message', 'form__message');
+    // live_url + '#newsletterSection';
+    window.location.href = window.location.href + '#newsletterSection';
+    console.log(window.location.href + '#newsletterSection');
+  }
+</script>
 
 {% schema %}
   {

@@ -225,7 +225,18 @@
 }
 
 .newsletter-form__message {
-  line-height: unset;
+  letter-spacing: unset;
+  font-size: 16px;
+}
+
+.newsletter-form__message .icon {
+  margin-bottom: 2px;
+}
+
+@media screen and (max-width: 749px) {
+  .newsletter-form__message {
+    font-size: 14px;
+  }
 }
 
 .newsletter-form__message:focus-visible {
