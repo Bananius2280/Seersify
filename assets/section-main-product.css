@@ -449,6 +449,13 @@ a.product__text {
   height: 25px;
 }
 
+.product-form__input price-per-item,
+.price-per-item__container {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
 .section-main-product .product .buy_buttons-box .form__label {
   margin-bottom: 0;
   font-size: 12px;

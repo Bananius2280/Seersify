@@ -79,12 +79,11 @@
                   style="max-width: min(100%, {{ section.settings.logo_width }}px);">
                   <a href="/">
                     <img
-                      srcset="{{ section.settings.footer_logo | image_url: width: section.settings.logo_width }}, {{ section.settings.footer_logo | image_url: width: image_size_2x }} 2x"
                       src="{{ section.settings.footer_logo | image_url: width: 760 }}"
                       alt="{{ section.settings.footer_logo.alt | escape }}"
                       loading="lazy"
-                      width="{{ section.settings.footer_logo.width }}"
-                      height="{{ section.settings.footer_logo.height }}"
+                      width="{{ section.settings.logo_width }}"
+                      height="65"
                     >
                   </a>
                 </div>
